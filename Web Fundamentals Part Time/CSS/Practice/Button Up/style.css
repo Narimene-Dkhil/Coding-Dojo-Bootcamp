@@ -1,0 +1,22 @@
+#button1 {
+    border-radius: 100px;
+    width: 100px;
+    border: 2px solid darkcyan;
+    color: darkcyan;
+    background-color: whitesmoke;
+}
+
+button {
+    border-radius: 190px;
+    color: white;
+    background-color: darkcyan;
+    border: white;
+}
+
+#button3 {
+    width: 150px;
+    height: 30px;
+    color: white;
+    background-color: rgb(6, 79, 205);
+    box-shadow: 2px 2px 2px 1px black;
+}
