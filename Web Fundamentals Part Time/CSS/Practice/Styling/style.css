@@ -1,0 +1,30 @@
+h1 {
+    font-family: cursive;
+    background-color: black;
+}
+
+.color1 {
+    color: white; 
+}
+
+.color2 {
+    color: aqua;
+}
+
+h2 {
+    color: White;
+    background-color: rebeccapurple;
+    text-align: center;
+    font-style: italic;
+    font-family: sans-serif;
+}
+
+h3 {
+    color: navy;
+    background-color: skyblue ;
+    text-align: right;
+    font-family: sans-serif ;
+    text-decoration: underline ;
+    font-weight: lighter;
+}
+
