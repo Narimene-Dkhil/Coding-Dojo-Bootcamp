@@ -1,13 +1,63 @@
-/* CSS reset */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-  /* Fixed width container class that will "auto-center" itself */
-
 .container {
     width: 1200px;
     margin: 0 auto;
 }
+
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    color: #007bff;
+    background-color: white;
+}
+
+.btn:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.col {
+    flex: 1;
+    padding: 10px;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.navbar a:hover {
+    background-color: #555;
+}
+
