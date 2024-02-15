@@ -4,7 +4,7 @@
     margin: 10px 0;
 }
 
-.col {
+.col-1 {
     flex: 1;
     background-color: cadetblue;
     text-align: center;

@@ -8,44 +8,49 @@
     <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
+    <!-- Nav bar -->
     <div class="top">
-        <div class="nav">
-            <h1 class="nav-title">Profile</h1>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#" class="active">My Profile</a></li>
-                <li><a href="#">Find Connections</a></li>
-                <li><button class="btn">Sign Out</button></li>
-            </ul>
+        <div class="navigation">
+            <h1 class="title">Profile</h1>
+            <div class="links"> 
+                <a href="#">Home</a>
+                <a href="#" class="bold">My Profile</a>
+                <a href="#">Find Connections</a>
+                <button class="btn">Sign Out</button>
+            </div>
         </div>  
     </div>
+
+
     <div class="container">
         <div class="row">
             <!-- left column -->
-            <div class="col-2">
+            <div class="column-1">
+                <!-- User card -->
                 <div class="user-card">
-                    <div class="card-header">
-                        <img src="img/images/jane-m.jpg" alt="jane-medium-avatar" class="avatar-m">
+                    <div class="header">
+                        <img src="img/images/jane-m.jpg" alt="jane-medium-avatar" class="user-id">
                     </div>
+
                     <div class="card-body">
                         <h1>Jane Doe</h1>
                         <h3>
-                            <img src="img/icons/map-marker.png" alt="pin" class="icon-s"> 
+                            <img src="img/icons/map-marker.png" alt="pin" class="icon"> 
                             Seattle
                         </h3>
                         <p>Developer | Engineer | Problem Solver<br>
                         Master of shadows and the Internet!</p>
                         <p>
                             <a href="#">
-                                <img src="/img/icons/gear.png" alt="gear" class="icon-s"> 
+                                <img src="img/icons/gear.png" alt="gear" class="icon"> 
                                 edit profile
                             </a>
                         </p>
                     </div>
                 </div>
-
+                <!-- Education -->
                 <div class="card">
-                    <div class="header">
+                    <div class="header-1">
                         Education
                     </div>
                     <div class="card-body">
@@ -58,63 +63,65 @@
             </div>
 
             <!-- right column -->
-            <div class="col">
+            <div class="column-2">
+                <!-- connexion requests -->
                 <div class="card">
-                    <div class="header">
+                    <div class="header-1">
                         <span class="connections">2</span>
                         Connection Requests
                     </div>
-                    <div class="user-line">
+                    <div class="line">
                         <span class="start">
-                            <img src="img/images/todd-s.jpg" alt="todd" class="avatar-s">
+                            <img src="img/images/todd-s.jpg" alt="todd" class="photo">
                             <span>Todd E.</span>
                         </span>
                         <span class="end">
-                            <img src="img/icons/accept-circle.png" alt="accept" class="avatar-s">
-                            <img src="img/icons/close-circle.png" alt="decline" class="avatar-s">
+                            <img src="img/icons/accept-circle.png" alt="accept" class="photo">
+                            <img src="img/icons/close-circle.png" alt="decline" class="photo">
                         </span>
                     </div>
-                    <div class="user-line">
+                    <div class="line">
                         <span class="start">
-                            <img src="img/images/phil-s.jpg" alt="phil" class="avatar-s">
+                            <img src="img/images/phil-s.jpg" alt="phil" class="photo">
                             <span>Phil K.</span>
                         </span>
                         <span class="end">
-                            <img src="img/icons/accept-circle.png" alt="accept" class="avatar-s">
-                            <img src="img/icons/close-circle.png" alt="decline" class="avatar-s">
+                            <img src="img/icons/accept-circle.png" alt="accept" class="photo">
+                            <img src="img/icons/close-circle.png" alt="decline" class="photo">
                         </span>
                     </div>
                 </div>
+                <!-- your connexions -->
                 <div class="card">
-                    <div class="header">
+                    <div class="header-1">
                         <span class="connections">500+</span>
                         Your Connections
                     </div>
-                    <div class="user-line">
+                    <div class="line">
                         <span class="start">
-                            <img src="img/images/adrien-s.jpg" alt="adrien" class="avatar-s">
+                            <img src="img/images/adrien-s.jpg" alt="adrien" class="photo">
                             <span>Adrien D.</span>
                         </span>
                     </div>
-                    <div class="user-line">
+                    <div class="line">
                         <span class="start">
-                            <img src="img/images/anne-s.jpg" alt="anne" class="avatar-s">
+                            <img src="img/images/anne-s.jpg" alt="anne" class="photo">
                             <span>Anne J.</span>
                         </span>
                     </div>
-                    <div class="user-line">
+                    <div class="line">
                         <span class="start">
-                            <img src="img/images/alayne-s.jpg" alt="alayne" class="avatar-s">
+                            <img src="img/images/alayne-s.jpg" alt="alayne" class="photo">
                             <span>Alayne T.</span>
                         </span>
                     </div>
-                    <div class="user-line">
+                    <div class="line">
                         <span class="start">
-                            <img src="img/images/arry-s.jpg" alt="arry" class="avatar-s">
+                            <img src="img/images/arry-s.jpg" alt="arry" class="photo">
                             <span>Arry Y.</span>
                         </span>
                     </div>
-                    <div class="footer">
+                    <div class="bottom">
                         <a href="#">View More</a>
                     </div>
                 </div>

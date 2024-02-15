@@ -4,14 +4,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 500px;
 }
 
 .container {
     text-align: left;
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px black;
     width: 900px;
     background-color: whitesmoke;
 }
@@ -35,41 +35,22 @@ body {
 
 h1 {
     margin: 0;
-    color: #333;
+    color: black;
     font-family: cursive;
 }
-
 .marker {
-    display: flex;
-    align-items: center;
-    margin: 10px 0;
-    color: #555;
-    font-family: cursive;
-}
-
-.gear {
     margin-right: 10px;
     height: 20px;
     width: 15px;
 }
 
+.gear {
+    margin-right: 10px;
+    height: 20px;
+    width: 20px;
+}
+
 p {
     margin: 10px 0;
     color: #333;
-}
-
-.contact-info {
-    display: flex;
-    align-items: center;
-    color: #007bff;
-}
-
-.contact-info img {
-    margin-right: 10px;
-}
-
-a {
-    color: #007bff;
-    text-decoration: underline;
-    
 }
