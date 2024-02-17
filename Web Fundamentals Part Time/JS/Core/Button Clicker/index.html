@@ -1,54 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Button Clicker</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <!-- Nav bar -->
     <div class="top">
-        <div class="nav">
-            <h1 class="nav-title">Dojonary</h1>
-            <form id="form"> 
-                <input type="search" id="query" name="q" placeholder="Search...">
-                <button class="btn">login</button>
-            </form>
-        </div>  
-    </div>
-
-    <div class="container">
-        <div class="row">
-            <!-- Left column -->
-            <div class="col">
-                <div class="definition">
-                    <h1>ninja</h1>
-                    <h2>noun</h2>
-                    <h3>Plural: ninjas</h3>
-                    <button class="btn-1">13 likes</button>
-                    <div class="def">
-                        <p>A practitioner skilled in the <a href="#">Japanese</a> art of <a href="#">ninjutsu</a></p>
-                    </div> 
-                </div>
-
-                <div class="definition">
-                    <h1>ninja</h1>
-                    <h2>noun</h2>
-                    <h3>Plural: ninjas</h3>
-                    <button class="btn-1">37 likes</button>
-                    <div class="def">
-                        <p>A <a href="#">programmer</a> who breaks down problems with <a href="#">zen</a>-like focus</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-1">
-                <p>Dojonary is defined by <span style="bold">You</span></p>
-
-            </div>
+        <div>
+            <h1>Dojonary</h1>
+        </div>
+        <div>
+            <input class="search-bar" type="search" id="query" name="q" placeholder="Search...">
+            <button class="btn">Login</button>
         </div>
     </div>
 
+    <div class="container">
+        <div class="clmn">
+            <div class="col-1">
+                <!-- two divisions -->
+                <!-- 1 -->
+                <div class="part-1">
+                    <div class="left">
+                        <h1>ninja</h1>
+                        <h2>noun</h2>
+                        <h3>Plural: ninjas</h3>
+                        <button class="btn-1">13 likes</button>
+                    </div>
+                    <div class="right">
+                        <p>A practitioner skilled in the <a href="#">Japanese</a> art of <a href="#">ninjutsu</a></p>
+                    </div>
+                </div> <br>
 
+                <!-- 2 -->
+                <div class="part-2">
+                    <div class="left">
+                        <h1>ninja</h1>
+                        <h2>noun</h2>
+                        <h3>Plural: ninjas</h3>
+                        <button class="btn-1">37 likes</button>
+                    </div>
+                    <div class="right">
+                        <p>A <a href="#">programmer</a> who breaks down problems with <a href="#">zen</a>-like focus</p>
+                    </div>
+                </div>
+            </div>    
+        </div> 
+    
+        <div class="container">
+            <div class="col-2">
+                <div class="part-3">
+                    <h2>Dojonary is <br>
+                        defined by <span>YOU</span></h2>
+                    <button class="btn-2">Add Definition</button>
+                </div>
+            </div>
+        </div> 
+    </div>    
 </body>
+
 </html>

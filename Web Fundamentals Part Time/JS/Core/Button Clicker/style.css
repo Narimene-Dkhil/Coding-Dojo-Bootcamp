@@ -1,31 +1,37 @@
-body {
-    font-family: 'Roboto', sans-serif;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.nav {
+body {
+    font-family: sans-serif;
+    justify-content: center; 
+    align-items: center; 
+    justify-items: center;
+    
+}
+
+/* navigation bar */
+
+.top {
     background-color: lightgrey;
     color: black;
-    margin: 50px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-}
-
-.nav-links {
-    width: 50%;
-    display: flex;
-    align-items: center;
-    list-style-type: none;
     justify-content: space-around;
-}
+    margin: 20px;
+    padding: 10px;
+    font-weight: bold;
+    width: 900px; 
+} 
 
-.nav a {
-    color: #ffffff;
-    text-decoration: none;
-}
 
-.nav-title {
-    margin-left: 20px;
+.search-bar {
+    height: 35px;
+    width: 200px; 
+    border: 2px solid black;
+    padding: 5px;
+    margin: 0 auto;
 }
 
 .btn {
@@ -33,11 +39,38 @@ body {
     width: 100px;
     background-color: blue;
     color: #ffffff;
-    border: none;
+    border: 2px solid black; 
     font-size: 16px;
     box-shadow: 5px 5px #000000;
-    margin: 20px;
+    margin: 5px;
 }
+
+/* Container */
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+}
+
+.clmn {
+    display: flex;
+
+}
+
+.col-1 {
+    flex: 2;
+    background-color: white;
+    display: block;
+}
+
+.col-2 {
+    flex: 1;
+    background-color: white;
+    justify-self: right;
+}
+
+/* col 1 */
 
 .btn-1 {
     height: 35px;
@@ -48,40 +81,54 @@ body {
     font-size: 16px;
     box-shadow: 5px 5px #000000;
     margin: 20px;
+    border: 2px solid black;
 }
 
-.container {
-    width: 1080px;
-    margin: 0 auto;
-}
-
-
-.column {
-    flex: 2;
-}
-
-.col, .col-2 {
-    margin: 10px;
-    padding: 10px;
+.left {
     flex: 1;
+    justify-content: left;
 }
 
-.col-2 {
-    flex: 1;
+.right {
+    flex: 3;
+    justify-content: right;
+    align-self: center;
 }
-.row {
+
+.part-1 {
     display: flex;
-}
-
-.definition {
-    border-color: black;
-    margin: 5px;
-    padding: 5px;
-    border: bold;
-}
-
-.def {
-    display: flex;
-    flex-direction: row-reverse;
+    border: 2px solid black; 
     justify-content: center;
+    padding: 10px;
+}
+
+.part-2 {
+    display: flex;
+    border: 2px solid black; 
+    justify-content: center;
+    padding: 10px;
+
+}
+
+/* col 2 */
+
+.btn-2 {
+    height: 35px;
+    width: 160px;
+    background-color: #93c47d;
+    color: black;
+    border: none;
+    font-size: 16px;
+    box-shadow: 5px 5px #000000;
+    margin: 20px;
+    border: 2px solid black;
+}
+
+span {
+    font-weight: bolder;
+}
+
+.part-3 {
+    border: 2px solid black; 
+    padding: 10px;
 }
