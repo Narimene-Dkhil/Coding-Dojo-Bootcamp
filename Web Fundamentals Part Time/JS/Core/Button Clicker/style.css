@@ -12,6 +12,12 @@ body {
 }
 
 /* navigation bar */
+.container-1 {
+    width: 1000px;
+    margin: 0px;
+    justify-content: center;
+    margin-left: 30px;
+}
 
 .top {
     background-color: lightgrey;
@@ -19,11 +25,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-left: 220px;
+    margin-left: 200px;
     margin-bottom: 30px;
     padding: 10px;
     font-weight: bold;
-    width: 840px; 
+    width: 820px; 
 } 
 
 
