@@ -75,5 +75,5 @@ dojo = {
 }
 
 # Output for 'dojo' dictionary
-printInfo(dojo)
+printInfo(dojo) 
 
