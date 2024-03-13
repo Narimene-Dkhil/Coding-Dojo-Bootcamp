@@ -1,0 +1,34 @@
+1 - 
+
+SELECT name FROM names; 
+
+2 - 
+
+insert into names (name, id)
+values ('Narimene', 1); 
+
+SELECT id, name FROM names; 
+
+3 - 
+
+-- Insert a single name
+
+INSERT INTO names (name)
+VALUES ('John');
+
+-- Ninja Bonus: Insert more than one name in a single statement
+
+INSERT INTO names (name)
+VALUES ('Jane'), ('Bob'), ('Alice'); 
+
+4 - 
+
+UPDATE names
+SET name = 'Janet'
+WHERE id = 3;
+
+5 - 
+
+DELETE from names
+where id = 4; 
+
