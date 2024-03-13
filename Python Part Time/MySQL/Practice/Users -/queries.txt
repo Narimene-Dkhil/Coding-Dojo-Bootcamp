@@ -1,0 +1,32 @@
+query 1 :
+INSERT INTO users (first_name , last_name , email) 
+VALUES('user1', 'lastname1', 'email1@email.com'), 
+('user2', 'lastname2', 'email2@email.com'), 
+('user3', 'lastname3', 'email3@email.com');
+
+query 2 :
+select * from users;
+
+query 3 :
+select * from users
+where email = 'email1@email.com'; 
+
+query 4 :
+select * from users 
+where id = 3; 
+
+query 5 : 
+update users set last_name = 'Pancakes'
+where users.id = 3; 
+
+query 6 :
+delete from users
+where users.id = 2;
+
+
+query 7 :
+select * from users
+order by first_name DESC;
+
+
+
