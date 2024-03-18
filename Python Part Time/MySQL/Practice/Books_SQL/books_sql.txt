@@ -1,0 +1,84 @@
+Query 1:
+
+insert into users (first_name, last_name)
+values ("Jane", "Amsden"), ("Emily", "Dixon"), ("Theodore", "Dostoevsky"), 
+("William", "Shapiro"), ("Lao", "Xiu");
+
+select * from users;
+
+Query 2:
+
+insert into books (title, num_of_pages)
+values ("C Sharp", 200), ("Java", 150), ("Python", 180), ("PHP", 250), ("Ruby", 100);
+
+select * from books; 
+
+Query 3:
+
+set SQL_SAFE_UPDATES = 0;
+update books set title = "C#"
+where title = "C Sharp";
+
+Query 4:
+
+set SQL_SAFE_UPDATES = 0;
+update users set first_name = "Bill"
+where id = 4; 
+
+Query 5:
+
+insert into favorites (book_id, user_id)
+values (1, 1), (1, 2); 
+
+Query 6:
+
+insert into favorites (user_id, book_id)
+values (1, 1), (1, 2); 
+
+
+Query 7:
+
+insert into favorites (user_id, book_id)
+values (2, 1), (2, 2), (2, 3);  
+
+
+Query 8:
+
+insert into favorites (user_id, book_id)
+values (3, 1), (3, 2), (3, 3), (3, 4);  
+
+Query 9:
+
+insert into favorites (user_id, book_id)
+values (4, 1), (4, 2), (4, 3), (4, 4), (4,5);  
+
+Query 10:
+
+select users.first_name, users.last_name from users 
+join favorites on users.id = user_id 
+join books on favorites.books_id = books.id
+where books.id = 3; 
+
+Query 11:
+
+delete from favorites 
+where book_id = 3 and user_id = 1; 
+
+Query 12:
+
+insert into favorites (user_id, book_id)
+values (5, 2);
+
+
+Query 13:
+select title from books
+join favorites on favorites.book_id = books.id
+where favorites.user_id =3;
+
+
+Query 14:
+select users.first_name, users.last_name from users
+join favorites on users.id = favorites.user_id
+where favorites.book_id = 5; 
+
+
