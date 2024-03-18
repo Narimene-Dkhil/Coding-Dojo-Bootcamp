@@ -24,3 +24,10 @@ class BankAccount:
         if self.balance >= 0:
             self.balance += self.balance * self.int_rate
         return self 
+    
+
+account1 = BankAccount(0.2, 100)
+account1.deposit(50).withdraw(30).display_account_info().yield_interest().display_account_info()
+
+account2 = BankAccount()  # Default interest rate 0.2, default balance 0
+account2.deposit(100).display_account_info().yield_interest().display_account_info() 
