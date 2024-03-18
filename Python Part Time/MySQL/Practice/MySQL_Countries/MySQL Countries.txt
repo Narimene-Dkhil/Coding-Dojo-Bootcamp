@@ -1,57 +1,60 @@
 Query 1:
 
-SELECT countries.name as name, languages.language as language, languages.percentage as percentage FROM countries
-JOIN languages ON countries.id = languages.country_id
-WHERE languages.language = "Slovene"
-ORDER BY languages.percentage DESC;
+select countries.name as name, languages.language as language, languages.percentage as percentage from countries
+join languages on countries.id = languages.country_id
+where languages.language = "Slovene"
+order by languages.percentage DESC;
 
 Query 2:
 
-SELECT countries.name as name, COUNT(cities.name) as cities
-FROM countries
-LEFT JOIN cities ON countries.id = cities.country_id
-GROUP BY countries.name
-ORDER BY cities DESC;
+select countries.name as name, count(cities.name) as cities
+from countries
+left join cities on countries.id = cities.country_id
+group by countries.name
+order by cities DESC;
 
 Query 3:
 
-SELECT  name , population, country_id FROM cities
-WHERE cities.population > 500000
-AND cities.country_id = ( SELECT id FROM countries WHERE countries.name = "Mexico" )
-ORDER BY population DESC;
+select  name , population, country_id from cities
+where cities.population > 500000
+and cities.country_id = ( select id from countries where countries.name = "Mexico" )
+order by population DESC;
 
 Query 4:
 
-SELECT countries.name as name, languages.language as language, languages.percentage as percentage FROM countries
-JOIN languages ON countries.id = languages.country_id
-WHERE languages.percentage > 89
-ORDER BY languages.percentage DESC;
+select countries.name as name, languages.language as language, languages.percentage as percentage from countries
+join languages on countries.id = languages.country_id
+where languages.percentage > 89
+order by languages.percentage DESC;
 
 Query 5:
 
-SELECT name, surface_area, population from countries
-WHERE surface_area < 501
-AND population >100000;
+select name, surface_area, population from countries
+where surface_area < 501
+and population >100000;
 
 Query 6:
 
-SELECT name, government_form,capital, life_expectancy from countries
-WHERE capital > 200
-AND government_form ="Constitutional Monarchy"
-AND life_expectancy > 75;
+select name, government_form,capital, life_expectancy from countries
+where capital > 200
+and government_form ="Constitutional Monarchy"
+and life_expectancy > 75;
 
 Query 7:
 
-SELECT countries.name as country_name, cities.name as city_name, cities.district, cities.population from countries
-JOIN cities ON countries.id = cities.country_id
-WHERE cities.district = "Buenos Aires"
-AND cities.population > 500000
-ORDER BY cities.population DESC;
+select countries.name as country_name, cities.name as city_name, cities.district, cities.population from countries
+join cities on countries.id = cities.country_id
+where cities.district = "Buenos Aires"
+and cities.population > 500000
+order by cities.population DESC;
 
 Query 8:
 
-SELECT countries.region, COUNT(countries.name) as countries
-FROM countries
-GROUP BY countries.region
-ORDER BY countries DESC
+select countries.region, COUNT(countries.name) as countries
+from countries
+group by countries.region
+order by countries DESC; 
+
+
+
 
