@@ -27,7 +27,7 @@ class BankAccount:
     
 
 account1 = BankAccount(0.2, 100)
-account1.deposit(50).withdraw(30).display_account_info().yield_interest().display_account_info()
+account1.deposit(50).deposit(30).deposit(20).withdraw(30).display_account_info().yield_interest().display_account_info()
 
 account2 = BankAccount()  # Default interest rate 0.2, default balance 0
-account2.deposit(100).display_account_info().yield_interest().display_account_info() 
+account2.deposit(100).deposit(50).withdraw(30).withdraw(20).withdraw(10).withdraw(5).display_account_info().yield_interest().display_account_info() 
