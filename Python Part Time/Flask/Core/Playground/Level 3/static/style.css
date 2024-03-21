@@ -1,0 +1,18 @@
+h1 {
+    text-align: center;
+}
+
+.blue-box {
+    width: 150px;
+    height: 150px;
+    background-color: skyblue;
+    margin: 10px; 
+    float: left;
+    border: 3px solid black; 
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
