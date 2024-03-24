@@ -9,12 +9,12 @@
 <body>
     <div>
         <form action="/process" method="post">
-            <div class="container">
+            <div>
                 <label for="name">Your Name:</label>
                 <input type="text" name="name">
             </div>
-        
-            <div class="container">
+            
+            <div>
                 <label for="dojo_location">Dojo Location:</label>
                 <select name="dojo_location" id="dojo_location">
                     <option value="san_jose">San Jose</option>
@@ -22,7 +22,7 @@
                 </select>
             </div>
         
-            <div class="container">
+            <div>
                 <label for="favorite_language">Favorite Language:</label> 
                 <select name="favorite_language" id="favorite_language">
                     <option value="python">Python</option>
@@ -31,11 +31,11 @@
                 </select>
             </div>
             
-            <div class="container">
+            <div class="textarea-group">
                 <label for="comment">Comment (optional):</label>
-                <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+                <textarea id="comment" name="comment" cols="30" rows="10"></textarea>
             </div>
-            
+
             <input type="submit" value="Button"> 
         </form>
     </div>
