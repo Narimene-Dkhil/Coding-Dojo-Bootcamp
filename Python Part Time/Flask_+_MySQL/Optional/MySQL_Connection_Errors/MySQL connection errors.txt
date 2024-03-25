@@ -1,0 +1,20 @@
+Error 1:
+
+OperationalError
+pymysql.err.OperationalError: (1049, "Unknown database 'first_flask'")
+
+--> This was because I didn't forward engineer the ERD and I didn't add friends, so the index.html didn't run.
+
+Error 2:
+KeyError
+KeyError: 'irst_name'
+
+--> This is because I changed the key first_name (I deleted the "f").
+
+Error 3:
+NameError
+NameError: name 'connectToMySQ' is not defined
+
+--> This is when  I deleted the letter "l" at the end.
+
+
