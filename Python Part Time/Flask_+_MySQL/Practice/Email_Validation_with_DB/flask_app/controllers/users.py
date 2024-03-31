@@ -16,13 +16,11 @@ def add_new():
 
 @app.route("/user/create",methods=["POST"])
 def create():
-    user_info = request.form
-    if User.is_valid_user(user_info):
-        User.save(user_info)
-        print("PASS")
-        return redirect('/')
-    print("FAIL")
-    return redirect('/user/new')
+    if User.is_valid_user(request.form):
+        User.save(request.form)
+        return redirect("/")
+    else:
+        return redirect('/user/new')
 
 @app.route("/user/edit/<int:id>")
 def edit(id):

@@ -12,25 +12,25 @@ class User:
         self.created_at = data["created_at"]
         self.updated_at = data["updated_at"]
         
-    @classmethod 
-    def is_valid_user(cls, user):
+    @staticmethod
+    def is_valid_user(user_info):
         is_valid = True
 
-        if len(user["first_name"]) <= 0:
-            is_valid = False
+        if len(user_info["first_name"]) <= 0:
             flash("First name is required.")
-        if len(user["last_name"]) <= 0:
             is_valid = False
+        if len(user_info["last_name"]) <= 0:
             flash("Last name is required.")
-        if len(user["email"]) <= 0:
             is_valid = False
+        if len(user_info["email"]) <= 0:
             flash("Email is required.")
-            
-        if len(user["email"]) > 0 and not EMAIL_REGEX.match(user['email']): 
+            is_valid = False
+        if not EMAIL_REGEX.match(user_info['email']): 
             flash("Invalid email format.")
             is_valid = False
-
-        return is_valid
+            
+        print(is_valid) 
+        return is_valid 
         
     @classmethod
     def get_all(cls):
