@@ -1,0 +1,63 @@
+
+th {
+    background-color: lightgrey;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-bottom: 1px solid #ddd; 
+}
+
+th {
+    height: 70px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+
+tr:hover {
+    background-color: coral;
+}
+
+a {
+    text-align: right;
+    margin-left: auto;
+    float: right; 
+    padding-bottom: 10px; 
+}
+
+h2, h3 {
+    text-align: left;
+    color: black;
+}
+
+h4 {
+    color: red;
+}
+
+.msg {
+    color: red;
+}
+
+.container {
+    width: 500px;
+    background-color: #f1f1f1;
+    padding: 20px;
+    margin: auto;
+}
+
+.cont {
+    margin-bottom: 15px;
+}
+
+label {
+    display: inline-block;
+    width: 120px; 
+    text-align: right;
+    margin-right: 10px;
+}
+
