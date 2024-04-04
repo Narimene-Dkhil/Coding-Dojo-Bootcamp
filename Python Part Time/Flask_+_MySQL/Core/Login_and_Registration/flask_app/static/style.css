@@ -1,0 +1,22 @@
+
+.msg {
+    color: red;
+}
+
+.container {
+    width: 500px;
+    background-color: #f1f1f1;
+    padding: 20px;
+    margin: auto;
+}
+
+.cont {
+    margin-bottom: 15px;
+}
+
+label {
+    display: inline-block;
+    width: 120px; 
+    text-align: right;
+    margin-right: 10px;
+}
