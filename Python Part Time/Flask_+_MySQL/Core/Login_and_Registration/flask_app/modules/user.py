@@ -24,7 +24,7 @@ class User:
         return result 
     
     @classmethod
-    def get_one(cls, data):
+    def get_by_email(cls, data):
         query = "SELECT * FROM users WHERE email = %(email)s;"
         result = connectToMySQL(DB).query_db(query, data)
         if len(result) < 1:
@@ -44,7 +44,9 @@ class User:
     def get_by_id(cls, data):
         query = "SELECT * FROM users WHERE id = %(id)s;"
         result = connectToMySQL(DB).query_db(query, data)
-        return result 
+        if not result:
+            return None
+        return cls(result[0]) 
     
     @staticmethod
     def validate_register(user):

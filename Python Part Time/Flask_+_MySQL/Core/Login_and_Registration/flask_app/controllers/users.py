@@ -26,7 +26,7 @@ def register():
 
 @app.route('/login', methods=['POST'])
 def login():
-    user  = User.get_one(request.form)
+    user  = User.get_by_email(request.form)
     if not user:
         flash("Invalid email", "login")
         return redirect('/')
@@ -43,10 +43,9 @@ def login():
 def dashboard():
     if 'user_id' not in session:
         return redirect ('/logout')
-    data = {
-        'id' : session['user_id']
-    }
-    return render_template('dashboard.html',user=User.get_by_id(data))
+    
+    logged_user = User.get_by_id({'id':session['user_id']})
+    return render_template("dashboard.html",user=logged_user)
 
 @app.route('/logout')
 def logout():
