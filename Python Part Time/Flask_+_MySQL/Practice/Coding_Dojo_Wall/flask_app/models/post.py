@@ -40,17 +40,16 @@ class Post:
     @classmethod
     def get_all(cls):
         query = """SELECT * from posts
-                JOIN users on posts.user_id = users.id;""" # test in workbench!
+                JOIN users on posts.user_id = users.id;""" 
         results = connectToMySQL(cls.DB).query_db(query)
 
         print("Raw data for all posts: ", results)
 
         all_posts = []
 
-        # iterate over raw data list of post dictionaries
+
         for row in results:
-            # each loop
-            #  - make user instance
+
             posting_user = User({
                 "id": row["user_id"],
                 "email": row["email"],
@@ -60,7 +59,7 @@ class Post:
                 "updated_at": row["users.updated_at"],
                 "password": row["password"]
             })
-            #  - make post instance with a user object
+
             new_post = Post({
                 "id": row["id"],
                 "content": row["content"],
@@ -68,7 +67,7 @@ class Post:
                 "updated_at": row["updated_at"],
                 "user": posting_user
             })
-            # Add post to all_posts list
+
             all_posts.append(new_post)
 
         return all_posts
