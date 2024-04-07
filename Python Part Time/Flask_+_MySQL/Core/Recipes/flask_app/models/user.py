@@ -61,10 +61,10 @@ class User:
             flash("Invalid email format","register")
             is_valid = False
         if len(user['first_name']) < 2:
-            flash("Invalid first name, must be at least 3 characters","register")
+            flash("Invalid first name, must be at least 2 characters","register")
             is_valid = False
         if len(user['last_name']) < 2:
-            flash("Invalid last name, must be at least 3 characters","register")
+            flash("Invalid last name, must be at least 2 characters","register")
             is_valid = False
         if user['password'] != user['confirm_password']:
             flash("Passwords don't match", "register")

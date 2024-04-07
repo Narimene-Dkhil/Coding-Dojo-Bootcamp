@@ -1,5 +1,5 @@
 from flask_app.config.mysqlconnection import connectToMySQL, DB
-from flask import flash, request
+from flask import flash, request, session
 from flask_app.models.user import User
 
 import re
@@ -80,3 +80,35 @@ class Recipe:
         return recipes
     
     
+    @staticmethod
+    def validate_create(recipe):
+        is_valid = True
+        query = "SELECT * FROM recipes WHERE id = %(id)s"
+        results = connectToMySQL(DB).query_db(query,recipe)
+        if len(recipe['name']) < 3:
+            flash("Invalid name, must be at least 3 characters","create")
+            is_valid = False
+        if len(recipe['description']) < 3:
+            flash("Invalid description, must be at least 3 characters","create")
+            is_valid = False
+        if len(recipe['instruction']) < 3:
+            flash("Invalid instruction, must be at least 3 characters","create")
+            is_valid = False
+        return is_valid
+    
+    
+    @staticmethod
+    def validate_update(recipe):
+        is_valid = True
+        query = "SELECT * FROM recipes WHERE id = %(id)s"
+        results = connectToMySQL(DB).query_db(query,recipe)
+        if len(recipe['name']) < 3:
+            flash("Invalid name, must be at least 3 characters","create")
+            is_valid = False
+        if len(recipe['description']) < 3:
+            flash("Invalid description, must be at least 3 characters","create")
+            is_valid = False
+        if len(recipe['instruction']) < 3:
+            flash("Invalid instruction, must be at least 3 characters","create")
+            is_valid = False
+        return is_valid

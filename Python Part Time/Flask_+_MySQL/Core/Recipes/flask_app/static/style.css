@@ -61,7 +61,7 @@ th, td {
     padding: 15px;
     text-align: left;
     color: black;
-    background-color: lightseagreen;
+    background-color: 	#0abab5;
     width: 800px;
 }
 
@@ -99,7 +99,8 @@ label[for="no"], label[for="yes"] {
 
 
 .cont4 {
-    background-color: pink;
+    background-color:#0abab5;
     width: 840px;
     padding: 30px;
 }
+

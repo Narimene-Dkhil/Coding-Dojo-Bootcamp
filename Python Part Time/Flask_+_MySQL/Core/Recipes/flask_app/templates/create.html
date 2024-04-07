@@ -8,6 +8,7 @@
 </head>
 <body>
     <div class="container1">
+
         <h2>Add a New Recipe!</h2> 
         <div class="cont2">
             <a href="/recipes">back to recipes</a>
@@ -15,8 +16,8 @@
         </div>
 
         <div class="cont1">
-            <div>
-                <form action="/recipes/new" method="post">
+            <form action="/recipes/new" method="post">
+                <div>
                     <div class="cont1">
                         <label for="name">Name</label>
                         <input type="text" name="name">
@@ -30,30 +31,26 @@
                     <div class="cont1">
                         <label for="instruction">Instructions</label>
                         <textarea name="instruction" rows="4" cols="50"></textarea>
+                    </div>    
+                </div>
+                
+                <div class="cont3">
+                    <div>
+                        <label for="date">Date Cooked/Made:</label>
+                        <input type="date">
+                    </div>
+                    <div>
+                        <label for="under_cook">Under 30 minutes?</label>
+                        <div class="cont1">
+                            <input type="checkbox" id="under_cook" name="under_cook" value="yes">
+                            <label for="yes">Yes</label>
+                            <input type="checkbox" id="under_cook" name="under_cook" value="no">
+                            <label for="no">No</label>
+                        </div>
                     </div>
                     <input type="submit" value="Submit">
-                </form>
-            </div>
-            <div class="cont3">
-                <div>
-                    <label for="date">Date Cooked/Made:</label>
-                    <input type="date">
                 </div>
-                <div>
-                    <label for="under_cook">Under 30 minutes?</label>
-                    <div class="cont1">
-                        <input type="checkbox" id="under_cook" name="under_cook" value="yes">
-                        <label for="yes">Yes</label>
-                        <input type="checkbox" id="under_cook" name="under_cook" value="no">
-                        <label for="no">No</label>
-                    </div>
-                </div>
-
-                <form action="/recipes" >
-                    <input type="submit" value="Submit">
-                </form>
-            </div>
-
+            </form>
         </div>
     </div>
 </body>
