@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}"> 
+    <title>edit recipe</title>
+</head>
+<body>
+    <div class="container1">
+        <h2>Edit Recipe!</h2> 
+        <div class="cont2">
+            <a href="/recipes">back to recipes</a>
+            <a href="/logout">logout</a>
+        </div>
+
+        <div class="cont1">
+            <div>
+                <form action="/recipes/update/{{ recipe.id }}" method="post">
+                    <!-- <input type="hidden" name="id" value="{{recipe.id}}"> -->
+
+                    <div class="cont1">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" value="{{recipe.name}}">
+                    </div>
+        
+                    <div class="cont1">
+                        <label for="description">Description</label>
+                        <textarea name="description" rows="4" cols="50">{{recipe.description}}</textarea>
+                    </div>
+        
+                    <div class="cont1">
+                        <label for="instruction">Instructions</label>
+                        <textarea name="instruction" rows="4" cols="50">{{recipe.instruction}}</textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="cont3">
+                <div>
+                    <label for="date">Date Cooked/Made:</label>
+                    <input type="date" value="{{recipe.created_at}}">
+                </div>
+                <div>
+                    <label for="under_30_minutes">Under 30 minutes?</label>
+                    <!-- values for yes/no under_cook attribute -->
+                    <div class="cont1">
+                        <input type="checkbox" id="yes" name="under_30_minutes" value="yes">
+                        <label for="yes">Yes</label>
+                        <input type="checkbox" id="no" name="under_30_minutes" value="no">
+                        <label for="no">No</label>
+                    </div>
+                </div>
+
+                <form action="/recipes" >
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
