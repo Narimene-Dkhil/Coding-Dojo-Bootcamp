@@ -40,15 +40,6 @@ def login():
     return redirect('/recipes')
 
 
-# @app.route('/recipes')
-# def recipes():
-#     if 'user_id' not in session:
-#         return redirect ('/logout')
-#     logged_user = User.get_by_id({'id':session['user_id']})
-#     recipes=Recipe.get_all()
-#     return render_template("recipes.html",user=logged_user, recipes=recipes)
-
-
 @app.route('/recipes')
 def recipes():
     logged_user = None

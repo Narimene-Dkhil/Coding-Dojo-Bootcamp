@@ -8,8 +8,15 @@
 </head>
 <body>
     <div class="container1">
-
         <h2>Add a New Recipe!</h2> 
+        {% with messages = get_flashed_messages() %}     
+            {% if messages %}                            
+                {% for message in messages %}            
+                    <p class="msg">{{message}}</p>                   
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+
         <div class="cont2">
             <a href="/recipes">back to recipes</a>
             <a href="/logout">logout</a>
@@ -42,9 +49,9 @@
                     <div>
                         <label for="under_cook">Under 30 minutes?</label>
                         <div class="cont1">
-                            <input type="checkbox" id="under_cook" name="under_cook" value="yes">
+                            <input type="checkbox" id="yes" name="under_cook" value="1">
                             <label for="yes">Yes</label>
-                            <input type="checkbox" id="under_cook" name="under_cook" value="no">
+                            <input type="checkbox" id="no" name="under_cook" value="0">
                             <label for="no">No</label>
                         </div>
                     </div>

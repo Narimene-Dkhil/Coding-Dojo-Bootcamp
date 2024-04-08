@@ -23,7 +23,7 @@
         <div class="cont4">
             <p>Description: {{recipe.description}}</p>
             <br>
-            <p>Under 30 minutes? {{recipe.under_cook}}</p>
+            <p>Under 30 minutes? {{ "Yes" if recipe.under_cook == "1" else "No" }}</p>
             <br>
             <p>Instructions: {{recipe.instruction}}</p>
             <br>
