@@ -15,8 +15,8 @@
         </div>
 
         <div class="cont1">
-            <div>
-                <form action="/recipes/update/{{ recipe.id }}" method="post">
+            <form action="/recipes/update/{{ recipe.id }}" method="post">
+                <div>
                     <div class="cont1">
                         <label for="name">Name</label>
                         <input type="text" name="name" value="{{recipe.name}}">
@@ -31,29 +31,26 @@
                         <label for="instruction">Instructions</label>
                         <textarea name="instruction" rows="4" cols="50">{{recipe.instruction}}</textarea>
                     </div>
-                </form>
-            </div>
-            <div class="cont3">
-                <div>
-                    <label for="date">Date Cooked/Made:</label>
-                    <input type="date" value="{{recipe.created_at}}">
                 </div>
-                <div>
-                    <label for="under_30_minutes">Under 30 minutes?</label>
-                    <!-- values for yes/no under_cook attribute -->
-                    <div class="cont1">
-                        <input type="checkbox" id="yes" name="under_30_minutes" value="yes">
-                        <label for="yes">Yes</label>
-                        <input type="checkbox" id="no" name="under_30_minutes" value="no">
-                        <label for="no">No</label>
+
+                <div class="cont3">
+                    <div>
+                        <label for="date">Date Cooked/Made:</label>
+                        <input type="date" value="{{recipe.created_at}}">
+                    </div>
+                    <div>
+                        <label for="under_30_minutes">Under 30 minutes?</label>
+                        <div class="cont1">
+                            <input type="checkbox" id="yes" name="under_30_minutes" value="yes">
+                            <label for="yes">Yes</label>
+                            <input type="checkbox" id="no" name="under_30_minutes" value="no">
+                            <label for="no">No</label>
+                        </div>
                     </div>
                 </div>
 
-                <form action="/recipes" >
-                    <input type="submit" value="Submit">
-                </form>
-            </div>
-
+                <input type="submit" value="Submit">
+            </form>
         </div>
     </div>
 </body>

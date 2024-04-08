@@ -65,6 +65,13 @@ def update_recipe(id):
     Recipe.update({'id': id}, data)
     return redirect('/recipes')
 
+@app.route("/recipes/delete/<int:id>")
+def delete(id):
+    data = {'id': id}
+    recipe = Recipe.get_by_id(data)
+    if recipe.user.id == session['user_id']:
+        Recipe.delete(data)
+    return redirect('/dashboard')
 
 
 
