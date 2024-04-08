@@ -50,14 +50,15 @@ def update_recipe(id):
     
     data = {
         'id': id,
-        'name': request.form['name'],
-        'description': request.form['description'],
-        'instruction': request.form['instruction'],
-        'under_cook': request.form.get('under_cook', 'no')
+        'name': request.form.get('name'),
+        'description': request.form.get('description'),
+        'instruction': request.form.get('instruction'),
+        'under_cook': 1 if 'under_cook' in request.form else 0
     }
 
     Recipe.update(data)
     return redirect('/recipes')
+
 
 
 @app.route("/recipes/delete/<int:id>")

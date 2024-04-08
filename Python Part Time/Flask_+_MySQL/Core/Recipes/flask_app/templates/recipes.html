@@ -41,7 +41,7 @@
                     <td>{{recipe.user.first_name}}</td>
                     <td>
                         <a href="/recipes/{{recipe.id}}">view recipe</a> | 
-                        {% if logged_user.id == user.id %}
+                        {% if logged_user.id == recipe.user.id %}
                             <a href="/recipes/edit/{{recipe.id}}">edit</a> | 
                             <a href="/recipes/delete/{{recipe.id}}">delete</a> 
                         {% endif %}
