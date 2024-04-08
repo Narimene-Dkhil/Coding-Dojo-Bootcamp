@@ -49,9 +49,9 @@
                     <div>
                         <label for="under_cook">Under 30 minutes?</label>
                         <div class="cont1">
-                            <input type="checkbox" id="yes" name="under_cook" value="1">
+                            <input type="checkbox" id="yes" name="under_cook" value="1" {% if recipe.under_cook == 1 %} checked {% endif %}>
                             <label for="yes">Yes</label>
-                            <input type="checkbox" id="no" name="under_cook" value="0">
+                            <input type="checkbox" id="no" name="under_cook" value="0" {% if recipe.under_cook == 0 %} checked {% endif %}>
                             <label for="no">No</label>
                         </div>
                     </div>
