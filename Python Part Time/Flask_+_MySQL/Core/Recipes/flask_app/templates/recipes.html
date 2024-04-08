@@ -31,7 +31,13 @@
                 {% for recipe in recipes %}
                 <tr>
                     <td>{{recipe.name}}</td>
-                    <td>{{ "Yes" if recipe.under_cook == "1" else "No" }}</td>
+                    <td>
+                        {% if recipe.under_cook == 1 %}
+                            Yes
+                        {% else %}
+                            No
+                        {% endif %}
+                    </td>
                     <td>{{recipe.user.first_name}}</td>
                     <td>
                         <a href="/recipes/{{recipe.id}}">view recipe</a> | 

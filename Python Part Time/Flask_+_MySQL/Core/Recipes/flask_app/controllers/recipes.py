@@ -22,7 +22,7 @@ def new_recipe():
         'name': request.form['name'],
         'description': request.form['description'],
         'instruction': request.form['instruction'],
-        'under_cook': request.form.get('under_cook', 'no'), 
+        'under_cook': request.form.get('under_cook'), 
         'user_id': session['user_id']
     }
     Recipe.create(data)
