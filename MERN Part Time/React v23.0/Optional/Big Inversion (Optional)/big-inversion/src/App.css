@@ -1,0 +1,40 @@
+.App {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.todoItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkbox {
+  margin-right: 10px;
+}
+
+.item {
+  margin-right: 10px;
+}
+
+.add {
+  margin-left: 10px;
+  background-color: rgb(99, 99, 250);
+  border: none;
+  color: azure;
+  height: 25px;
+  border-radius: 5px;
+}
+
+.delete {
+  margin-left: 10px;
+  background-color: rgb(250, 99, 99);
+  border: none;
+  color: azure;
+  height: 25px;
+  border-radius: 5px;
+}
+
+.todoInput {
+  margin-bottom: 20px;
+}
