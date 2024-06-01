@@ -1,24 +1,23 @@
-import React, {useState} from 'react';
+import React, {useState} from 'react'; 
 
 const PersonCard = (props) => {
-    const {lastName, firstName, initialAge, hairColor} = props;
+    const {lastName, firstName, age, hairColor} = props;
 
-    const [age, setAge] = useState(initialAge);
+    const [count, setCount] = useState (age);
 
-    const handleBirthday = () => {
-        setAge(age + 1);
-    };
+    const handleClick = () => {
+        setCount(count + 1);
+    }
 
-    
     return (
     <div>
         <h1>{lastName}, {firstName}</h1>
-        <p>Age: {age}</p>
+        <p>Age: {count}</p>
         <p>Hair Color: {hairColor}</p>
-        <button onClick={handleBirthday}>Birthday Button for {firstName} {lastName}</button>
+        <button onClick={handleClick}>Birthday button for {firstName} {lastName}</button>
         <br></br>
     </div>
     )
 }
 
-export default PersonCard; 
+export default PersonCard;
