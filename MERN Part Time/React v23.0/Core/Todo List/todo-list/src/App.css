@@ -1,29 +1,16 @@
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  flex-direction: column;
+}
+
+
+
 .App {
   text-align: center;
-  margin-top: 50px;
-}
-
-.todoItem {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.checkbox {
-  margin-right: 10px;
-}
-
-.item {
-  margin-right: 10px;
-}
-
-.add {
-  margin-left: 10px;
-  background-color: rgb(99, 99, 250);
-  border: none;
-  color: azure;
-  height: 25px;
-  border-radius: 5px;
 }
 
 .App-logo {
