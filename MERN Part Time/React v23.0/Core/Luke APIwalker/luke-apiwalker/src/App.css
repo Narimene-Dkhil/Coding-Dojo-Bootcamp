@@ -2,24 +2,6 @@
   text-align: center;
 }
 
-.search {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-/* .homeworld {
-  
-} */
-
-.searchSelect {
-  margin-right: 10px;
-}
-.searchId {
-  margin-right: 10px;
-}
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
