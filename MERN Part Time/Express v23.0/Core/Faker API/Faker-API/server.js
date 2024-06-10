@@ -7,7 +7,7 @@ const { faker } = require('@faker-js/faker');
 
 const createUser = () => {
     const newFakeUser = {
-        _id: faker.finance.uuid(),
+        _id: faker.string.uuid(),
         firstName: faker.person.firstName(),
         lastName: faker.person.lastName(),
         email: faker.internet.email(),
@@ -19,7 +19,7 @@ const createUser = () => {
 
 const createCompany = () => {
     const newFakeCompany = {
-        _id: faker.finance.uuid(),
+        _id: faker.string.uuid(),
         name: faker.company.name(),
         address: {
             street: faker.location.streetAddress(),
