@@ -7,9 +7,9 @@ const { faker } = require('@faker-js/faker');
 
 const createUser = () => {
     const newFakeUser = {
-        _id: faker.finance.account(5),
-        firstName: faker.name.firstName(),
-        lastName: faker.name.lastName(),
+        _id: faker.finance.uuid(),
+        firstName: faker.person.firstName(),
+        lastName: faker.person.lastName(),
         email: faker.internet.email(),
         password: faker.internet.password(),
         phoneNumber: faker.phone.number()
@@ -19,14 +19,14 @@ const createUser = () => {
 
 const createCompany = () => {
     const newFakeCompany = {
-        _id: faker.finance.account(5),
+        _id: faker.finance.uuid(),
         name: faker.company.name(),
         address: {
-            street: faker.address.streetAddress(),
-            city: faker.address.city(),
-            state: faker.address.state(),
-            zipCode: faker.address.zipCode(),
-            country: faker.address.country()
+            street: faker.location.streetAddress(),
+            city: faker.location.city(),
+            state: faker.location.state(),
+            zipCode: faker.location.zipCode(),
+            country: faker.location.country()
         }
     };
     return newFakeCompany;
