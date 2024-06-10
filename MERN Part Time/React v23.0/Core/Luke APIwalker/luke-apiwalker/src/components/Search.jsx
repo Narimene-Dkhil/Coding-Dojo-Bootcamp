@@ -14,7 +14,7 @@ const Search = () => {
         <div>
             <form className='search' onSubmit={handleSearch} method='GET'>
                 <div className='searchSelect'>
-                    <label htmlFor="searchType"></label>
+                    <label htmlFor="searchType">Search for:  </label>
                     <select name='searchType' onChange={(e) => setSearchType(e.target.value)}>
                         <option value="people">People</option>
                         <option value="planets">Planets</option>
