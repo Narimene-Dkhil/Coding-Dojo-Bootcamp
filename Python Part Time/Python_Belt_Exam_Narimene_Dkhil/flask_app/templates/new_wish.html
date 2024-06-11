@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <title>new wish</title>
+</head>
+<body>
+
+    <div class="cont1">
+        <h2>Hello {{ user.first_name }}! Make a wish!</h2> 
+        <div class="cont2">
+            <a href="/logout">Logout</a>
+        </div>
+        {% with messages = get_flashed_messages() %}     
+            {% if messages %}                            
+                {% for message in messages %}            
+                    <p class="msg">{{message}}</p>                   
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+
+        <form action="/wishes/create" method="post" style="margin-top: 10px;">
+            <div>
+                <label for="name">I wish for:</label>
+                <input type="text" name="name">
+            </div>
+            <div>
+                <label for="description">Description</label>
+                <input type="text" name="description">
+            </div>
+            <div class="cont2">
+                <a href="/wishes" class="btn2">Cancel</a>
+                <input type="submit" value="Submit" class="btn">
+            </div>
+            
+        </form>
+    </div>
+    
+</body>
+</html>

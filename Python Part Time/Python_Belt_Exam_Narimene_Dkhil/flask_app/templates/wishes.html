@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <title>wishes</title>
+</head>
+<body>
+    <div class="cont1">
+        <h2>Hello {{ logged_user.first_name }}!</h2> 
+        <div class="cont2">
+            <a href="/logout">Logout</a>
+            <a href="/wishes/new" class="btn">Make a wish!</a>
+        </div>
+
+        <!-- Ungranted list tab -->
+
+        <h4>Your wish list:</h4>
+        <Table class="tab">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Date added</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for wish in ungranted_wishes %}
+                    <tr id="wish-{{ wish.id }}">
+                        <td>{{ wish.name }}</td>
+                        <td>{{ wish.created_at.strftime("%B %d %Y") }}</td>
+                        <td>
+                            <a href="/wishes/delete/{{ wish.id }}">Remove</a> |
+                            <a href="/wishes/edit/{{ wish.id }}">Edit</a> |
+                            <a href="#" onclick="grantWish('{{ wish.id }}')">Grant</a>
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </Table>
+
+        <!-- Granted list tab -->
+
+        <h4>Granted wishes:</h4>
+        <Table id="grantedWishesTable" class="tab">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Wisher</th>
+                    <th>Date added</th>
+                    <th>Date Granted</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for wish in granted_wishes %}
+                    <tr>
+                        <td>{{ wish.name }}</td>
+                        <td>{{ wish.user.first_name }}</td>
+                        <td>{{ wish.created_at.strftime("%B %d %Y") }}</td>
+                        <td>{{ wish.updated_at.strftime("%B %d %Y") }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </Table>
+    </div>
+
+    <script>
+        function grantWish(wishId) {
+            fetch(`/wishes/grant/${wishId}`, {
+                method: 'POST'
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    const wishRow = document.getElementById(`wish-${wishId}`);
+                    wishRow.parentNode.removeChild(wishRow);
+        
+                    const grantedWishesTable = document.getElementById('grantedWishesTable').getElementsByTagName('tbody')[0];
+                    const newRow = grantedWishesTable.insertRow();
+                    newRow.innerHTML = `
+                        <td>${data.wish.name}</td>
+                        <td>${data.wish.user.first_name}</td>
+                        <td>${data.wish.created_at}</td>
+                        <td>${data.wish.updated_at}</td>
+                    `;
+                } else {
+                    alert(data.message);
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('Failed to grant wish.');
+            });
+        }
+    </script>
+
+</body>
+</html>
