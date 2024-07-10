@@ -1,0 +1,15 @@
+C:\Users\narim\OneDrive\Desktop\Coding Dojo Programs\Coding-Dojo-Africa\C# .Net Part Time\Language Fundamentals\Core\Game Developer I\GameDev\bin\Debug\net6.0\GameDev.exe
+C:\Users\narim\OneDrive\Desktop\Coding Dojo Programs\Coding-Dojo-Africa\C# .Net Part Time\Language Fundamentals\Core\Game Developer I\GameDev\bin\Debug\net6.0\GameDev.deps.json
+C:\Users\narim\OneDrive\Desktop\Coding Dojo Programs\Coding-Dojo-Africa\C# .Net Part Time\Language Fundamentals\Core\Game Developer I\GameDev\bin\Debug\net6.0\GameDev.runtimeconfig.json
+C:\Users\narim\OneDrive\Desktop\Coding Dojo Programs\Coding-Dojo-Africa\C# .Net Part Time\Language Fundamentals\Core\Game Developer I\GameDev\bin\Debug\net6.0\GameDev.dll
+C:\Users\narim\OneDrive\Desktop\Coding Dojo Programs\Coding-Dojo-Africa\C# .Net Part Time\Language Fundamentals\Core\Game Developer I\GameDev\bin\Debug\net6.0\GameDev.pdb
+C:\Users\narim\OneDrive\Desktop\Coding Dojo Programs\Coding-Dojo-Africa\C# .Net Part Time\Language Fundamentals\Core\Game Developer I\GameDev\obj\Debug\net6.0\GameDev.csproj.AssemblyReference.cache
+C:\Users\narim\OneDrive\Desktop\Coding Dojo Programs\Coding-Dojo-Africa\C# .Net Part Time\Language Fundamentals\Core\Game Developer I\GameDev\obj\Debug\net6.0\GameDev.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\narim\OneDrive\Desktop\Coding Dojo Programs\Coding-Dojo-Africa\C# .Net Part Time\Language Fundamentals\Core\Game Developer I\GameDev\obj\Debug\net6.0\GameDev.AssemblyInfoInputs.cache
+C:\Users\narim\OneDrive\Desktop\Coding Dojo Programs\Coding-Dojo-Africa\C# .Net Part Time\Language Fundamentals\Core\Game Developer I\GameDev\obj\Debug\net6.0\GameDev.AssemblyInfo.cs
+C:\Users\narim\OneDrive\Desktop\Coding Dojo Programs\Coding-Dojo-Africa\C# .Net Part Time\Language Fundamentals\Core\Game Developer I\GameDev\obj\Debug\net6.0\GameDev.csproj.CoreCompileInputs.cache
+C:\Users\narim\OneDrive\Desktop\Coding Dojo Programs\Coding-Dojo-Africa\C# .Net Part Time\Language Fundamentals\Core\Game Developer I\GameDev\obj\Debug\net6.0\GameDev.dll
+C:\Users\narim\OneDrive\Desktop\Coding Dojo Programs\Coding-Dojo-Africa\C# .Net Part Time\Language Fundamentals\Core\Game Developer I\GameDev\obj\Debug\net6.0\refint\GameDev.dll
+C:\Users\narim\OneDrive\Desktop\Coding Dojo Programs\Coding-Dojo-Africa\C# .Net Part Time\Language Fundamentals\Core\Game Developer I\GameDev\obj\Debug\net6.0\GameDev.pdb
+C:\Users\narim\OneDrive\Desktop\Coding Dojo Programs\Coding-Dojo-Africa\C# .Net Part Time\Language Fundamentals\Core\Game Developer I\GameDev\obj\Debug\net6.0\GameDev.genruntimeconfig.cache
+C:\Users\narim\OneDrive\Desktop\Coding Dojo Programs\Coding-Dojo-Africa\C# .Net Part Time\Language Fundamentals\Core\Game Developer I\GameDev\obj\Debug\net6.0\ref\GameDev.dll
