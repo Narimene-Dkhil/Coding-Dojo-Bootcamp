@@ -1,0 +1,15 @@
+C:\Users\narim\OneDrive\Desktop\Coding Dojo Programs\Coding-Dojo-Africa\C# .Net Part Time\Language Fundamentals\Practice\Fuel Up!\FuelUp\bin\Debug\net6.0\FuelUp.exe
+C:\Users\narim\OneDrive\Desktop\Coding Dojo Programs\Coding-Dojo-Africa\C# .Net Part Time\Language Fundamentals\Practice\Fuel Up!\FuelUp\bin\Debug\net6.0\FuelUp.deps.json
+C:\Users\narim\OneDrive\Desktop\Coding Dojo Programs\Coding-Dojo-Africa\C# .Net Part Time\Language Fundamentals\Practice\Fuel Up!\FuelUp\bin\Debug\net6.0\FuelUp.runtimeconfig.json
+C:\Users\narim\OneDrive\Desktop\Coding Dojo Programs\Coding-Dojo-Africa\C# .Net Part Time\Language Fundamentals\Practice\Fuel Up!\FuelUp\bin\Debug\net6.0\FuelUp.dll
+C:\Users\narim\OneDrive\Desktop\Coding Dojo Programs\Coding-Dojo-Africa\C# .Net Part Time\Language Fundamentals\Practice\Fuel Up!\FuelUp\bin\Debug\net6.0\FuelUp.pdb
+C:\Users\narim\OneDrive\Desktop\Coding Dojo Programs\Coding-Dojo-Africa\C# .Net Part Time\Language Fundamentals\Practice\Fuel Up!\FuelUp\obj\Debug\net6.0\FuelUp.csproj.AssemblyReference.cache
+C:\Users\narim\OneDrive\Desktop\Coding Dojo Programs\Coding-Dojo-Africa\C# .Net Part Time\Language Fundamentals\Practice\Fuel Up!\FuelUp\obj\Debug\net6.0\FuelUp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\narim\OneDrive\Desktop\Coding Dojo Programs\Coding-Dojo-Africa\C# .Net Part Time\Language Fundamentals\Practice\Fuel Up!\FuelUp\obj\Debug\net6.0\FuelUp.AssemblyInfoInputs.cache
+C:\Users\narim\OneDrive\Desktop\Coding Dojo Programs\Coding-Dojo-Africa\C# .Net Part Time\Language Fundamentals\Practice\Fuel Up!\FuelUp\obj\Debug\net6.0\FuelUp.AssemblyInfo.cs
+C:\Users\narim\OneDrive\Desktop\Coding Dojo Programs\Coding-Dojo-Africa\C# .Net Part Time\Language Fundamentals\Practice\Fuel Up!\FuelUp\obj\Debug\net6.0\FuelUp.csproj.CoreCompileInputs.cache
+C:\Users\narim\OneDrive\Desktop\Coding Dojo Programs\Coding-Dojo-Africa\C# .Net Part Time\Language Fundamentals\Practice\Fuel Up!\FuelUp\obj\Debug\net6.0\FuelUp.dll
+C:\Users\narim\OneDrive\Desktop\Coding Dojo Programs\Coding-Dojo-Africa\C# .Net Part Time\Language Fundamentals\Practice\Fuel Up!\FuelUp\obj\Debug\net6.0\refint\FuelUp.dll
+C:\Users\narim\OneDrive\Desktop\Coding Dojo Programs\Coding-Dojo-Africa\C# .Net Part Time\Language Fundamentals\Practice\Fuel Up!\FuelUp\obj\Debug\net6.0\FuelUp.pdb
+C:\Users\narim\OneDrive\Desktop\Coding Dojo Programs\Coding-Dojo-Africa\C# .Net Part Time\Language Fundamentals\Practice\Fuel Up!\FuelUp\obj\Debug\net6.0\FuelUp.genruntimeconfig.cache
+C:\Users\narim\OneDrive\Desktop\Coding Dojo Programs\Coding-Dojo-Africa\C# .Net Part Time\Language Fundamentals\Practice\Fuel Up!\FuelUp\obj\Debug\net6.0\ref\FuelUp.dll
