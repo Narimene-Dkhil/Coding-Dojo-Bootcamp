@@ -1,0 +1,15 @@
+C:\Users\narim\OneDrive\Desktop\Coding Dojo Programs\Coding-Dojo-Africa\C# .Net Part Time\Language Fundamentals\Practice\Drink Maker\DrinkMaker\bin\Debug\net6.0\DrinkMaker.exe
+C:\Users\narim\OneDrive\Desktop\Coding Dojo Programs\Coding-Dojo-Africa\C# .Net Part Time\Language Fundamentals\Practice\Drink Maker\DrinkMaker\bin\Debug\net6.0\DrinkMaker.deps.json
+C:\Users\narim\OneDrive\Desktop\Coding Dojo Programs\Coding-Dojo-Africa\C# .Net Part Time\Language Fundamentals\Practice\Drink Maker\DrinkMaker\bin\Debug\net6.0\DrinkMaker.runtimeconfig.json
+C:\Users\narim\OneDrive\Desktop\Coding Dojo Programs\Coding-Dojo-Africa\C# .Net Part Time\Language Fundamentals\Practice\Drink Maker\DrinkMaker\bin\Debug\net6.0\DrinkMaker.dll
+C:\Users\narim\OneDrive\Desktop\Coding Dojo Programs\Coding-Dojo-Africa\C# .Net Part Time\Language Fundamentals\Practice\Drink Maker\DrinkMaker\bin\Debug\net6.0\DrinkMaker.pdb
+C:\Users\narim\OneDrive\Desktop\Coding Dojo Programs\Coding-Dojo-Africa\C# .Net Part Time\Language Fundamentals\Practice\Drink Maker\DrinkMaker\obj\Debug\net6.0\DrinkMaker.csproj.AssemblyReference.cache
+C:\Users\narim\OneDrive\Desktop\Coding Dojo Programs\Coding-Dojo-Africa\C# .Net Part Time\Language Fundamentals\Practice\Drink Maker\DrinkMaker\obj\Debug\net6.0\DrinkMaker.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\narim\OneDrive\Desktop\Coding Dojo Programs\Coding-Dojo-Africa\C# .Net Part Time\Language Fundamentals\Practice\Drink Maker\DrinkMaker\obj\Debug\net6.0\DrinkMaker.AssemblyInfoInputs.cache
+C:\Users\narim\OneDrive\Desktop\Coding Dojo Programs\Coding-Dojo-Africa\C# .Net Part Time\Language Fundamentals\Practice\Drink Maker\DrinkMaker\obj\Debug\net6.0\DrinkMaker.AssemblyInfo.cs
+C:\Users\narim\OneDrive\Desktop\Coding Dojo Programs\Coding-Dojo-Africa\C# .Net Part Time\Language Fundamentals\Practice\Drink Maker\DrinkMaker\obj\Debug\net6.0\DrinkMaker.csproj.CoreCompileInputs.cache
+C:\Users\narim\OneDrive\Desktop\Coding Dojo Programs\Coding-Dojo-Africa\C# .Net Part Time\Language Fundamentals\Practice\Drink Maker\DrinkMaker\obj\Debug\net6.0\DrinkMaker.dll
+C:\Users\narim\OneDrive\Desktop\Coding Dojo Programs\Coding-Dojo-Africa\C# .Net Part Time\Language Fundamentals\Practice\Drink Maker\DrinkMaker\obj\Debug\net6.0\refint\DrinkMaker.dll
+C:\Users\narim\OneDrive\Desktop\Coding Dojo Programs\Coding-Dojo-Africa\C# .Net Part Time\Language Fundamentals\Practice\Drink Maker\DrinkMaker\obj\Debug\net6.0\DrinkMaker.pdb
+C:\Users\narim\OneDrive\Desktop\Coding Dojo Programs\Coding-Dojo-Africa\C# .Net Part Time\Language Fundamentals\Practice\Drink Maker\DrinkMaker\obj\Debug\net6.0\DrinkMaker.genruntimeconfig.cache
+C:\Users\narim\OneDrive\Desktop\Coding Dojo Programs\Coding-Dojo-Africa\C# .Net Part Time\Language Fundamentals\Practice\Drink Maker\DrinkMaker\obj\Debug\net6.0\ref\DrinkMaker.dll
