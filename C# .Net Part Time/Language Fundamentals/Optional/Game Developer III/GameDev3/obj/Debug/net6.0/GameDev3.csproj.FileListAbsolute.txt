@@ -1,0 +1,15 @@
+C:\Users\narim\OneDrive\Desktop\Coding Dojo Programs\Coding-Dojo-Africa\C# .Net Part Time\Language Fundamentals\Optional\Game Developer III\GameDev3\bin\Debug\net6.0\GameDev3.exe
+C:\Users\narim\OneDrive\Desktop\Coding Dojo Programs\Coding-Dojo-Africa\C# .Net Part Time\Language Fundamentals\Optional\Game Developer III\GameDev3\bin\Debug\net6.0\GameDev3.deps.json
+C:\Users\narim\OneDrive\Desktop\Coding Dojo Programs\Coding-Dojo-Africa\C# .Net Part Time\Language Fundamentals\Optional\Game Developer III\GameDev3\bin\Debug\net6.0\GameDev3.runtimeconfig.json
+C:\Users\narim\OneDrive\Desktop\Coding Dojo Programs\Coding-Dojo-Africa\C# .Net Part Time\Language Fundamentals\Optional\Game Developer III\GameDev3\bin\Debug\net6.0\GameDev3.dll
+C:\Users\narim\OneDrive\Desktop\Coding Dojo Programs\Coding-Dojo-Africa\C# .Net Part Time\Language Fundamentals\Optional\Game Developer III\GameDev3\bin\Debug\net6.0\GameDev3.pdb
+C:\Users\narim\OneDrive\Desktop\Coding Dojo Programs\Coding-Dojo-Africa\C# .Net Part Time\Language Fundamentals\Optional\Game Developer III\GameDev3\obj\Debug\net6.0\GameDev3.csproj.AssemblyReference.cache
+C:\Users\narim\OneDrive\Desktop\Coding Dojo Programs\Coding-Dojo-Africa\C# .Net Part Time\Language Fundamentals\Optional\Game Developer III\GameDev3\obj\Debug\net6.0\GameDev3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\narim\OneDrive\Desktop\Coding Dojo Programs\Coding-Dojo-Africa\C# .Net Part Time\Language Fundamentals\Optional\Game Developer III\GameDev3\obj\Debug\net6.0\GameDev3.AssemblyInfoInputs.cache
+C:\Users\narim\OneDrive\Desktop\Coding Dojo Programs\Coding-Dojo-Africa\C# .Net Part Time\Language Fundamentals\Optional\Game Developer III\GameDev3\obj\Debug\net6.0\GameDev3.AssemblyInfo.cs
+C:\Users\narim\OneDrive\Desktop\Coding Dojo Programs\Coding-Dojo-Africa\C# .Net Part Time\Language Fundamentals\Optional\Game Developer III\GameDev3\obj\Debug\net6.0\GameDev3.csproj.CoreCompileInputs.cache
+C:\Users\narim\OneDrive\Desktop\Coding Dojo Programs\Coding-Dojo-Africa\C# .Net Part Time\Language Fundamentals\Optional\Game Developer III\GameDev3\obj\Debug\net6.0\GameDev3.dll
+C:\Users\narim\OneDrive\Desktop\Coding Dojo Programs\Coding-Dojo-Africa\C# .Net Part Time\Language Fundamentals\Optional\Game Developer III\GameDev3\obj\Debug\net6.0\refint\GameDev3.dll
+C:\Users\narim\OneDrive\Desktop\Coding Dojo Programs\Coding-Dojo-Africa\C# .Net Part Time\Language Fundamentals\Optional\Game Developer III\GameDev3\obj\Debug\net6.0\GameDev3.pdb
+C:\Users\narim\OneDrive\Desktop\Coding Dojo Programs\Coding-Dojo-Africa\C# .Net Part Time\Language Fundamentals\Optional\Game Developer III\GameDev3\obj\Debug\net6.0\GameDev3.genruntimeconfig.cache
+C:\Users\narim\OneDrive\Desktop\Coding Dojo Programs\Coding-Dojo-Africa\C# .Net Part Time\Language Fundamentals\Optional\Game Developer III\GameDev3\obj\Debug\net6.0\ref\GameDev3.dll
