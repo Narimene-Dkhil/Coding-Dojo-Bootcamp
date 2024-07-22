@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Hello!</title>
+    <link rel="stylesheet" href="~/css/style.css"/> 
+    </head>
+
+    <body>
+
+        @{
+            DateTime CurrentTime = DateTime.Now;
+            DateTime now = DateTime.Now;
+            string CurrentDate = now.ToString("MMMM d") + (now.Day == 1 ? "st" : (now.Day == 2 ? "nd" : (now.Day == 3 ? "rd" : "th"))) + now.ToString(", yyyy");
+            string TimeNow = DateTime.Now.ToString("h:mm tt");
+            DateTime date2 = new DateTime(2024, 10, 7, 10, 0, 0);
+            string Grad = date2.ToString("MMMM d") + (date2.Day == 1 ? "st" : (date2.Day == 2 ? "nd" : (date2.Day == 3 ? "rd" : "th"))) + date2.ToString(", yyyy");
+            string GradDay = date2.ToString("h:mm tt");
+            int result = DateTime.Compare(CurrentTime, date2);
+
+            @* Calculations to form time to date *@
+            TimeSpan diffOfDates = date2 - CurrentTime;
+            int days = (int) diffOfDates.TotalDays;
+            int daysleft = (int) diffOfDates.TotalDays-1;
+            int hours = (int) diffOfDates.TotalHours;
+            int HoursTotal = hours - days*24;
+            string m = diffOfDates.ToString("mm");
+        }
+        @* Content *@
+        <div class="OuterContainer">
+            <h1>Countdown to <span class="grad">Graduation!</span></h1>
+            <div class="Container">
+                <div class="Box_1">
+                    <h2>Today's date</h2>
+                    <h3>@CurrentDate</h3>
+                    <h3>@TimeNow</h3>
+                </div>
+                <div class="Box_2">
+                    <h2>Graduation day</h2>
+                    <h3>@Grad</h3>
+                    <h3>@GradDay</h3>
+                </div>
+            </div>
+            
+            <div class="Box_3">
+                <p class="ToGo">@days <span class="ToGoGraduate">days</span>, @HoursTotal <span class="ToGoGraduate">hour(s)</span>, @m <span class="ToGoGraduate">minute(s)</span></p>
+                
+                <p class="ToGo2">Time remaining: - @daysleft <span class="ToGoGrad2">days</span>, @HoursTotal <span class="ToGoGrad2">hour(s)</span>, @m <span class="ToGoGrad2">minute(s)</span></p>
+            </div>
+        </div>
+    </body>
+</html>
