@@ -1,0 +1,176 @@
+/* Style All Pages */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+
+}
+
+p {
+    font-size: 22px;
+}
+
+.Flex {
+    display: flex;
+    justify-content: center;
+    margin: 25px;
+}
+
+.Flex2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Flex3 {
+    display: flex;
+    justify-content: flex-end;
+    margin: 5px;
+}
+
+/* Index/Profile Style */
+.ProfileContainer {
+    width: 70%;
+    min-width: 370px;
+    margin:20px auto;
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+
+.ProfileLeft {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.UserImage {
+    width: 300px;
+    height: 300px;
+    border: 3px solid darkgray;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.ProfileUserText {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.ProfileRight {
+    width: 55%;
+    min-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+
+/* Projects Style */
+.ProjectContainer {
+    width: 70%;
+    min-width: 370px;
+    margin:20px auto;
+    height: 600px;
+    overflow-y: scroll;
+    border: 3px solid silver;
+}
+
+.ProjectBox {
+    margin-bottom: 20px;
+    display: flex;
+    border: 3px solid lightcoral;
+}
+
+.Projimage {
+    width: 350px;
+    border: 3px solid transparent;
+    border-right: 3px solid lightcoral;
+}
+
+
+.Projimage:hover {
+    border: 3px solid cyan;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.ProjectTitle {
+    padding:10px;
+    color: rebeccapurple;
+    border-bottom:3px solid lightcoral;
+    text-align: center;
+    background-color: bisque;
+}
+
+.ProjectText {
+    padding: 10px;
+}
+
+/* Contact Style */
+.Form {
+    width: 350px;
+    margin:20px auto;
+    padding: 15px;
+    border: 2px solid rosybrown;
+    background-color: bisque;
+}
+
+.Input {
+    width: 240px;
+    background-color: lightyellow;
+    border: 2px solid rosybrown;
+}
+
+.Input:focus {
+    background-color: lightcyan;
+}
+
+
+.Button {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: lightcoral;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow:inset 2px 2px 2px 0px rgba(103, 147, 174, 0.8),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+}
+
+.Button:hover {
+    color: black;
+    background-color: aqua;
+}
+
+.Button:hover:after  {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    direction: rtl;
+    z-index: -1;
+    box-shadow:
+    -7px -7px 20px 0px green,
+    -4px -4px 5px 0px green,
+    7px 7px 20px 0px #0002,
+    4px 4px 5px 0px #0001;
+    transition: all 0.3s ease;
+}
+
+.Button:active {
+    top: 5px;
+}
