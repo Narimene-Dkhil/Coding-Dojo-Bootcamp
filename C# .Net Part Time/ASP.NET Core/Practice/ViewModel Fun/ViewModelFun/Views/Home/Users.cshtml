@@ -1,0 +1,16 @@
+@{
+    ViewData["Title"] = "Users";
+}
+
+@model List<User>
+
+
+<h1 class="text-center">Here is a List of @ViewData["Title"]</h1>
+<ul class="list-group justify-content-center align-items-center">
+    @{
+        foreach (User user in @Model)
+        {
+            <li class="list-group-item w-25 text-center">@user.FirstName @user.LastName</li>
+        }
+    }
+</ul>

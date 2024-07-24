@@ -1,0 +1,18 @@
+@{
+    ViewData["Title"] = "Numbers Page";
+}
+
+@model List<int>
+
+<div class="text-center">
+    <h1 class="text-center">Here are some numbers</h1>
+    <ul class="list-group justify-content-center align-items-center">
+        @{
+            foreach (int num in @Model)
+            {
+                <li class="list-group-item w-10 text-center">@num</li>
+            }
+        }
+    </ul>
+
+</div>

@@ -1,0 +1,16 @@
+@{
+    ViewData["Title"] = "User";
+}
+
+@model List<User>
+
+
+<h1 class="text-center">Here is a @ViewData["Title"]</h1>
+
+<ul class="list-group justify-content-center align-items-center">
+    @{
+        Random rand = new Random();
+        int MyRandomNumber = rand.Next(0,4);
+        <p>@Model[MyRandomNumber].FirstName @Model[MyRandomNumber].LastName</p>
+    }
+</ul>
