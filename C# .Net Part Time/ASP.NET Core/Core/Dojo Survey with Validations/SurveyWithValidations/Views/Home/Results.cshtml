@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewData["Title"] = "Results Page";
+}
+@model UserSurvey
+
+<h1 class="Center">@ViewData["Title"]</h1>
+
+
+    <div class="ResultsContainer">
+        <H2 class="Center">Submitted Info</H2>
+        <div class="Flex">
+            <h3>Name:</h3>
+            <h3>@Model.Name</h3>
+        </div>
+
+        <div class="Flex">
+            <h3>Location:</h3>
+            <h3>@Model.Location</h3>
+        </div>
+
+        <div class="Flex">
+            <h3>Fav. Language:</h3>
+            <h3>@Model.Language</h3>
+        </div>
+
+        <div>
+            <h3 class="Comments">Comments:</h3>
+            <div class="CommentBox"><h3>@Model.Comments</h3></div>
+        </div>
+
+    </div>
+    <div class="LinkContainer">
+        <a class="End Button nav-link text-light" asp-area="" asp-controller="Home" asp-action="Index">Go Home</a>
+    </div>

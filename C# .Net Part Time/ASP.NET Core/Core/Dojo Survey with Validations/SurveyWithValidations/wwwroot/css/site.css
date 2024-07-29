@@ -17,6 +17,7 @@ body {
   margin-bottom: 60px;
 }
 
+
 .Flex {
   display: flex;
   justify-content: space-between;
@@ -35,6 +36,10 @@ body {
   padding: 15px;
   border: 2px solid blue;
   background-color: lightgray;
+}
+
+.DropDown {
+  text-align: center;
 }
 
 .Input {
@@ -93,12 +98,17 @@ body {
   top: 5px;
 }
 
+.Validation {
+  font-weight: 800;
+  color: red;
+}
+
 
 /* Results Container */
 .ResultsContainer {
   width: 40%;
   min-width: 380px;
-  margin: 20px auto;
+  margin: 20px auto 0;
   border: 3px solid blue;
   padding: 5px;
 }
@@ -116,4 +126,10 @@ body {
   width: 80%;
   min-height: 20px;
   margin: 1% 1% 1% 20%;
+}
+
+.LinkContainer {
+  width: 40%;
+  min-width: 380px;
+  margin: 10px auto;
 }
