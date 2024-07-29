@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\narim\\OneDrive\\Desktop\\Coding Dojo Programs\\Coding-Dojo-Africa\\C# .Net Part Time\\ASP.NET Core\\Practice\\ViewModel Fun\\ViewModelFun\\ViewModelFun.csproj": {}
+    "C:\\Users\\narim\\OneDrive\\Desktop\\Coding Dojo Programs\\Coding-Dojo-Africa\\C# .Net Part Time\\ASP.NET Core\\Practice\\ViewModel Fun\\ViewModelfun\\ViewModelFun.csproj": {}
   },
   "projects": {
-    "C:\\Users\\narim\\OneDrive\\Desktop\\Coding Dojo Programs\\Coding-Dojo-Africa\\C# .Net Part Time\\ASP.NET Core\\Practice\\ViewModel Fun\\ViewModelFun\\ViewModelFun.csproj": {
+    "C:\\Users\\narim\\OneDrive\\Desktop\\Coding Dojo Programs\\Coding-Dojo-Africa\\C# .Net Part Time\\ASP.NET Core\\Practice\\ViewModel Fun\\ViewModelfun\\ViewModelFun.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\narim\\OneDrive\\Desktop\\Coding Dojo Programs\\Coding-Dojo-Africa\\C# .Net Part Time\\ASP.NET Core\\Practice\\ViewModel Fun\\ViewModelFun\\ViewModelFun.csproj",
+        "projectUniqueName": "C:\\Users\\narim\\OneDrive\\Desktop\\Coding Dojo Programs\\Coding-Dojo-Africa\\C# .Net Part Time\\ASP.NET Core\\Practice\\ViewModel Fun\\ViewModelfun\\ViewModelFun.csproj",
         "projectName": "ViewModelFun",
-        "projectPath": "C:\\Users\\narim\\OneDrive\\Desktop\\Coding Dojo Programs\\Coding-Dojo-Africa\\C# .Net Part Time\\ASP.NET Core\\Practice\\ViewModel Fun\\ViewModelFun\\ViewModelFun.csproj",
+        "projectPath": "C:\\Users\\narim\\OneDrive\\Desktop\\Coding Dojo Programs\\Coding-Dojo-Africa\\C# .Net Part Time\\ASP.NET Core\\Practice\\ViewModel Fun\\ViewModelfun\\ViewModelFun.csproj",
         "packagesPath": "C:\\Users\\narim\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\narim\\OneDrive\\Desktop\\Coding Dojo Programs\\Coding-Dojo-Africa\\C# .Net Part Time\\ASP.NET Core\\Practice\\ViewModel Fun\\ViewModelFun\\obj\\",
+        "outputPath": "C:\\Users\\narim\\OneDrive\\Desktop\\Coding Dojo Programs\\Coding-Dojo-Africa\\C# .Net Part Time\\ASP.NET Core\\Practice\\ViewModel Fun\\ViewModelfun\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\narim\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -1,0 +1,20 @@
+@{
+    ViewData["Title"] = "Results";
+}
+@model User
+
+<div class="container">
+    <h1 class="text-center">Submitted Info:</h1>
+    <br>
+    <div class="d-flex justify-content-around">
+        <div class="mr-3">
+            <h3>Name: @Model.Name</h3>
+            <h3>Language: @Model.Language</h3>
+            <h3>Location: @Model.Location</h3>
+            <h3>Comment (Optional):</h3>
+            <div>
+                <h3>@Model.Comment</h3>
+            </div>
+        </div>
+    </div>
+</div>

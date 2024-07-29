@@ -1,0 +1,119 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.Flex {
+  display: flex;
+  justify-content: space-between;
+  margin: 2px;
+}
+
+.End {
+  text-align: end;
+  margin-right: 20px ;
+}
+
+/* Form Style */
+.Form {
+  width: 370px;
+  margin:20px auto;
+  padding: 15px;
+  border: 2px solid blue;
+  background-color: lightgray;
+}
+
+.Input {
+  width: 225px;
+  background-color: wheat;
+  border: 2px solid blue;
+}
+
+.Input:focus {
+  background-color: lightskyblue;
+}
+
+
+.Button {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: blue;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow:inset 2px 2px 2px 0px rgba(103, 147, 174, 0.8),
+  7px 7px 20px 0px rgba(0,0,0,.1),
+  4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+
+.Button:hover {
+  color: black;
+  background-color: aqua;
+}
+
+.Button:hover:after  {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  direction: rtl;
+  z-index: -1;
+  box-shadow:
+  -7px -7px 20px 0px green,
+  -4px -4px 5px 0px green,
+  7px 7px 20px 0px #0002,
+  4px 4px 5px 0px #0001;
+  transition: all 0.3s ease;
+}
+
+.Button:active {
+  top: 5px;
+}
+
+
+/* Results Container */
+.ResultsContainer {
+  width: 40%;
+  min-width: 380px;
+  margin: 20px auto;
+  border: 3px solid blue;
+  padding: 5px;
+}
+
+.Center {
+  text-align: center;
+}
+
+.Comments {
+  border-bottom: 2px solid blue;
+}
+
+.CommentBox {
+  text-align: end;
+  width: 80%;
+  min-height: 20px;
+  margin: 1% 1% 1% 20%;
+}
