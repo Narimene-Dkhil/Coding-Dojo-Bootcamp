@@ -1,0 +1,38 @@
+@{
+    ViewData["Title"] = "Results";
+}
+@model User
+
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid justify-content-space-between">
+                <h1>Welcome  @Context.Session.GetString("UserName")</h1>
+                <!-- <div class="LinkContainer"> -->
+                    <a class="End Button nav-link" asp-area="" asp-controller="Home" asp-action="ClearSession">Log out</a>
+                <!-- </div> -->
+            </div>
+        </nav>
+    </header>
+
+    <div class="ResultTitle">
+        <h4>My Number: <span>@Context.Session.GetInt32("Digit")</span></h4>
+    </div>
+
+    <div class="ButtonContainer">
+        <form asp-action="UpdateNumber" asp-controller="Home" method="post">    
+            <input type="hidden" name="Value" value="+1">
+            <input class="Button Btn1" type="submit"  value="+1"/>
+        </form>
+        <form asp-action="UpdateNumber" asp-controller="Home" method="post">    
+            <input type="hidden" name="Value" value="-1">
+            <input class="Button Btn2" type="submit" value="-1"/>
+        </form>
+        <form asp-action="UpdateNumber" asp-controller="Home" method="post">    
+            <input type="hidden" name="Value" value="x2">
+            <input class="Button Btn3" type="submit" value="x2"/>
+        </form>
+        <form asp-action="UpdateNumber" asp-controller="Home" method="post">    
+            <input type="hidden" name="Value" value="random">
+            <input class="Button Btn4" type="submit" value="+ Random"/>
+        </form>
+    </div>
