@@ -1,0 +1,37 @@
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-body text-center">
+                    <h2>Welcome @Context.Session.GetString("username")!</h2>
+                    <a class="btn btn-danger mb-3" asp-controller="Home" asp-action="ClearSession">Log out</a>
+                    <div class="ButtonContainer">
+                        <h4>My Number is: <span>@Context.Session.GetInt32("Numb")</span></h4>
+                        <div class="d-flex justify-content-around mt-3">
+                            <form asp-action="UpdateNumber" asp-controller="Home" method="post">
+                                <input type="hidden" name="Value" value="+1">
+                                <input class="btn btn-primary" type="submit" value="+1" />
+                            </form>
+                            <form asp-action="UpdateNumber" asp-controller="Home" method="post">
+                                <input type="hidden" name="Value" value="-1">
+                                <input class="btn btn-secondary" type="submit" value="-1" />
+                            </form>
+                            <form asp-action="UpdateNumber" asp-controller="Home" method="post">
+                                <input type="hidden" name="Value" value="x2">
+                                <input class="btn btn-success" type="submit" value="x2" />
+                            </form>
+                            <form asp-action="UpdateNumber" asp-controller="Home" method="post">
+                                <input type="hidden" name="Value" value="random">
+                                <input class="btn btn-warning" type="submit" value="+ Random" />
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
