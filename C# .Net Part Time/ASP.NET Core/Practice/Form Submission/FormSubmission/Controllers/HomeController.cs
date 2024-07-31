@@ -18,25 +18,26 @@ public class HomeController : Controller
     {
         return View();
     }
-
+    
     [HttpPost("process")]
     public IActionResult Process(User newUser)
-    {
-        if (ModelState.IsValid)
-        {
-            return RedirectToAction("Success");
-        }
-        else 
-        {
-            return View("Index");
-        }
+    {    
+    if(ModelState.IsValid)    
+    {        
+        return RedirectToAction("Success");    
+    }    
+    else    
+    {        
+        return View("Index");    
     }
+}
 
     [HttpGet("success")]
     public IActionResult Success()
     {
-        return View();
+        return View("Success");
     }
+
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
