@@ -14,7 +14,7 @@ public class Dish
     public string Chef { get; set; }
     [Required]
     [Range(1, int.MaxValue, ErrorMessage = "Calories must be a positive number.")]
-    public int Calories { get; set; } = 0;
+    public int? Calories { get; set; }
     [Required]
     [Range(minimum:1, maximum:5, ErrorMessage = "Tastiness must be between 1 and 5.")]
     public int Tastiness { get; set; }
