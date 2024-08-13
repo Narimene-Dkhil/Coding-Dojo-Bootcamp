@@ -85,11 +85,12 @@ public class HomeController : Controller
         return View();
     }
 
-
-
-    public IActionResult Privacy()
+    //Clear Session
+    [HttpPost("logout")]
+    public IActionResult Logout()
     {
-        return View();
+        HttpContext.Session.Clear();
+        return RedirectToAction("Index");
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
