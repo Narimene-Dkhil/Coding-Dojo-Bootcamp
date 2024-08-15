@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Chefs Page";
+}
+
+@model List<Chef>
+
+<div class="text-center">
+    @await Html.PartialAsync("_Navbar")
+    <br>
+    <h1 class="display-4">Check out our roster of chefs!</h1>
+    <div class="TableContainer">
+        <table class="table table-light table-hover">
+            <thead>
+                <tr>
+                    <th class="text-center">Name</th>
+                    <th class="text-center">Age</th>
+                    <th class="text-center"># of Dishes</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (Chef chef in Model) // Iterate over the list of chefs
+                {
+                    int now = int.Parse(DateTime.Now.ToString("yyyyMMdd"));
+                    int dob = int.Parse(@chef.DoB.ToString("yyyyMMdd"));
+                    int DoB = (now - dob) / 10000;
+                    <tr>
+                        <td>@chef.FirstName @chef.LastName</td>
+                        <td class="text-center">@DoB</td>
+                        <td class="text-center">@chef.AllDishes.Count()</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

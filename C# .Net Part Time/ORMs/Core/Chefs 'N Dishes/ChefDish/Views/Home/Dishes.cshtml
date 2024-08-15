@@ -1,0 +1,41 @@
+@{
+    ViewData["Title"] = "Dishes Page";
+}
+
+@model List<Dish>
+
+<div class="text-center">
+    @await Html.PartialAsync("_Navbar")
+    <br>
+    <h1 class="display-4">Yum! Check out our tasty dishes!</h1>
+    <div class="TableContainer">
+        <table class="table table-light table-hover">
+            <thead>
+                <tr>
+                    <th class="text-center">Name</th>
+                    <th class="text-center">Chef</th>
+                    <th class="text-center">Tastiness</th>
+                    <th class="text-center">Calories</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach(Dish dish in Model){
+                    <tr>
+                        <td>@dish.Name</td>
+                        <td>@dish.Cook.FirstName @dish.Cook.LastName</td>
+                        <td>
+                            <div class="d-flex">
+                                @{
+                                for(var i = 0; i< @dish.Tastiness; i++){
+                                <h5>⭐</h5>
+                                    }
+                                }
+                            </div>
+                        </td>
+                        <td>@dish.Calories</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
