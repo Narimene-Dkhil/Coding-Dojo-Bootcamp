@@ -1,0 +1,54 @@
+@model Association
+
+@await Html.PartialAsync("_Navbar")
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 text-center">
+            <h1 class="mt-5">@ViewBag.OneCategory.Name</h1>
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <h3>Categories</h3>
+            @if (ViewBag.CatsAndProds.MyCategories != null)
+            {
+                @foreach (Association c in ViewBag.CatsAndProds.MyCategories)
+                {
+                    <div class="d-flex m-3 align-items-center justify-content-between">
+                        <p>@c.Product.Name</p>
+                        <form class="ms-3" action="/catandprod/@c.AssociationId/delete" method="post">
+                            <input class="Button bg-danger text-light p-1 mb-3" type="submit" value="Remove Item">
+                        </form>
+                    </div>
+                }
+            }
+        </div>
+
+        <div class="col-md-6">
+            <h3>Add Product</h3>
+            <form class="Form" asp-action="catAddProd" asp-controller="Home">
+                <div class="mb-3">
+                    <input type="hidden" asp-for="CategoryId" value="@ViewBag.OneCategory.CategoryId">
+                    <label asp-for="ProductId">Select A Product</label>
+                    <select class="form-control" asp-for="ProductId">
+                        @foreach (var c in ViewBag.FilteredProds)
+                        {
+                            <option value="@c.ProductId">@c.Name</option>
+                        }
+                    </select>
+                </div>
+                <div class="text-center">
+                    @if (ViewBag.FilteredProds.Count == 0)
+                    {
+                        <input disabled class="btn btn-secondary" type="submit" value="Add">
+                    }
+                    else
+                    {
+                        <input class="btn btn-primary" type="submit" value="Add">
+                    }
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

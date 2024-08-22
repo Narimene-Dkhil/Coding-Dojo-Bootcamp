@@ -1,0 +1,27 @@
+﻿@model MyViewModel
+
+@await Html.PartialAsync("_Navbar")
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <h2 class="display-4">New Product</h2>
+            @await Html.PartialAsync("_NewProduct", new Product())
+        </div>
+        <div class="col-md-6">
+            <h2 class="display-4">All Products</h2>
+            <ul>
+                @if (Model.AllProducts != null)
+                {
+                    @foreach (Product a in Model.AllProducts)
+                    {
+                        <li><a href="/products/@a.ProductId">@a.Name</a></li>
+                    }
+                }
+                else
+                {
+                    <li>No products available.</li>
+                }
+            </ul>
+        </div>
+    </div>
+</div>

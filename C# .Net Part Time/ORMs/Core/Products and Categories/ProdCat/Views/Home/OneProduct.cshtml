@@ -1,0 +1,57 @@
+@model Association
+
+@await Html.PartialAsync("_Navbar")
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 text-center">
+            <h1 class="mt-5">@ViewBag.OneProduct.Name</h1>
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <h3>Categories</h3>
+            @if (ViewBag.ProdsAndCats.MyProducts != null)
+            {
+                @foreach (Association p in ViewBag.ProdsAndCats.MyProducts)
+                {
+                    <div class="d-flex m-3 align-items-center justify-content-between">
+                        <p>@p.Category.Name</p>
+                        <form class="ms-3" action="/productaddcat/@p.AssociationId/delete" method="post">
+                            <input class="Button bg-danger text-light p-1 mb-3" type="submit" value="Remove Item">
+                        </form>
+                    </div>
+                }
+            }
+        </div>
+
+        <div class="col-md-6">
+            <h3>Add Category</h3>
+            <form class="Form" asp-action="productAddCat" asp-controller="Home">
+                <div class="mb-3">
+                    <input type="hidden" asp-for="ProductId" value="@ViewBag.OneProduct.ProductId">
+                    <label asp-for="CategoryId">Select A Category</label>
+                    <select class="form-control" asp-for="CategoryId">
+                        @if (ViewBag.FilteredCats != null)
+                        {
+                            @foreach (var c in ViewBag.FilteredCats)
+                            {
+                                <option value="@c.CategoryId">@c.Name</option>
+                            }
+                        }
+                    </select>
+                </div>
+                <div class="text-center">
+                    @if (ViewBag.FilteredCats.Count == 0)
+                    {
+                        <input disabled class="btn btn-secondary" type="submit" value="Add">
+                    }
+                    else
+                    {
+                        <input class="btn btn-primary" type="submit" value="Add">
+                    }
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

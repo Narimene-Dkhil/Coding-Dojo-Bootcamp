@@ -92,6 +92,7 @@ public IActionResult AddDish(Dish newDish)
             dishToEdit.Calories = updatedDish.Calories;
             dishToEdit.Tastiness = updatedDish.Tastiness;
             dishToEdit.Description = updatedDish.Description;
+            dishToEdit.UpdatedAt = DateTime.Now;
             _context.SaveChanges();
             return RedirectToAction("Index");
         }

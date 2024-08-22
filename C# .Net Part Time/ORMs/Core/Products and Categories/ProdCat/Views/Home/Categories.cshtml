@@ -1,0 +1,27 @@
+@model MyViewModel
+
+@await Html.PartialAsync("_Navbar")
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <h2 class="display-4">New Category</h2>
+            @await Html.PartialAsync("_NewCategory", new Category())
+        </div>
+        <div class="col-md-6">
+            <h2 class="display-4">All Categories</h2>
+            <ul>
+                @if (Model.AllCategories != null)
+                {
+                    @foreach (Category a in Model.AllCategories)
+                    {
+                        <li><a href="/categories/@a.CategoryId">@a.Name</a></li>
+                    }
+                }
+                else
+                {
+                    <li>No categories available.</li>
+                }
+            </ul>
+        </div>
+    </div>
+</div>
