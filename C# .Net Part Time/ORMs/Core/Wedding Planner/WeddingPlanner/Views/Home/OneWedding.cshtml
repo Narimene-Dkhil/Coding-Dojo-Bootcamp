@@ -1,0 +1,33 @@
+@{
+    ViewData["Title"] = "One Wedding Page";
+}
+
+@model MyViewModel
+
+<div class="d-flex justify-content-between align-items-center">
+    <h3>Welcome @Model.User.FirstName!</h3>
+    <div>
+        @await Html.PartialAsync("_Navbar")
+    </div>
+</div>
+
+<div class="Content">
+    <h1 class="Center m-5">@Model.Wedding.Bride & @Model.Wedding.Groom's wedding</h1>
+    <div>
+        @{
+            DateTime date = @Model.Wedding.EventDate;
+            string stringDate = date.ToString("MMMM d") + (date.Day == 1 ? "st" : (date.Day == 2 ? "nd" : (date.Day == 3
+            ? "rd" : "th"))) + date.ToString(", yyyy");
+        }
+        <p>Date: @stringDate</p>
+        <p>Guests:</p>
+        <ul>
+            @foreach (Rsvp r in @Model.Wedding.Guests)
+            {
+                <li>
+                    <p>@r.User.FirstName @r.User.LastName</p>
+                </li>
+            }
+        </ul>
+    </div>
+</div>

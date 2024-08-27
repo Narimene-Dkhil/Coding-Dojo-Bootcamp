@@ -1,0 +1,118 @@
+//CREATE
+    //VIEW
+    // [SessionCheck]
+    // [HttpGet("weddings/new")]
+    // public IActionResult AddWedding ()
+    // {
+    //     return View("AddWedding");
+    // }
+
+    [SessionCheck]
+    [HttpGet("weddings/new")]
+    public IActionResult AddWedding()
+    {
+        var userId = HttpContext.Session.GetInt32("UserId");
+        if (userId == null)
+        {
+            // Handle the case where the user is not logged in
+            return RedirectToAction("Index", "Home");
+        }
+
+        MyViewModel MyModel = new MyViewModel
+        {
+            User = _context.Users.FirstOrDefault(u => u.UserId == userId.Value) ?? new User(),
+            Wedding = new Wedding(), // Initialize the Wedding property
+            AllWeddings = new List<Wedding>() // Initialize with an empty list or fetch relevant data
+        };
+
+        return View("AddWedding", MyModel);
+    }
+
+
+
+
+    //POST
+    [SessionCheck]
+    [HttpPost("weddings/new")]
+    public IActionResult CreateWedding(Wedding newWedding)
+    {
+        var userId = HttpContext.Session.GetInt32("UserId");
+        if (userId == null)
+        {
+            // Handle the case where the user is not logged in
+            return RedirectToAction("Index", "Home");
+        }
+
+        if (ModelState.IsValid)
+        {
+            newWedding.UserId = userId.Value; // Set the UserId of the wedding
+            _context.Weddings.Add(newWedding);
+            _context.SaveChanges();
+            return RedirectToAction("Weddings");
+        }
+
+        MyViewModel MyModel = new MyViewModel
+        {
+            User = _context.Users.FirstOrDefault(u => u.UserId == userId.Value) ?? new User(),
+            Wedding = newWedding,
+            AllWeddings = new List<Wedding>() // Initialize with an empty list or fetch relevant data
+        };
+
+        return View("AddWedding", MyModel);
+    }
+
+
+    /////////////////
+
+
+    [SessionCheck]
+    [HttpGet("weddings/new")]
+    public IActionResult AddWedding ()
+    {
+        return View("AddWedding");
+    }
+    
+
+    //POST
+    [SessionCheck]
+    [HttpPost("weddings/new")]
+    public IActionResult CreateWedding (Wedding newWedding)
+    {
+        if (ModelState.IsValid)
+        {
+            _context.Weddings.Add(newWedding);
+            _context.SaveChanges();
+            return RedirectToAction("Weddings");
+        }
+        return View ("AddWedding");
+    }
+//////////////////////////////////??
+
+//Session check
+    // [SessionCheck]
+    // [HttpGet("weddings")]
+    // public IActionResult Weddings()
+    // {
+    //     MyViewModel MyModel = new MyViewModel
+    //     {
+    //         AllWeddings = _context.Weddings.Include(w => w.Guests).ToList(),
+    //         User = _context.Users.FirstOrDefault(u => u.UserId == HttpContext.Session.GetInt32("UserId"))
+    //     };
+    //     return View(MyModel);
+    // }
+
+    ///////////////??
+    public class FutureDateAttribute : ValidationAttribute
+{
+protected override ValidationResult? IsValid(object? value, ValidationContext validationContext)
+    {
+            DateTime CurrentTime = DateTime.Now;
+        if ((DateTime?)value < CurrentTime)
+        {
+            return new ValidationResult("Date must be in future!");
+        } 
+        else {
+            return ValidationResult.Success;
+        }
+    }
+}

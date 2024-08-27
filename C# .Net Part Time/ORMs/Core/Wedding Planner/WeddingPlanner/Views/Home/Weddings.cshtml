@@ -1,0 +1,74 @@
+@{
+    ViewData["Title"] = "Weddings Page";
+}
+@{int LoggedUser = (int)@Context.Session.GetInt32("UserId");}
+@model MyViewModel
+
+<div class="d-flex justify-content-between align-items-center">
+    <h3>Welcome @Model.User.FirstName!</h3>
+    <div>
+        @await Html.PartialAsync("_Navbar")
+    </div>
+</div>
+<hr>
+
+<table class="table table-light table-hover">
+    <thead>
+        <tr>
+            <th>Wedding of</th>
+            <th>Date</th>
+            <th>Guest count</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Wedding wedding in Model.AllWeddings)
+        {
+            <tr>
+                <td> <a href="/weddings/@wedding.WeddingId">@wedding.Bride & @wedding.Groom</a> </td>
+                <td>@wedding.EventDate.ToString("MMM dd yyyy")</td>
+                <td>@wedding.Guests.Count</td>
+                <td>
+                @if(wedding.UserId == LoggedUser)
+                {
+                    <div class="d-flex align-items-center">
+                        <form asp-action="DeleteWedding" asp-controller="Home" asp-route-id="@wedding.WeddingId" method="post" class="mr-2">
+                            <input class="btn btn-danger" type="submit" value="Delete">
+                        </form>
+                        <a href="/weddings/@wedding.WeddingId/edit" class="btn btn-primary">Edit</a>
+                    </div>
+                }
+
+            else
+            {
+            var counter = 0;
+            foreach(var g in @wedding.Guests){
+                if(g.UserId == LoggedUser){
+                counter++;
+                }
+            }
+            if(counter == 0)
+            {
+                <form asp-action="RSVP" asp-controller="Home" method="post">
+                    <input type="hidden" name="UserId" value="@LoggedUser">
+                    <input type="hidden" name="WeddingId" value="@wedding.WeddingId">
+                    <input class="btn btn-success" type="submit" value="RSVP">
+                </form>
+
+            }
+            else
+            {
+                foreach(var g in @wedding.Guests){
+                if(g.UserId == LoggedUser){
+                    <form action="RSVP/@g.RsvpId/remove" method="post">   
+                    <input class="btn btn-warning" type="submit" value="Cancel RSVP">
+                    </form>
+                }
+                }
+            }
+            }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
