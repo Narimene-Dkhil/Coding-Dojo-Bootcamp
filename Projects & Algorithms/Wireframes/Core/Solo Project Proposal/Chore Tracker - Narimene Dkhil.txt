@@ -1,0 +1,21 @@
+Application:
+Chore Tracker - A chore tracking app for Event Agency
+
+Description:
+Planning events has never been easy! The Chore Tracker web application stores and keeps track of all the chores that need to be done within an event. 
+Features include viewing, adding, editing or cancelling (deleting) tasks/chores from a list of jobs.
+
+Language used:
+C# .Net
+
+Framework: 
+ASP.NET Core
+
+Database:
+MySQL
+
+Styling: 
+CSS 
+Bootstrap
+
+
