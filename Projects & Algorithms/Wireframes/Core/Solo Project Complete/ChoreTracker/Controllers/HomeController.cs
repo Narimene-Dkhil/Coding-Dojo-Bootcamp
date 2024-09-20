@@ -92,12 +92,17 @@ public class HomeController : Controller
     //-------------------------------- Dashboard Start ----------------------------------
 
     //Dahsboard
-    //View
+    //View All 
     [SessionCheck]
     [HttpGet("dashboard")]
     public IActionResult Dashboard()
     {
-        return View();
+        MyViewModel MyModel = new MyViewModel
+        {
+            AllJobs = _context.Jobs.Include(w => w.Favorites).ToList(),
+            User = _context.Users.FirstOrDefault(u => u.UserId == HttpContext.Session.GetInt32("UserId")) ?? new User()
+        };
+        return View(MyModel);
     }
 
 

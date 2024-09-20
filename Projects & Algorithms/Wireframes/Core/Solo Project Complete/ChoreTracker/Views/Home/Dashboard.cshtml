@@ -3,3 +3,50 @@
 }
 
 @model MyViewModel
+
+<div class="d-flex justify-content-between align-items-center">
+    <h5 class="mb-0">Welcome @Model.User.FirstName!</h5>
+    <a href="/addJob" class="btn btn-link">Add A Job</a>
+</div>
+
+
+<table class="table table-light table-hover">
+    <thead>
+        <tr>
+            <th>Job</th>
+            <th>Location</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Job job in Model.AllJobs)
+        {
+            <tr>
+                <td>@job.Title</td>
+                <td>@job.Location</td>
+                <td>
+                @if(job.UserId == LoggedUser)
+                {
+                    <div class="d-flex align-items-center">
+                        <a href="/view/@Model.Job.JobId" class="btn btn-link">View</a>
+                        <a href="/addJob" class="btn btn-link">Add</a>
+                        <a href="/edit/@Model.Job.JobId" class="btn btn-link">Edit</a>
+                        <form asp-action="DeleteJob" asp-controller="Home" asp-route-jobId="@Model.Job.JobId"
+                            method="post" class="m-0">
+                            <input type="submit" value="Cancel" class="btn btn-link">
+                        </form>
+                    </div>
+                }
+
+            else
+            {
+                <div class="d-flex align-items-center">
+                        <a href="/view/@Model.Job.JobId" class="btn btn-link">View</a>
+                        <a href="/addJob" class="btn btn-link">Add</a>
+                </div>
+            }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

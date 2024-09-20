@@ -20,3 +20,7 @@ body {
 .register-title {
   margin-left: 200px; /* Adjust this value as needed */
 }
+
+.text-right {
+  float: right;
+}
