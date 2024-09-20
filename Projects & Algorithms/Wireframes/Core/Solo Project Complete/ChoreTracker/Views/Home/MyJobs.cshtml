@@ -1,0 +1,45 @@
+@{
+    ViewData["Title"] = "My Created Jobs Page";
+}
+
+@model MyViewModel
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h5>Welcome @Model.User.FirstName!</h5>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <h6 class="mb-3">These are your created Jobs:</h6>
+        <table class="table table-light table-hover">
+            <thead>
+                <tr>
+                    <th>Job</th>
+                    <th>Location</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (Job job in Model.AllJobs)
+                {
+                    <tr>
+                        <td>@job.Title</td>
+                        <td>@job.Location</td>
+                        <td>
+                            <div class="d-flex align-items-center">
+                                <a href="/view/@job.JobId" class="btn btn-link">View</a>
+                                <form asp-action="AddJobToFavorites" asp-route-jobId="@job.JobId" method="post" class="m-0">
+                                    <input type="submit" value="Add" class="btn btn-link">
+                                </form>
+                                <a href="/edit/@job.JobId" class="btn btn-link">Edit</a>
+                                <form asp-action="DeleteJob" asp-controller="Home" asp-route-jobId="@job.JobId" method="post" class="m-0">
+                                    <input type="submit" value="Cancel" class="btn btn-link">
+                                </form>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

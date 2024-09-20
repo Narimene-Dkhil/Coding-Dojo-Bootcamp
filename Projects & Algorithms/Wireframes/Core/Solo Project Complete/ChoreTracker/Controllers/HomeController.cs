@@ -10,12 +10,12 @@ namespace ChoreTracker.Controllers;
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
-    private MyContext _context; 
+    private MyContext _context;
 
     public HomeController(ILogger<HomeController> logger, MyContext context)
     {
         _logger = logger;
-        _context = context;  
+        _context = context;
     }
 
     //---------------------------- Login Registration Start -----------------------
@@ -97,13 +97,64 @@ public class HomeController : Controller
     [HttpGet("dashboard")]
     public IActionResult Dashboard()
     {
+        int? loggedInUserId = HttpContext.Session.GetInt32("UserId");
+
+        if (loggedInUserId == null)
+        {
+            return RedirectToAction("Index");
+        }
+
+        // Retrieve all jobs
+        List<Job> allJobs = _context.Jobs.ToList();
+
+        // Get all jobs that have been marked as favorites by any user
+        List<int> favoriteJobIds = _context.Favorites
+            .Select(f => f.JobId)
+            .ToList();
+
+        // Filter out jobs that are in any user's favorites
+        List<Job> filteredJobs = allJobs
+            .Where(j => !favoriteJobIds.Contains(j.JobId))
+            .ToList();
+
+        // Create the view model
         MyViewModel MyModel = new MyViewModel
         {
-            AllJobs = _context.Jobs.Include(w => w.Favorites).ToList(),
-            User = _context.Users.FirstOrDefault(u => u.UserId == HttpContext.Session.GetInt32("UserId")) ?? new User()
+            AllJobs = filteredJobs,  // Filtered jobs that are not in any user's favorites
+            User = _context.Users
+                .Include(u => u.Favorites)
+                .ThenInclude(f => f.Job)
+                .FirstOrDefault(u => u.UserId == loggedInUserId) ?? new User()
         };
+
+        ViewBag.LoggedUserId = loggedInUserId;
         return View(MyModel);
     }
+
+
+    // View My Created Jobs
+    [SessionCheck]
+    [HttpGet("myJobs")]
+    public IActionResult MyJobs()
+    {
+        // Get the logged-in user's ID from the session
+        int? userId = HttpContext.Session.GetInt32("UserId");
+
+        if (userId == null)
+        {
+            return RedirectToAction("Index"); // Redirect to login if the user is not logged in
+        }
+
+        // Get all jobs created by the logged-in user
+        MyViewModel myJobsModel = new MyViewModel
+        {
+            AllJobs = _context.Jobs.Where(job => job.UserId == userId).ToList(),
+            User = _context.Users.FirstOrDefault(u => u.UserId == userId) ?? new User()
+        };
+
+        return View("MyJobs", myJobsModel);
+    }
+
 
 
     //Create Job
@@ -230,12 +281,73 @@ public class HomeController : Controller
         return View(viewModel);
     }
 
-
-
-
-
-
     //-------------------------------- Dashboard End ----------------------------------
+
+
+    //---------------------------------Favorites Start --------------------------------
+
+    // Add Job to Favorites
+    [HttpPost("addJobToFavorites")]
+    public IActionResult AddJobToFavorites(int jobId)
+    {
+        // Get the logged-in user's ID from the session
+        int? userId = HttpContext.Session.GetInt32("UserId");
+
+        if (userId == null)
+        {
+            return RedirectToAction("Index"); // Redirect to login if the user is not logged in
+        }
+
+        // Check if the job is already in favorites
+        Favorite existingFavorite = _context.Favorites
+            .FirstOrDefault(f => f.UserId == userId && f.JobId == jobId);
+
+        if (existingFavorite == null)
+        {
+            // Add the job to the user's favorites
+            Favorite newFavorite = new Favorite
+            {
+                UserId = (int)userId,
+                JobId = jobId
+            };
+            _context.Favorites.Add(newFavorite);
+
+            // Save changes to the database
+            _context.SaveChanges();
+        }
+
+        // Now, return the updated view
+        return RedirectToAction("Dashboard");
+    }
+
+
+    // Remove Job from Favorites
+    [HttpPost("removeJobFromFavorites")]
+    public IActionResult RemoveJobFromFavorites(int jobId)
+    {
+        // Get the logged-in user's ID from the session
+        int? userId = HttpContext.Session.GetInt32("UserId");
+
+        if (userId == null)
+        {
+            return RedirectToAction("Index"); // Redirect to login if the user is not logged in
+        }
+
+        // Find the favorite to remove
+        Favorite favoriteToRemove = _context.Favorites
+            .FirstOrDefault(f => f.UserId == userId && f.JobId == jobId);
+
+        if (favoriteToRemove != null)
+        {
+            _context.Favorites.Remove(favoriteToRemove);
+            _context.SaveChanges();
+        }
+
+        return RedirectToAction("Dashboard");
+    }
+
+
+    //-------------------------------- Favorites End --------------------------------
 
 
 
