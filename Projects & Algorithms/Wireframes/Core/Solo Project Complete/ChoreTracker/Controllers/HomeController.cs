@@ -89,54 +89,55 @@ public class HomeController : Controller
 
     //---------------------------- Login Registration End -----------------------
 
+
     //-------------------------------- Dashboard Start ----------------------------------
 
-    // Dashboard View - Now with Search Filter
-[SessionCheck]
-[HttpGet("dashboard")]
-public IActionResult Dashboard(string searchLocation = "")
-{
-    int? loggedInUserId = HttpContext.Session.GetInt32("UserId");
-
-    if (loggedInUserId == null)
+    // Dashboard View - With Search Filter
+    [SessionCheck]
+    [HttpGet("dashboard")]
+    public IActionResult Dashboard(string searchLocation = "")
     {
-        return RedirectToAction("Index");
+        int? loggedInUserId = HttpContext.Session.GetInt32("UserId");
+
+        if (loggedInUserId == null)
+        {
+            return RedirectToAction("Index");
+        }
+
+        // Retrieve all jobs
+        List<Job> allJobs = _context.Jobs.ToList();
+
+        // Filter jobs based on location if a searchLocation is provided
+        if (!string.IsNullOrEmpty(searchLocation))
+        {
+            allJobs = allJobs.Where(job => job.Location.Contains(searchLocation, StringComparison.OrdinalIgnoreCase)).ToList();
+        }
+
+        // Get all jobs that have been marked as favorites by any user
+        List<int> favoriteJobIds = _context.Favorites
+            .Select(f => f.JobId)
+            .ToList();
+
+        // Filter out jobs that are in any user's favorites
+        List<Job> filteredJobs = allJobs
+            .Where(j => !favoriteJobIds.Contains(j.JobId))
+            .ToList();
+
+        // Create the view model
+        MyViewModel MyModel = new MyViewModel
+        {
+            AllJobs = filteredJobs,
+            User = _context.Users
+                .Include(u => u.Favorites)
+                .ThenInclude(f => f.Job)
+                .FirstOrDefault(u => u.UserId == loggedInUserId) ?? new User()
+        };
+
+        ViewBag.LoggedUserId = loggedInUserId;
+        ViewBag.SearchLocation = searchLocation;
+
+        return View(MyModel);
     }
-
-    // Retrieve all jobs
-    List<Job> allJobs = _context.Jobs.ToList();
-
-    // Filter jobs based on location if a searchLocation is provided
-    if (!string.IsNullOrEmpty(searchLocation))
-    {
-        allJobs = allJobs.Where(job => job.Location.Contains(searchLocation, StringComparison.OrdinalIgnoreCase)).ToList();
-    }
-
-    // Get all jobs that have been marked as favorites by any user
-    List<int> favoriteJobIds = _context.Favorites
-        .Select(f => f.JobId)
-        .ToList();
-
-    // Filter out jobs that are in any user's favorites
-    List<Job> filteredJobs = allJobs
-        .Where(j => !favoriteJobIds.Contains(j.JobId))
-        .ToList();
-
-    // Create the view model
-    MyViewModel MyModel = new MyViewModel
-    {
-        AllJobs = filteredJobs,
-        User = _context.Users
-            .Include(u => u.Favorites)
-            .ThenInclude(f => f.Job)
-            .FirstOrDefault(u => u.UserId == loggedInUserId) ?? new User()
-    };
-
-    ViewBag.LoggedUserId = loggedInUserId;
-    ViewBag.SearchLocation = searchLocation;
-
-    return View(MyModel);
-}
 
 
 
@@ -356,7 +357,6 @@ public IActionResult Dashboard(string searchLocation = "")
 
 
     //-------------------------------- Favorites End --------------------------------
-
 
 
 
