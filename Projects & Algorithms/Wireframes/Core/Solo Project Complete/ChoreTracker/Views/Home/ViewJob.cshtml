@@ -23,8 +23,13 @@
                 @if (Model.Job.UserId == Model.LoggedInUser.UserId)
                 {
                     <div class="d-flex">
-                        <a href="/dashboard" class="btn btn-link">Add To My Jobs</a>
+                        
+                        <form asp-action="AddJobToFavorites" asp-route-jobId="@Model.Job.JobId" method="post" class="m-0">
+                            <input type="submit" value="Add To My Jobs" class="btn btn-link">
+                        </form>
+
                         <a href="/edit/@Model.Job.JobId" class="btn btn-link">Edit</a>
+                        
                         <form asp-action="DeleteJob" asp-controller="Home" asp-route-jobId="@Model.Job.JobId"
                             method="post" class="m-0">
                             <input type="submit" value="Cancel" class="btn btn-link">
@@ -33,7 +38,9 @@
                 }
                 else
                 {
-                    <a href="/dashboard" class="btn btn-link">Add To My Jobs</a>
+                    <form asp-action="AddJobToFavorites" asp-route-jobId="@Model.Job.JobId" method="post" class="m-0">
+                        <input type="submit" value="Add To My Jobs" class="btn btn-link">
+                    </form>
                 }
             </div>
         </div>
