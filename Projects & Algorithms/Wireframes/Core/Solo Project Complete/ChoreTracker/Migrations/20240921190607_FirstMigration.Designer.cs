@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ChoreTracker.Migrations
 {
     [DbContext(typeof(MyContext))]
-    [Migration("20240918172220_FirstMigration")]
+    [Migration("20240921190607_FirstMigration")]
     partial class FirstMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

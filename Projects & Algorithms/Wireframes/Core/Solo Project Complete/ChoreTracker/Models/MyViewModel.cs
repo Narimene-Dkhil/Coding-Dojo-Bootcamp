@@ -9,5 +9,6 @@ public class MyViewModel
     public List<User> AllUsers { get; set; }
     public Job Job { get; set; }
     public List<Job> AllJobs { get; set; }
+    public bool IsFavorited { get; set; }  
 
 }

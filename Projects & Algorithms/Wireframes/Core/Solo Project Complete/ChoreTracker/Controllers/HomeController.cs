@@ -256,39 +256,45 @@ public class HomeController : Controller
     }
 
 
-    //View One Job
-    // Read One 
-    [SessionCheck]
-    [HttpGet("view/{jobId}")]
-    public IActionResult ViewJob(int jobId)
+    // View One Job - Check if it is from Favorites or All Jobs
+[SessionCheck]
+[HttpGet("view/{jobId}")]
+public IActionResult ViewJob(int jobId)
+{
+    int? loggedInUserId = HttpContext.Session.GetInt32("UserId");
+    if (loggedInUserId == null)
     {
-        int? loggedInUserId = HttpContext.Session.GetInt32("UserId");
-        if (loggedInUserId == null)
-        {
-            return RedirectToAction("Index", "Home");
-        }
-
-        var job = _context.Jobs
-            .Include(p => p.Creator)
-            .Include(p => p.Favorites)
-            .FirstOrDefault(p => p.JobId == jobId);
-
-        if (job == null)
-        {
-            return NotFound();
-        }
-
-        User? loggedInUser = _context.Users.SingleOrDefault(u => u.UserId == loggedInUserId);
-
-        var viewModel = new MyViewModel
-        {
-            Job = job,
-            User = job.Creator,
-            LoggedInUser = loggedInUser
-        };
-
-        return View(viewModel);
+        return RedirectToAction("Index", "Home");
     }
+
+    var job = _context.Jobs
+        .Include(p => p.Creator)
+        .Include(p => p.Favorites)
+        .FirstOrDefault(p => p.JobId == jobId);
+
+    if (job == null)
+    {
+        return NotFound();
+    }
+
+    User? loggedInUser = _context.Users.SingleOrDefault(u => u.UserId == loggedInUserId);
+
+    // Check if the job is already in the user's favorites
+    bool isFavorited = _context.Favorites
+        .Any(f => f.UserId == loggedInUserId && f.JobId == jobId);
+
+    var viewModel = new MyViewModel
+    {
+        Job = job,
+        User = job.Creator,
+        LoggedInUser = loggedInUser,
+        IsFavorited = isFavorited // New property to indicate if the job is favorited
+    };
+
+    return View(viewModel);
+}
+
+
 
     //-------------------------------- Dashboard End ----------------------------------
 

@@ -44,7 +44,7 @@
                                 @if (job.UserId == (int)ViewBag.LoggedUserId)
                                 {
                                     <div class="d-flex align-items-center">
-                                        <a href="/view/@job.JobId" class="btn btn-link">View</a>
+                                        <a href="/view/@job.JobId?isFromFavorites=false" class="btn btn-link">View</a>
                                         <form asp-action="AddJobToFavorites" asp-route-jobId="@job.JobId" method="post" class="m-0">
                                             <input type="submit" value="Add" class="btn btn-link">
                                         </form>
@@ -93,7 +93,7 @@
                         <td>@favorite.Job.Title</td>
                         <td>
                             <div class="d-flex align-items-center">
-                                <a href="/view/@favorite.Job.JobId" class="btn btn-link">View</a>
+                                <a href="/view/@favorite.Job.JobId?isFromFavorites=true" class="btn btn-link">View</a>
                                 <form asp-action="DeleteJob" asp-controller="Home" asp-route-jobId="@favorite.Job.JobId" method="post" class="m-0">
                                     <input type="submit" value="Done" class="btn btn-link">
                                 </form>

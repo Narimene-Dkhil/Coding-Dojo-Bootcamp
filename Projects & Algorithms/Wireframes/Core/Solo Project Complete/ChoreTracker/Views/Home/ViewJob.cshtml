@@ -9,7 +9,6 @@
 <div class="container">
     <div class="row">
         <div class="col-md-6">
-
             <div class="card border-dark mb-3">
                 <div class="card-body">
                     <p>@Model.Job.Description</p>
@@ -19,27 +18,29 @@
                 </div>
             </div>
 
+            <!-- Updated favorite/unfavorite and creator options logic -->
             <div class="d-flex">
-                @if (Model.Job.UserId == Model.LoggedInUser.UserId)
+                @if (Model.IsFavorited)
                 {
-                    <div class="d-flex">
-                        
-                        <form asp-action="AddJobToFavorites" asp-route-jobId="@Model.Job.JobId" method="post" class="m-0">
-                            <input type="submit" value="Add To My Jobs" class="btn btn-link">
-                        </form>
-
-                        <a href="/edit/@Model.Job.JobId" class="btn btn-link">Edit</a>
-                        
-                        <form asp-action="DeleteJob" asp-controller="Home" asp-route-jobId="@Model.Job.JobId"
-                            method="post" class="m-0">
-                            <input type="submit" value="Cancel" class="btn btn-link">
-                        </form>
-                    </div>
+                    <!-- Display Unfavorite button if job is already favorited -->
+                    <form asp-action="RemoveJobFromFavorites" asp-route-jobId="@Model.Job.JobId" method="post" class="m-0">
+                        <input type="submit" value="Unfavorite" class="btn btn-link">
+                    </form>
                 }
                 else
                 {
+                    <!-- Display Add To My Jobs button if job is not favorited -->
                     <form asp-action="AddJobToFavorites" asp-route-jobId="@Model.Job.JobId" method="post" class="m-0">
                         <input type="submit" value="Add To My Jobs" class="btn btn-link">
+                    </form>
+                }
+
+                @if (Model.Job.UserId == Model.LoggedInUser.UserId)
+                {
+                    <!-- Job creator options: Edit and Cancel buttons -->
+                    <a href="/edit/@Model.Job.JobId" class="btn btn-link">Edit</a>
+                    <form asp-action="DeleteJob" asp-controller="Home" asp-route-jobId="@Model.Job.JobId" method="post" class="m-0">
+                        <input type="submit" value="Cancel" class="btn btn-link">
                     </form>
                 }
             </div>
