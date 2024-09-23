@@ -36,6 +36,10 @@ public class User
     [Display(Name = "Confirm Password")]
     public string Confirm { get; set; }
 
+    [Required]
+    [Display(Name = "Are you a Doctor?")]
+    public bool IsDoctor { get; set; }
+
     public DateTime CreatedAt { get; set; } = DateTime.Now;
     public DateTime UpdatedAt { get; set; } = DateTime.Now;
 

@@ -39,6 +39,7 @@ public class HomeController : Controller
             _context.Add(newUser);
             _context.SaveChanges();
             HttpContext.Session.SetInt32("UserId", newUser.UserId);
+            HttpContext.Session.SetString("IsDoctor", newUser.IsDoctor.ToString());
             return RedirectToAction("Dashboard");
         }
         else
@@ -46,6 +47,7 @@ public class HomeController : Controller
             return View("Index");
         }
     }
+
 
     //LOGIN
 
@@ -70,6 +72,7 @@ public class HomeController : Controller
             else
             {
                 HttpContext.Session.SetInt32("UserId", userInDB.UserId);
+                HttpContext.Session.SetString("IsDoctor", userInDB.IsDoctor.ToString());
                 return RedirectToAction("Dashboard");
             }
         }
@@ -78,6 +81,9 @@ public class HomeController : Controller
             return View("Index");
         }
     }
+
+
+
     //LOGOUT
     [SessionCheck]
     [HttpGet("logout")]
@@ -104,35 +110,31 @@ public class HomeController : Controller
             return RedirectToAction("Index");
         }
 
-        // Retrieve all jobs
+        User loggedInUser = _context.Users.FirstOrDefault(u => u.UserId == loggedInUserId);
+
+        // Check if user is a doctor
+        bool isDoctor = loggedInUser.IsDoctor;
+
         List<Job> allJobs = _context.Jobs.ToList();
 
-        // Filter jobs based on location if a searchLocation is provided
         if (!string.IsNullOrEmpty(searchLocation))
         {
             allJobs = allJobs.Where(job => job.Location.Contains(searchLocation, StringComparison.OrdinalIgnoreCase)).ToList();
         }
 
-        // Get all jobs that have been marked as favorites by any user
-        List<int> favoriteJobIds = _context.Favorites
-            .Select(f => f.JobId)
-            .ToList();
+        List<int> favoriteJobIds = _context.Favorites.Select(f => f.JobId).ToList();
+        List<Job> filteredJobs = allJobs.Where(j => !favoriteJobIds.Contains(j.JobId)).ToList();
 
-        // Filter out jobs that are in any user's favorites
-        List<Job> filteredJobs = allJobs
-            .Where(j => !favoriteJobIds.Contains(j.JobId))
-            .ToList();
-
-        // Create the view model
         MyViewModel MyModel = new MyViewModel
         {
             AllJobs = filteredJobs,
             User = _context.Users
                 .Include(u => u.Favorites)
                 .ThenInclude(f => f.Job)
-                .FirstOrDefault(u => u.UserId == loggedInUserId) ?? new User()
+                .FirstOrDefault(u => u.UserId == loggedInUserId)
         };
 
+        ViewBag.IsDoctor = isDoctor;
         ViewBag.LoggedUserId = loggedInUserId;
         ViewBag.SearchLocation = searchLocation;
 
@@ -141,24 +143,24 @@ public class HomeController : Controller
 
 
 
+
     // View My Created Jobs
     [SessionCheck]
     [HttpGet("myJobs")]
     public IActionResult MyJobs()
     {
-        // Get the logged-in user's ID from the session
         int? userId = HttpContext.Session.GetInt32("UserId");
+        User loggedInUser = _context.Users.FirstOrDefault(u => u.UserId == userId);
 
-        if (userId == null)
+        if (userId == null || !loggedInUser.IsDoctor)
         {
-            return RedirectToAction("Index"); // Redirect to login if the user is not logged in
+            return RedirectToAction("Dashboard");
         }
 
-        // Get all jobs created by the logged-in user
         MyViewModel myJobsModel = new MyViewModel
         {
             AllJobs = _context.Jobs.Where(job => job.UserId == userId).ToList(),
-            User = _context.Users.FirstOrDefault(u => u.UserId == userId) ?? new User()
+            User = _context.Users.FirstOrDefault(u => u.UserId == userId)
         };
 
         return View("MyJobs", myJobsModel);
@@ -172,7 +174,14 @@ public class HomeController : Controller
     [HttpGet("addJob")]
     public IActionResult AddJob()
     {
-        return View("AddJob");
+        int? loggedInUserId = HttpContext.Session.GetInt32("UserId");
+        User loggedInUser = _context.Users.FirstOrDefault(u => u.UserId == loggedInUserId);
+
+        if (loggedInUser.IsDoctor)
+        {
+            return View("AddJob");
+        }
+        return RedirectToAction("Dashboard");
     }
 
     // POST
@@ -257,42 +266,42 @@ public class HomeController : Controller
 
 
     // View One Job - Check if it is from Favorites or All Jobs
-[SessionCheck]
-[HttpGet("view/{jobId}")]
-public IActionResult ViewJob(int jobId)
-{
-    int? loggedInUserId = HttpContext.Session.GetInt32("UserId");
-    if (loggedInUserId == null)
+    [SessionCheck]
+    [HttpGet("view/{jobId}")]
+    public IActionResult ViewJob(int jobId)
     {
-        return RedirectToAction("Index", "Home");
+        int? loggedInUserId = HttpContext.Session.GetInt32("UserId");
+        if (loggedInUserId == null)
+        {
+            return RedirectToAction("Index", "Home");
+        }
+
+        var job = _context.Jobs
+            .Include(p => p.Creator)
+            .Include(p => p.Favorites)
+            .FirstOrDefault(p => p.JobId == jobId);
+
+        if (job == null)
+        {
+            return NotFound();
+        }
+
+        User? loggedInUser = _context.Users.SingleOrDefault(u => u.UserId == loggedInUserId);
+
+        // Check if the job is already in the user's favorites
+        bool isFavorited = _context.Favorites
+            .Any(f => f.UserId == loggedInUserId && f.JobId == jobId);
+
+        var viewModel = new MyViewModel
+        {
+            Job = job,
+            User = job.Creator,
+            LoggedInUser = loggedInUser,
+            IsFavorited = isFavorited // New property to indicate if the job is favorited
+        };
+
+        return View(viewModel);
     }
-
-    var job = _context.Jobs
-        .Include(p => p.Creator)
-        .Include(p => p.Favorites)
-        .FirstOrDefault(p => p.JobId == jobId);
-
-    if (job == null)
-    {
-        return NotFound();
-    }
-
-    User? loggedInUser = _context.Users.SingleOrDefault(u => u.UserId == loggedInUserId);
-
-    // Check if the job is already in the user's favorites
-    bool isFavorited = _context.Favorites
-        .Any(f => f.UserId == loggedInUserId && f.JobId == jobId);
-
-    var viewModel = new MyViewModel
-    {
-        Job = job,
-        User = job.Creator,
-        LoggedInUser = loggedInUser,
-        IsFavorited = isFavorited // New property to indicate if the job is favorited
-    };
-
-    return View(viewModel);
-}
 
 
 
