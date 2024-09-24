@@ -6,15 +6,15 @@ public class Job
     [Key]
     public int JobId { get; set; }
 
-    [Required]
+    [Required(ErrorMessage = "Title is required!")]
     [MinLength(2, ErrorMessage = "Title must be at least 2 characters")]
     public string Title { get; set; }
     
-    [Required]
+    [Required(ErrorMessage = "Description is required!")]
     [MinLength(2, ErrorMessage = "Description must be at least 2 characters")]
     public string Description { get; set; }
 
-    [Required]
+    [Required(ErrorMessage = "Location is required!")]
     [MinLength(2, ErrorMessage = "Location must be at least 2 characters")]
     public string Location { get; set; }
 

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "o47b0+VANXCTT++beLi2W7a6LdYHNE+nyuJkUA8ONI/5fgI4iP1sOOVtXQJ5+A8+agDFptDxsYmTP9xPvYW/vA==",
+  "dgSpecHash": "reOQ6D/JtS/Ii2oZEEU0484IWDREuxfwRtEelSz9RL5diauMoc/9jCQN4RXdlt7jYvz0vsgjj27UbYcAY+R4dA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\narim\\OneDrive\\Desktop\\Solo Project 1\\ChoreTracker\\ChoreTracker.csproj",
+  "projectFilePath": "C:\\Users\\narim\\OneDrive\\Desktop\\Solo Project Proposal\\Solo Project 1\\ChoreTracker\\ChoreTracker.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\narim\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\narim\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.3\\microsoft.entityframeworkcore.6.0.3.nupkg.sha512",

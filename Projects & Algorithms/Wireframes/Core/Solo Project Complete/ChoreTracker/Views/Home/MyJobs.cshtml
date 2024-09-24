@@ -5,7 +5,7 @@
 @model MyViewModel
 
 <div class="d-flex justify-content-between align-items-center mb-4">
-    <h5>Welcome @Model.User.FirstName!</h5>
+    <h3>Welcome Dr. @Model.User.FirstName!<h3>
 </div>
 
 <div class="row">
@@ -27,13 +27,13 @@
                         <td>@job.Location</td>
                         <td>
                             <div class="d-flex align-items-center">
-                                <a href="/view/@job.JobId" class="btn btn-link">View</a>
+                                <a href="/view/@job.JobId" class="btn btn-secondary me-2">View</a>
                                 <form asp-action="AddJobToFavorites" asp-route-jobId="@job.JobId" method="post" class="m-0">
-                                    <input type="submit" value="Add" class="btn btn-link">
+                                    <input type="submit" value="Add" class="btn btn-secondary me-2">
                                 </form>
-                                <a href="/edit/@job.JobId" class="btn btn-link">Edit</a>
+                                <a href="/edit/@job.JobId" class="btn btn-secondary me-2">Edit</a>
                                 <form asp-action="DeleteJob" asp-controller="Home" asp-route-jobId="@job.JobId" method="post" class="m-0">
-                                    <input type="submit" value="Cancel" class="btn btn-link">
+                                    <input type="submit" value="Cancel" class="btn btn-secondary me-2">
                                 </form>
                             </div>
                         </td>

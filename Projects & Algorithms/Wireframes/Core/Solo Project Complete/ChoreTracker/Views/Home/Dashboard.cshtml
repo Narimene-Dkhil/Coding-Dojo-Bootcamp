@@ -4,13 +4,27 @@
 
 @model MyViewModel
 
-<div class="d-flex justify-content-between align-items-center mb-4">
-    <h5>Welcome @Model.User.FirstName!</h5>
-    <div class="ms-auto">
+
+    
+    <div class="container my-4">
+    <div class="row">
+        <div class="col-md-6">
+            @if ((bool)ViewBag.IsDoctor)
+            {
+                <h3>Welcome Dr. @Model.User.FirstName!</h3>
+            }
+            else
+            {
+                <h3>Welcome Nurse @Model.User.FirstName!</h3>
+            }
+        </div>
+
         @if ((bool)ViewBag.IsDoctor)
         {
-            <a href="/addJob" class="btn btn-link">Add A Job</a>
-            <a href="/myJobs" class="btn btn-link">My Jobs</a>
+            <div class="col-md-6 text-end">
+                <a href="/addJob" class="btn btn-light me-2">Add A Job</a>
+                <a href="/myJobs" class="btn btn-light">My Jobs</a>
+            </div>
         }
     </div>
 </div>
@@ -19,51 +33,52 @@
 <!-- Search Form -->
 <form asp-action="Dashboard" method="get" class="mb-4">
     <div class="input-group">
-        <input type="text" name="searchLocation" value="@ViewBag.SearchLocation" class="form-control" placeholder="Search by Location">
-        <button class="btn btn-primary" type="submit">Search</button>
-        <a href="/dashboard" class="btn btn-secondary">Clear Search</a>
+        <input type="text" name="searchLocation" value="@ViewBag.SearchLocation" class="form-control me-2" placeholder="Search by Location">
+        <button class="btn btn-custom-blue me-2" type="submit">Search</button>
+        <a href="/dashboard" class="btn btn-custom-red">Clear Search</a>
     </div>
 </form>
+
 
 <div class="row">
     <div class="col-md-6">
         <h6 class="mb-3">Click "Add" to add a Job to your Favorite Jobs List!</h6>
-        <table class="table table-light table-hover">
-            <thead>
+        <table class="table table-bordered table-hover text-secondary border-light">
+            <thead class="text-dark">
                 <tr>
-                    <th>Job</th>
-                    <th>Location</th>
-                    <th>Action</th>
+                    <th class="text-dark">Job</th>
+                    <th class="text-dark">Location</th>
+                    <th class="text-dark">Action</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody class="bg-light text-dark">
                 @if (Model.AllJobs.Count > 0)
                 {
                     @foreach (Job job in Model.AllJobs)
                     {
                         <tr>
-                            <td>@job.Title</td>
+                            <td><strong>@job.Title</strong></td>
                             <td>@job.Location</td>
                             <td>
                                 @if (job.UserId == (int)ViewBag.LoggedUserId)
                                 {
                                     <div class="d-flex align-items-center">
-                                        <a href="/view/@job.JobId?isFromFavorites=false" class="btn btn-link">View</a>
+                                        <a href="/view/@job.JobId?isFromFavorites=false" class="btn btn-secondary me-2">View</a>
                                         <form asp-action="AddJobToFavorites" asp-route-jobId="@job.JobId" method="post" class="m-0">
-                                            <input type="submit" value="Add" class="btn btn-link">
+                                            <input type="submit" value="Add" class="btn btn-secondary me-2">
                                         </form>
-                                        <a href="/edit/@job.JobId" class="btn btn-link">Edit</a>
+                                        <a href="/edit/@job.JobId" class="btn btn-secondary me-2">Edit</a>
                                         <form asp-action="DeleteJob" asp-controller="Home" asp-route-jobId="@job.JobId" method="post" class="m-0">
-                                            <input type="submit" value="Cancel" class="btn btn-link">
+                                            <input type="submit" value="Cancel" class="btn btn-secondary me-2">
                                         </form>
                                     </div>
                                 }
                                 else
                                 {
                                     <div class="d-flex align-items-center">
-                                        <a href="/view/@job.JobId" class="btn btn-link">View</a>
+                                        <a href="/view/@job.JobId" class="btn btn-secondary me-2">View</a>
                                         <form asp-action="AddJobToFavorites" asp-route-jobId="@job.JobId" method="post" class="m-0">
-                                            <input type="submit" value="Add" class="btn btn-link">
+                                            <input type="submit" value="Add" class="btn btn-secondary me-2">
                                         </form>
                                     </div>
                                 }
@@ -83,26 +98,26 @@
 
     <div class="col-md-6">
         <h6 class="mb-3">Favorite Jobs List!</h6>
-        <table class="table table-light table-hover">
-            <thead>
+        <table class="table table-bordered table-hover text-secondary border-light">
+            <thead class="text-dark">
                 <tr>
-                    <th>My Favorite Jobs</th>
-                    <th>Action</th>
+                    <th class="text-dark">My Favorite Jobs</th>
+                    <th class="text-dark">Action</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody class="bg-light text-dark">
                 @foreach (Favorite favorite in Model.User.Favorites)
                 {
                     <tr>
-                        <td>@favorite.Job.Title</td>
+                        <td><strong>@favorite.Job.Title</strong></td>
                         <td>
                             <div class="d-flex align-items-center">
-                                <a href="/view/@favorite.Job.JobId?isFromFavorites=true" class="btn btn-link">View</a>
+                                <a href="/view/@favorite.Job.JobId?isFromFavorites=true" class="btn btn-secondary me-2">View</a>
                                 <form asp-action="DeleteJob" asp-controller="Home" asp-route-jobId="@favorite.Job.JobId" method="post" class="m-0">
-                                    <input type="submit" value="Done" class="btn btn-link">
+                                    <input type="submit" value="Done" class="btn btn-secondary me-2">
                                 </form>
                                 <form asp-action="RemoveJobFromFavorites" asp-route-jobId="@favorite.Job.JobId" method="post" class="m-0">
-                                    <input type="submit" value="Unfavorite" class="btn btn-link">
+                                    <input type="submit" value="Unfavorite" class="btn btn-secondary me-2">
                                 </form>
                             </div>
                         </td>
@@ -112,3 +127,4 @@
         </table>
     </div>
 </div>
+

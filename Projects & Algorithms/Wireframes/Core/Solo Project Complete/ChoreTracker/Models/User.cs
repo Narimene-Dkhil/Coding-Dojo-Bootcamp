@@ -7,30 +7,30 @@ public class User
     [Key]
     public int UserId { get; set; }
 
-    [Required(ErrorMessage = "First Name is required")]
+    [Required(ErrorMessage = "First Name is required!")]
     [MinLength(2, ErrorMessage = "First Name must be at least 2 characters")]
     [Display(Name = "First Name")]
     public string FirstName { get; set; }
 
-    [Required(ErrorMessage = "Last Name is required")]
+    [Required(ErrorMessage = "Last Name is required!")]
     [MinLength(2, ErrorMessage = "Last Name must be at least 2 characters")]
     [Display(Name = "Last Name")]
     public string LastName { get; set; }
 
-    [Required(ErrorMessage = "Email address is required")]
+    [Required(ErrorMessage = "Email address is required!")]
     [EmailAddress]
     [UniqueEmail]
     public string Email { get; set; }
 
 
-    [Required(ErrorMessage = "Password is required")]
+    [Required(ErrorMessage = "Password is required!")]
     [MinLength(8, ErrorMessage = "Password must be at least 8 characters")]
     [DataType(DataType.Password)] 
     public string Password { get; set; }
 
     //Not mapped Confirm Password
     [NotMapped]
-    [Required(ErrorMessage = "Confirm Password is required")]
+    [Required(ErrorMessage = "Confirm Password is required!")]
     [DataType(DataType.Password)]
     [Compare("Password", ErrorMessage = "Password & Confirm Password not matching!")]
     [Display(Name = "Confirm Password")]
