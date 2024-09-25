@@ -18,6 +18,10 @@ public class Job
     [MinLength(2, ErrorMessage = "Location must be at least 2 characters")]
     public string Location { get; set; }
 
+    [Required]
+    [Display(Name = "Is it Urgent?")]
+    public bool IsUrgent { get; set; }
+
     public DateTime CreatedAt { get; set; } = DateTime.Now;
     public DateTime UpdatedAt { get; set; } = DateTime.Now;
 

@@ -48,6 +48,7 @@
                 <tr>
                     <th class="text-dark">Job</th>
                     <th class="text-dark">Location</th>
+                    <th class="text-dark">Priority</th>
                     <th class="text-dark">Action</th>
                 </tr>
             </thead>
@@ -59,6 +60,7 @@
                         <tr>
                             <td><strong>@job.Title</strong></td>
                             <td>@job.Location</td>
+                            <td>@(job.IsUrgent? "Urgent!" : "Not urgent.")</td>
                             <td>
                                 @if (job.UserId == (int)ViewBag.LoggedUserId)
                                 {
@@ -102,6 +104,7 @@
             <thead class="text-dark">
                 <tr>
                     <th class="text-dark">My Favorite Jobs</th>
+                    <th class="text-dark">Priority</th>
                     <th class="text-dark">Action</th>
                 </tr>
             </thead>
@@ -110,6 +113,7 @@
                 {
                     <tr>
                         <td><strong>@favorite.Job.Title</strong></td>
+                        <td>@(favorite.Job.IsUrgent? "Urgent!" : "Not urgent.")</td>
                         <td>
                             <div class="d-flex align-items-center">
                                 <a href="/view/@favorite.Job.JobId?isFromFavorites=true" class="btn btn-secondary me-2">View</a>

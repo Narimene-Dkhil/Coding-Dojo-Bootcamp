@@ -16,6 +16,7 @@
                 <tr>
                     <th>Job</th>
                     <th>Location</th>
+                    <th>Priority</th>
                     <th>Action</th>
                 </tr>
             </thead>
@@ -25,6 +26,7 @@
                     <tr>
                         <td>@job.Title</td>
                         <td>@job.Location</td>
+                        <td>@(job.IsUrgent? "Urgent!" : "Not urgent.")</td>
                         <td>
                             <div class="d-flex align-items-center">
                                 <a href="/view/@job.JobId" class="btn btn-secondary me-2">View</a>

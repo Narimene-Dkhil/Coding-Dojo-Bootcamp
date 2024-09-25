@@ -13,10 +13,9 @@
                 <div class="card-body text-secondary">
                     <p><strong>Description:</strong> @Model.Job.Description</p>
                     <p><strong>Location:</strong> @Model.Job.Location</p>
-                    <p><strong>Posted by: </strong> Dr. @Model.User.FirstName
-                        @Model.User.LastName</p>
-                    <p><strong>Posted on:</strong>
-                        @Model.Job.CreatedAt.ToString("MMMM d, yyyy")</p>
+                    <p><strong>Posted by: </strong> Dr. @Model.User.FirstName @Model.User.LastName</p>
+                    <p><strong>Posted on:</strong>@Model.Job.CreatedAt.ToString("MMMM d, yyyy")</p>
+                    <p><strong>Priority: @(Model.Job.IsUrgent? "Urgent!" : "Not urgent.")</strong></p>
                 </div>
             </div>
 
@@ -52,6 +51,7 @@
                         class="m-0">
                         <input type="submit" value="Cancel" class="btn btn-light me-2">
                     </form>
+                    <a href="/myJobs" class="btn btn-light">My Jobs</a>
                 }
             </div>
         </div>
