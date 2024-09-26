@@ -12,11 +12,12 @@
     <div class="col-md-12">
         <h6 class="mb-3">Jobs you created:</h6>
         <table class="table table-light table-hover">
-            <thead>
+            <thead class="table-dark">
                 <tr>
                     <th>Job</th>
                     <th>Location</th>
                     <th>Priority</th>
+                    <th>Due Date</th>
                     <th>Action</th>
                 </tr>
             </thead>
@@ -24,9 +25,10 @@
                 @foreach (Job job in Model.AllJobs)
                 {
                     <tr>
-                        <td>@job.Title</td>
+                        <td><strong>@job.Title</strong></td>
                         <td>@job.Location</td>
                         <td>@(job.IsUrgent? "Urgent!" : "Not urgent.")</td>
+                        <td>@job.DueDate.ToString("MMMM d, yyyy h:mm tt")</td>
                         <td>
                             <div class="d-flex align-items-center">
                                 <a href="/view/@job.JobId" class="btn btn-secondary me-2">View</a>

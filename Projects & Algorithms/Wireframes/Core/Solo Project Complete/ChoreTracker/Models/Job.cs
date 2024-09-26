@@ -22,6 +22,11 @@ public class Job
     [Display(Name = "Is it Urgent?")]
     public bool IsUrgent { get; set; }
 
+    [Display(Name = "Due Date")]
+    [DataType(DataType.DateTime)]
+    [FutureDate]
+    public DateTime DueDate { get; set; }
+
     public DateTime CreatedAt { get; set; } = DateTime.Now;
     public DateTime UpdatedAt { get; set; } = DateTime.Now;
 
@@ -30,4 +35,20 @@ public class Job
     public User? Creator { get; set; }
     // Many to many join
     public List<Favorite> Favorites { get; set; } = new List<Favorite>();
+}
+
+
+public class FutureDateAttribute : ValidationAttribute
+{
+protected override ValidationResult? IsValid(object? value, ValidationContext validationContext)
+    {
+            DateTime CurrentTime = DateTime.Now;
+        if ((DateTime?)value < CurrentTime)
+        {
+            return new ValidationResult("Date must be in future!");
+        } 
+        else {
+            return ValidationResult.Success;
+        }
+    }
 }

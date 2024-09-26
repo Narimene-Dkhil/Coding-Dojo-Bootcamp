@@ -45,9 +45,19 @@
             <div class="col-md-8 d-flex align-items-center">
                 <div class="form-check">
                     <input asp-for="IsUrgent" type="checkbox" class="form-check-input" id="urgentCheckbox">
-                    <label asp-for="IsUrgent" class="form-check-label ms-2"></label>
+                    <span asp-validation-for="IsUrgent" class="text-danger ms-2"></span>
                 </div>
-                <span asp-validation-for="IsUrgent" class="text-danger ms-2"></span>
+                
+            </div>
+        </div>
+        
+        <div class="row mb-3">
+            <div class="col-md-2 text-start">
+                <label asp-for="DueDate" class="form-label"></label>
+            </div>
+            <div class="col-md-8">
+                <input asp-for="DueDate" class="form-control" type="datetime-local">
+                <span asp-validation-for="DueDate" class="text-dark"></span>
             </div>
         </div>
 

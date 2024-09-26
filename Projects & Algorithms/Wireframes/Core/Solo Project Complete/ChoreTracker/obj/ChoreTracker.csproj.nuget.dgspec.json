@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\narim\\OneDrive\\Desktop\\Solo Project Proposal\\Solo Project 2\\ChoreTracker\\ChoreTracker.csproj": {}
+    "C:\\Users\\narim\\OneDrive\\Desktop\\Solo Project Proposal\\Solo Project 3\\ChoreTracker\\ChoreTracker.csproj": {}
   },
   "projects": {
-    "C:\\Users\\narim\\OneDrive\\Desktop\\Solo Project Proposal\\Solo Project 2\\ChoreTracker\\ChoreTracker.csproj": {
+    "C:\\Users\\narim\\OneDrive\\Desktop\\Solo Project Proposal\\Solo Project 3\\ChoreTracker\\ChoreTracker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\narim\\OneDrive\\Desktop\\Solo Project Proposal\\Solo Project 2\\ChoreTracker\\ChoreTracker.csproj",
+        "projectUniqueName": "C:\\Users\\narim\\OneDrive\\Desktop\\Solo Project Proposal\\Solo Project 3\\ChoreTracker\\ChoreTracker.csproj",
         "projectName": "ChoreTracker",
-        "projectPath": "C:\\Users\\narim\\OneDrive\\Desktop\\Solo Project Proposal\\Solo Project 2\\ChoreTracker\\ChoreTracker.csproj",
+        "projectPath": "C:\\Users\\narim\\OneDrive\\Desktop\\Solo Project Proposal\\Solo Project 3\\ChoreTracker\\ChoreTracker.csproj",
         "packagesPath": "C:\\Users\\narim\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\narim\\OneDrive\\Desktop\\Solo Project Proposal\\Solo Project 2\\ChoreTracker\\obj\\",
+        "outputPath": "C:\\Users\\narim\\OneDrive\\Desktop\\Solo Project Proposal\\Solo Project 3\\ChoreTracker\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\narim\\AppData\\Roaming\\NuGet\\NuGet.Config"
