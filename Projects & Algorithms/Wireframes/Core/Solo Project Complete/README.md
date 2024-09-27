@@ -1,5 +1,4 @@
-<<<<<<< HEAD
- Solo Project (Chore Tracker)
+Solo Project (Chore Tracker)
 =======
 ![Chore Tracker](chore_tracker.png)
 
