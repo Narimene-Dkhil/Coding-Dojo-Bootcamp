@@ -1,5 +1,5 @@
 <<<<<<< HEAD
-![Chore Tracker](chore_tracker.png) 
+ Solo Project (Chore Tracker)
 =======
 ![Chore Tracker](chore_tracker.png)
 
@@ -30,7 +30,4 @@
 
 ### 📝Database
 -Attached the ChoreTrackerDB.mwb file for database design, including relationships between users, jobs and favorites.
- 
 
-
->>>>>>> 642612f690e2e782b7f3fe4ef2d0d1918cc27285
