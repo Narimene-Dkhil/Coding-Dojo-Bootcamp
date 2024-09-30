@@ -1,9 +1,6 @@
-<<<<<<< HEAD
-![Chore Tracker](chore_tracker.png) 
+Solo Project (Chore Tracker)
 =======
 ![Chore Tracker](chore_tracker.png)
-
-# Solo Project (Chore Tracker)
 
 ### 🚀 Project Kickoff
 - Initialized the Chore Tracker project structure, setting up backend and frontend components.
@@ -12,7 +9,7 @@
 ### 📦Backend 
 - Created the **User** and **Jobs** models to manage user data, job information and relathionships between users and jobs.
 - Developed controller:
-  - Home Controller: Handles user authentication (registration, login) and validations. It manages jobs CRUD operations, including the ability for users to create, edit, delete and view jobs they posted.
+  - **Home Controller**: Handles user authentication (registration, login) and validations. It manages jobs CRUD operations, including the ability for users to create, edit, delete and view jobs they posted.
 - Set up database connectivity using **LINQ** to interact with a MySQL database.
 
 ### 💻Frontend 
@@ -29,8 +26,5 @@
 - Added logout functionality that clears the session and redirects to the login page.
 
 ### 📝Database
--Attached the ChoreTrackerDB.mwb file for database design, including relationships between users, jobs and favorites.
- 
+- Attached the ChoreTrackerDB.mwb file for database design, including relationships between users, jobs and favorites.
 
-
->>>>>>> 642612f690e2e782b7f3fe4ef2d0d1918cc27285
