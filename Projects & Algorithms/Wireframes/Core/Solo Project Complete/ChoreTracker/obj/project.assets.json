@@ -786,11 +786,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\narim\\OneDrive\\Desktop\\Solo Project Proposal\\Solo Project 3\\ChoreTracker\\ChoreTracker.csproj",
+      "projectUniqueName": "C:\\Users\\narim\\OneDrive\\Desktop\\Coding Dojo Programs\\Coding-Dojo-Africa\\Projects & Algorithms\\Wireframes\\Core\\Solo Project Complete\\ChoreTracker\\ChoreTracker.csproj",
       "projectName": "ChoreTracker",
-      "projectPath": "C:\\Users\\narim\\OneDrive\\Desktop\\Solo Project Proposal\\Solo Project 3\\ChoreTracker\\ChoreTracker.csproj",
+      "projectPath": "C:\\Users\\narim\\OneDrive\\Desktop\\Coding Dojo Programs\\Coding-Dojo-Africa\\Projects & Algorithms\\Wireframes\\Core\\Solo Project Complete\\ChoreTracker\\ChoreTracker.csproj",
       "packagesPath": "C:\\Users\\narim\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\narim\\OneDrive\\Desktop\\Solo Project Proposal\\Solo Project 3\\ChoreTracker\\obj\\",
+      "outputPath": "C:\\Users\\narim\\OneDrive\\Desktop\\Coding Dojo Programs\\Coding-Dojo-Africa\\Projects & Algorithms\\Wireframes\\Core\\Solo Project Complete\\ChoreTracker\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\narim\\AppData\\Roaming\\NuGet\\NuGet.Config"
