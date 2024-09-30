@@ -1,6 +1,6 @@
 Solo Project (Chore Tracker)
 =======
-![Chore Tracker](chore_tracker.png)
+![Chore Tracker](1654264630_chore_tracker.png)
 
 ### 🚀 Project Kickoff
 - Initialized the Chore Tracker project structure, setting up backend and frontend components.
