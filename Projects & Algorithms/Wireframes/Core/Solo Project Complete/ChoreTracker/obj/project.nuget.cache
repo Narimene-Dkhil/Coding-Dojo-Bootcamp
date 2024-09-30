@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZX778QEkCtNbxAMTRaCEbN39EXfm/A4+bFOscejTKfWAGnbJRw81UozaZjUHd1pZEP1XVsYRoS26l9kV/SKOwQ==",
+  "dgSpecHash": "hOOjz3l6ZBkm+HYhdl8hyu4+bbcht7x+MVEJvgJnFti4YP8A21fJSVaesXCNxhUBZr21WzOi93RkVBe1VNPs+g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\narim\\OneDrive\\Desktop\\Coding Dojo Programs\\Coding-Dojo-Africa\\Projects & Algorithms\\Wireframes\\Core\\Solo Project Complete\\ChoreTracker\\ChoreTracker.csproj",
+  "projectFilePath": "C:\\Users\\narim\\OneDrive\\Desktop\\Solo Project Proposal\\Solo Project 3\\ChoreTracker\\ChoreTracker.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\narim\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\narim\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.3\\microsoft.entityframeworkcore.6.0.3.nupkg.sha512",
