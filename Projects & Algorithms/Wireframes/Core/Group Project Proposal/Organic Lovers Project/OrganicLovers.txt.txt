@@ -1,0 +1,67 @@
+Group : Narimene Dkhil, Selma Rourou, Mounir Said, Mohamed Ben Ammar
+
+Application: Organic Lovers - A web application for organic product enthusiasts!
+
+Description: The Organic Lovers web application allows users to browse, add, edit, and manage organic products. Users can register, log in, view products, and manage their shopping cart. This project is aimed at creating a seamless and user-friendly experience for organic product lovers.
+
+Language used: JavaScript (MERN stack)
+
+Framework: Node.js, Express.js, React.js, MongoDB
+
+Styling: CSS, Bootstrap
+
+GitHub repository: []
+
+Project features:
+
+MVP Features: Login and Registration with Validations
+
+Validation messages should display for unsuccessful submissions.
+(Registration and Login) All fields required.
+(Registration) Name must have a minimum length of 2 characters.
+(Registration) Valid email format.
+(Registration) No duplicate emails.
+(Registration) Password must have a minimum length of 8 characters.
+(Registration) Password and Confirm Password must match.
+(Login) Valid email and password are required for login.
+Users cannot access the rest of the site unless they are logged in.
+
+Dashboard:
+
+Displays the user’s name and provides navigation links: “All Products,” “My Products,” “Add a Product,” and “My Cart.”
+A search bar allows users to search by product title.
+"Clear Search" button resets the product list to show all available products.
+
+Product List:
+
+Displays all products with their information, sorted by most recent at the top.
+Each product shows the title, the creator’s name, and the time since the product was posted.
+“Add to cart” option available for products not owned by the user.
+For products created by the user, “Edit” and “Delete” buttons are displayed.
+
+Cart:
+
+Displays all items added to the cart by the user.
+Users can remove items from the cart.
+Total price of items is calculated and displayed at the bottom.
+Users can clear the cart or proceed to payment.
+
+Add a Product (New Product Creation):
+
+All fields are required (Image, Title, Category, Price).
+Validation messages should display for unsuccessful submission.
+On successful addition, the user is redirected back to the dashboard, where the new product is displayed.
+
+Edit a Product:
+
+Users can edit the product details for items they have created.
+All fields are required.
+Validation messages should display for unsuccessful submission.
+On successful update, the user is redirected to the updated product view.
+
+Stretch Goals:
+
+Add a search filter that allows users to search for products based on title.
+Display time since the product was posted (e.g., “Posted 5 minutes ago”).
+Include the ability to sort products by price.
+Implement a cart item quantity management system, where users can update the number of items in the cart.
