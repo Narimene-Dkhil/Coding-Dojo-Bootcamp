@@ -24,4 +24,4 @@ I welcome contributions from everyone! If you'd like to contribute to any of the
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Contact 📧
-Questions, feedback, or just want to say hi? Feel free to reach out to me: narimene_dkhil@yahoo.com 
+Questions, feedback, or just want to say hi? Feel free to reach out to me: 'narimene_dkhil@yahoo.com'
