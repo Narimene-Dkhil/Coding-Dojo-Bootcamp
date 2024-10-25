@@ -5,7 +5,7 @@ Welcome to my Coding Dojo journey! This repo contains all the CORE and PRACTICE 
 ## Installation 💻
 To get started, follow these simple steps:
 
-- Clone the repo to your local machine: git clone https://github.com/narimenedk/Coding-Dojo-Bootcamp.git
+- Clone the repo to your local machine: <code> git clone https://github.com/narimenedk/Coding-Dojo-Bootcamp.git </code>
 - Navigate to any project directory you want and to set up a virtual environment using: pipenv
 - Now, install all necessary dependencies. Please note that the specific command may vary depending on the project, some might need flask while others might need something else.
 - Run the server.py, app.py, or index.html
