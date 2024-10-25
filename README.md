@@ -1,1 +1,1 @@
-# Coding-Dojo-Africa
+# Coding-Dojo
