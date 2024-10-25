@@ -1,4 +1,4 @@
-🌐 ## Coding Dojo💻
+# 🌐 Coding Dojo💻
 ## Description
 Welcome to my Coding Dojo journey! This repo contains all the CORE and PRACTICE I did in coding dojo bootcamp along side some others that I made for fun. Get ready to see that journey for yourselfes!
 
