@@ -12,7 +12,7 @@ Recreate all the HTML elements shown on the image above! As you haven't learned 
 
 Our HTML should contain the following tags:
 
-- <input type="text">
+-<input type="text">
 - <input type="password">
 - <input type="date">
 - <input type="radio">
