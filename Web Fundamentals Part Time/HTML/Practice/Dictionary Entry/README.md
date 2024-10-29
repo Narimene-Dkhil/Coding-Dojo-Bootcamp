@@ -14,4 +14,5 @@ We may need to use some of the following HTML tags:
 - <code>em</code>
 - <code>ol</code>
 - <code>li</code>
-You can download an image of the pronunciation [https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/pronunciation.png](here).
+You can find an image of the pronunciation:
+![Dictionary entry](prononciation.png)
