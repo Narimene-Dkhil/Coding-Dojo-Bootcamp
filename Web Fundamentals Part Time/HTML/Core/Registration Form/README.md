@@ -11,7 +11,7 @@ Now that we've learned about all of the different types of form tags, let's crea
 Recreate all the HTML elements shown on the image above! As you haven't learned yet how to use CSS to make the form look nice, don't worry about how our registration form looks for now.
 
 Our HTML should contain the following tags:
- - <input type="text">
+ -- <input type="text">
  - <input type="password">
  - <input type="date">
  - <input type="radio">
