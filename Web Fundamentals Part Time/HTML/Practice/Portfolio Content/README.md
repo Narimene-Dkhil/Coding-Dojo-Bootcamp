@@ -9,6 +9,7 @@ We'll be learning a lot about how to style our website soon, but that doesn't me
 - At the bottom of the page, include a form that uses the following tags:
     - form, label, textarea, input type="text", input type="submit"
 Below is an example of how we may want our portfolio to look (for now):
+
 ![Portfolio Content](image.png)
 
 
