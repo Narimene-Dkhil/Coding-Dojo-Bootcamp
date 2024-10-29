@@ -7,7 +7,7 @@ https://github.com/TheCodingDojo/webFun_html_indentation
 Please fix this very ugly code!
 
 Create a new file in your Text Editor (VS Code, Atom, Sublime...) and properly indent the code below:
-'''
+```
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,10 +23,11 @@ What language do you love?
 I love HTML!
 </p>
 </body>
-</html> '''
+</html>
+```
 
 Please note that most of the tags in the code below have not been discussed yet. But at this point, you already know what opening and closing tags look like. Without knowing the HTML tags, determine what the parents, children, and siblings are by properly indenting the code below:
-'''
+```
 <!DOCTYPE html>
 <html>
     <head>
@@ -60,4 +61,5 @@ Please note that most of the tags in the code below have not been discussed yet.
         </li>
     </ul>
     </body>
-</html>'''
+</html>
+```
