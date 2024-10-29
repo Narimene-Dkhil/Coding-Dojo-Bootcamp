@@ -19,8 +19,8 @@ This assignment may take several hours to complete. **Take your time** with each
    - **Two-Column Layout**: Implement a two-column structure for the page, focusing on defining rough boxes first.
    - **Layering and Styling**: Gradually add in images, text, and icons as you build out the structure. Use padding, margins, and positioning properties to adjust spacing.
    - **Avatar and Icons**: Download the images from the provided files:
-     - **[Avatar Images](images.zip)**
-     - **[Icons](icons.zip)**
+     - **[Avatar Images](https://login.codingdojo.africa/m/283/8971/60837)**
+     - **[Icons](https://login.codingdojo.africa/m/283/8971/60837)**
 
 3. **Styling Tips**:
    - Break down the page into smaller, manageable sections and work on one section at a time.
