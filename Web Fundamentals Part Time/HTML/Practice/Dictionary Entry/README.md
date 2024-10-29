@@ -15,4 +15,4 @@ We may need to use some of the following HTML tags:
 - <code>ol</code>
 - <code>li</code>
 You can find an image of the pronunciation:
-![Dictionary entry](prononciation.png)
+![Dictionary entry](pronunciation.png) 
