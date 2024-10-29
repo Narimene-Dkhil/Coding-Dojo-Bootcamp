@@ -12,7 +12,7 @@ Recreate all the HTML elements shown on the image above! As you haven't learned 
 
 Our HTML should contain the following tags:
 
--<input type="text">
+- <input type="text">
 - <input type="password">
 - <input type="date">
 - <input type="radio">
@@ -20,6 +20,7 @@ Our HTML should contain the following tags:
 - <input type="submit">
 - <textarea>
 - <select>
+
 We'll get to use forms in one way or another in many later assignments during the bootcamp so don't feel the need to memorize all of the different form tags and attributes today. We can always come back to this chapter for reference!
 
 <Important:> don't worry too much about making the form look identical to the image. We will be learning about how exactly to do that tomorrow. For today, it's good enough that the form has all the inputs it needs.
