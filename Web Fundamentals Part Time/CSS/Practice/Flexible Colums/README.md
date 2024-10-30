@@ -1,6 +1,6 @@
 # FLEX-ible Columns Assignment
 
-## Objective
+## Objective 
 The purpose of this assignment is to practice using Flexbox properties to create a flexible column layout system. You will implement classes to organize columns within rows, with varying proportions for each section.
 
 [Watch the video](columns.mp4)
