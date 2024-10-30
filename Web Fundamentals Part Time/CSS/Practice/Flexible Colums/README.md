@@ -13,24 +13,24 @@ Follow the steps below to complete each part of the assignment. Use the provided
 2. Your goal is to arrange the four columns so that they are evenly spaced within the row, each taking up 1/4 of the available space.
 
 #### HTML: 
-html
+``` html
 <div class="row">
     <div class="col">1/4</div>
     <div class="col">1/4</div>
     <div class="col">1/4</div>
     <div class="col">1/4</div>
-</div> 
+</div> ``` 
 
 
 ### Part II: 1/3 and 2/3 Column Layout
 Using the HTML provided below and reusing the .row and .col classes from before, create a .col-2 class in the CSS to achieve a layout with a 1/3 width column and a 2/3 width column.
 
 #### HTML:
-html
+``` html
 <div class="row">
     <div class="col">1/3</div> 
     <div class="col-2">2/3</div>
-</div>
+</div>``` 
 
 
 ### Part III: 2/5 and 3/5 Column Layout
@@ -41,5 +41,5 @@ Using the HTML provided below and reusing the .row and .col-2 classes from befor
 <div class="row">
     <div class="col-2">2/5</div>
     <div class="col-3">3/5</div>
-</div>
+</div>``` 
 
