@@ -30,18 +30,6 @@ This assignment may take several hours to complete. **Take your time** with each
 4. **Time Management**:
    - This assignment may take up to 4 hours to complete. Work consistently, and remember that building complex layouts takes practice.
 
-## Troubleshooting Tips
-
-If you encounter difficulties, try the following:
-
-- **Struggling for <20 minutes**: Revisit previous modules for guidance on layout and positioning.
-- **Struggling for <40 minutes**: Try searching online for specific challenges (e.g., "aligning elements with Flexbox").
-- **Struggling for >40 minutes**:
-  - Post questions in your cohort’s Discord channel for peer support.
-  - Tag a Teaching Assistant or instructor in Discord.
-  - Schedule a code review for one-on-one assistance.
-
-After submitting your best attempt, review the solution provided for this assignment to compare techniques and learn alternative approaches.
 
 ## Submission Checklist
 
@@ -49,4 +37,3 @@ After submitting your best attempt, review the solution provided for this assign
 2. **Check Images and Icons**: Verify that all images and icons are correctly placed and sized.
 3. **Upload Your Code**: Submit your HTML and CSS files, along with the images, to the assignment platform.
 
-**Note**: After submission, go to your "assignment checklist" tab to see the green check mark confirming your submission. Each completed assignment brings you closer to graduation!
