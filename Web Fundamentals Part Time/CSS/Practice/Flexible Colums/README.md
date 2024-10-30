@@ -22,6 +22,7 @@ Follow the steps below to complete each part of the assignment. Use the provided
     <div class="col">1/4</div>
 </div>```
 
+
 ### Part II
 Using the HTML provided below and reusing the `.row` and `.col` classes from before, create a `.col-2` class in the CSS to achieve a layout with a 1/3 width column and a 2/3 width column.
 
