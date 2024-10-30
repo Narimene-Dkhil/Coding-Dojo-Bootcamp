@@ -26,17 +26,6 @@
 4. **Customize**:
     - Choose your favorite colors and images from the Octodex to personalize your layout.
 
-## Tips & Resources
-
-If you get stuck, try these steps to get back on track:
-- If you've struggled for <20 minutes, re-read previous modules for extra clarity.
-- For <40 minutes, consider specific help resources, such as searching for topics on Google (e.g., "using Flexbox justify-content").
-- If struggling for more than 40 minutes:
-  - Post questions in your cohort's Discord channel for peer support.
-  - Tag a Teaching Assistant or instructor on Discord.
-  - Consider scheduling a code review.
-
-After submitting your best attempt, review the provided solution to compare and learn.
 
 ## Submission Checklist
 
@@ -44,4 +33,4 @@ After submitting your best attempt, review the provided solution to compare and 
 2. Verify that all images are uniformly sized and positioned correctly using Flexbox.
 3. Upload the code and images to the assignment platform.
 
-**Remember**: Once submitted, check your "assignment checklist" tab to see the green check mark indicating completion. Every assignment submission is a step closer to graduation!
+
