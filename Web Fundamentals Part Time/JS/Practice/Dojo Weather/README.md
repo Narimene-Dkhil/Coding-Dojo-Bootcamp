@@ -12,7 +12,8 @@ Using `HTML`, `CSS`, and `JS` recreate the look and functionality of the followi
 - When the user accepts the cookie policy, hide the fixed message
 - Challenge: When the user changes the <select> convert the temperatures from Celsius to Fahrenheit
 
-## Technologies Used
+## Technologies Used :
+
 - HTML - Structure of the layout.
 - CSS - Styling to match the wireframe.
 - JavaScript - Functions for button interactivity.
