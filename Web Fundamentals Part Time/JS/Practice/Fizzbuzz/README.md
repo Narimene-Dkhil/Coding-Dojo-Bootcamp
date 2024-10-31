@@ -39,7 +39,8 @@ Your code should:
 - Print `"Buzz"` for each number that is a multiple of 5.
 - Print `"FizzBuzz"` for each number that is a multiple of both 3 and 5.
 - Print the number itself if it does not meet any of the above conditions.
-
+- 
+**Hint:** We may need to make use of the modulo operator a % b
 
 ## Technologies Used
 - JavaScript - The coding language for this assignment.
