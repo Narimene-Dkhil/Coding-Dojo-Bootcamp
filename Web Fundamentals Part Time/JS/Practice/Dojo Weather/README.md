@@ -10,7 +10,7 @@ Using `HTML`, `CSS`, and `JS` recreate the look and functionality of the followi
 - Use position: fixed; to position the cookie policy message at the bottom of the page
 - When a user clicks on a city, alert the message "Loading weather report..."
 - When the user accepts the cookie policy, hide the fixed message
-- Challenge: When the user changes the <select> convert the temperatures from Celsius to Fahrenheit
+- Challenge: When the user changes the `<select>` convert the temperatures from Celsius to Fahrenheit
 
 ## Technologies Used :
 
