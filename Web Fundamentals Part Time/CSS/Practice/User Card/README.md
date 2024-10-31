@@ -21,39 +21,11 @@ To start this project:
 2. Inside this folder, add an `index.html` file and a `styles.css` file.
 3. Link your CSS file to your HTML file and set up the structure following the wireframe.
 
-### Project Structure
-user-card-layout/ │ ├── index.html # HTML structure for the user card ├── styles.css # CSS styling for the user card └── README.md # Project README file
+### HTML Structure
 
+In your `index.html` file, create a basic structure for the user card with sections for the user image, user name, and details. 
 
-#### HTML Structure
-
-In your `index.html` file, create a basic structure for the user card with sections for the user image, user name, and details. Here’s an example:
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Card Layout</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="user-card">
-        <div class="icon">
-            <!-- Icon image -->
-            <img src="path/to/icon.png" alt="Icon">
-        </div>
-        <div class="user-info">
-            <h2>John Doe</h2>
-            <p>Software Engineer</p>
-        </div>
-    </div>
-</body>
-</html>
-```
-
-#### CSS Styling
+### CSS Styling
 In your `styles.css` file, add styling to achieve the look and layout required:
 
 Style the `.user-card` container to have a background, padding, and border radius.
