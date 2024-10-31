@@ -21,8 +21,6 @@ Recreate the layout you see below. It may be helpful to focus on getting the HTM
 
 ![Button clicker](image.png)
 
-![Button Clicker1](image1.png)
-
 
 ## Completion Checklist
 - Confirm that clicking the "logout" button toggles it to "login" and vice versa.
