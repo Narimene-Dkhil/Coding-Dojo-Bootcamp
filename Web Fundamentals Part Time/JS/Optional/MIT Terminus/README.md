@@ -10,5 +10,5 @@ https://web.mit.edu/mprat/Public/web/Terminus/Web/main.html
 
 To submit this (optional) assignment upload a screenshot (or several) of your favorite scene(s)
 - Go to: MIT terminus
-- Try using the commands: ls, cd, and pwd
+- Try using the commands: `ls`, `cd`, and `pwd`
 - Upload a screenshot of your favorite scene!
