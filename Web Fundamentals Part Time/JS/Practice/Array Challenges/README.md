@@ -83,5 +83,4 @@ console.log(result); // we expect back [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
 
 ## Technologies Used
 - HTML - Structure of the layout.
-- CSS - Styling to match the wireframe.
 - JavaScript - Functions for button interactivity.
