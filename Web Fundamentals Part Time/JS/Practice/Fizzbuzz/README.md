@@ -43,3 +43,4 @@ Your code should:
 
 ## Technologies Used
 - JavaScript - The coding language for this assignment.
+Run in terminal `node script.js`
