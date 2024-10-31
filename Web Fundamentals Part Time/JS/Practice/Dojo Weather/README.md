@@ -4,8 +4,6 @@ Using `HTML`, `CSS`, and `JS` recreate the look and functionality of the followi
 
 ![Dojo Weather](image.png)
 
-![Weather](img.png) 
-
 ## Requirements:
 
 - Recreate the look of the Weather Forecast page using HTML and CSS
