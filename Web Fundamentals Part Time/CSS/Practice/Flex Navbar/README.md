@@ -23,3 +23,7 @@ You will start with the following HTML structure for the navbar:
         <li><button class="btn">Sign Out</button></li>
     </ul>
 </div>
+```
+### Requirements:
+- Use the supplied HTML code snippet to recreate the image using flex.
+- (optional) Use google font Roboto
