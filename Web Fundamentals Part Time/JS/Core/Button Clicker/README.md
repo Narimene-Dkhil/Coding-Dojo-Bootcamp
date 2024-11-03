@@ -23,9 +23,9 @@ The main objectives of this assignment are:
 
 
 ## Completion Checklist
-- Confirm that clicking the "logout" button toggles it to "login" and vice versa.
-- Check that clicking "Add definition" removes the button from the page.
-- Verify that clicking the "Like" button triggers an alert with the message "Ninja was liked."
+1. - Confirm that clicking the "logout" button toggles it to "login" and vice versa.
+2. - Check that clicking "Add definition" removes the button from the page.
+3. - Verify that clicking the "Like" button triggers an alert with the message "Ninja was liked."
 
 ## Requirements
 - Visually recreate the wireframe as shown above
