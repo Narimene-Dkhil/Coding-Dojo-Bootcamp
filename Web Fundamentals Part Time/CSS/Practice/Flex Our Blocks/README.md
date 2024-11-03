@@ -71,5 +71,11 @@ And our starting CSS:
 
 ```
 
-### Requirements:
+### Requirements
 - Recreate the image above using flex properties
+
+### Technologies Used
+- HTML - For structuring the page.
+- CSS - For styling the text elements as per the assignment.### Technologies Used
+- HTML - For structuring the page.
+- CSS - For styling the text elements as per the assignment.
