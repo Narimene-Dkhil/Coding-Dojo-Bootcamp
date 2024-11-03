@@ -11,7 +11,7 @@ The primary objectives of this assignment are:
 2. **Positioning** - Use `position` properties like `absolute`, `relative`, or `fixed` to position the icon as shown in the wireframe.
 3. **Spacing** - Use properties like `padding` and `margin` to achieve proper spacing between elements.
 
-**Use what we've learned about CSS to recreate this layout**
+# **Use what we've learned about CSS to recreate this layout**
 ![User Card](image.png)
 
 ## Getting Started
