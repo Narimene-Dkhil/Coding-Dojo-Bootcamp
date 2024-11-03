@@ -4,7 +4,7 @@
 In this assignment, you will practice your CSS skills by recreating various button styles using the properties you’ve learned so far. Specifically, you will work with the following CSS properties:
 - **Border and Border-Radius**
 - **Height and Width**
-- **Box-Shadow** (optional)
+- **Optional:** Explore using the box-shadow CSS property https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow
 
 ## Assignment Overview
 Your task is to recreate the look of several button elements as shown in the reference image below:
