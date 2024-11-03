@@ -37,3 +37,6 @@ This assignment may take several hours to complete. **Take your time** with each
 2. **Check Images and Icons**: Verify that all images and icons are correctly placed and sized.
 3. **Upload Your Code**: Submit your HTML and CSS files, along with the images, to the assignment platform.
 
+## Technologies Used
+- HTML - For structuring the page.
+- CSS - For styling the text elements as per the assignment.
