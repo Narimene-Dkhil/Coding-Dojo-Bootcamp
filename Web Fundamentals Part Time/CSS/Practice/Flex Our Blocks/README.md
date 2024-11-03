@@ -70,3 +70,6 @@ And our starting CSS:
 }
 
 ```
+
+### Requirements:
+- Recreate the image above using flex properties
