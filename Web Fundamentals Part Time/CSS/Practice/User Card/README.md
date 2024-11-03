@@ -36,3 +36,7 @@ Add spacing and alignment to elements to match the design.
 - Use CSS to recreate the above image
 - Use position to properly set the icon image as show above
 
+## Technologies Used
+- HTML - For structuring the page.
+- CSS - For styling the text elements as per the assignment.
+
