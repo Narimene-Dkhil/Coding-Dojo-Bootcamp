@@ -57,4 +57,4 @@ And CSS:
     background-color: purple;
 }
 ``` 
-While we do this assignment, we can make use height as well as the vertical-align property to give the necessary height to the division and also to vertically align some of the inline-blocks.
+While we do this assignment, we can make use `height` as well as the `vertical-align` property to give the necessary height to the division and also to vertically align some of the inline-blocks.
