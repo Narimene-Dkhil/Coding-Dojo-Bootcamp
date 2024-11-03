@@ -58,3 +58,7 @@ And CSS:
 }
 ``` 
 While we do this assignment, we can make use `height` as well as the `vertical-align` property to give the necessary height to the division and also to vertically align some of the inline-blocks.
+
+### Requirements:
+- Copy the code above to set up the assignment
+- Apply CSS properties to recreate the image above
