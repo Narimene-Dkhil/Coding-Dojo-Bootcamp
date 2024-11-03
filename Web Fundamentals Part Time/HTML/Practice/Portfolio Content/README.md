@@ -15,4 +15,4 @@ Below is an example of how we may want our portfolio to look (for now):
 
 During the rest of the bootcamp, we'll get to use these HTML tags a lot. Don't feel pressured to memorize all of these HTML tags and how they exactly work, as we can refer to this section later and we'll feel more comfortable with HTML as we learn more about CSS and other topics in the curriculum. Once we have done the basic assignment, move on to the next chapter and we'll gain a deeper understanding on these HTML tags we've just learned.
 
-**NOTE:** Remember to validate our code before submitting it.
+**NOTE:** Remember to validate our code before submitting it: https://validator.w3.org/#validate_by_upload
