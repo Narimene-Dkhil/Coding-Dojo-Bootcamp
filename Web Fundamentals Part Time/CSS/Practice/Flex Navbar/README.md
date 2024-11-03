@@ -24,6 +24,10 @@ You will start with the following HTML structure for the navbar:
     </ul>
 </div>
 ```
-### Requirements:
+### Requirements
 - Use the supplied HTML code snippet to recreate the image using flex.
 - (optional) Use google font Roboto
+
+### Technologies Used
+- HTML - For structuring the page.
+- CSS - For styling the text elements as per the assignment.
