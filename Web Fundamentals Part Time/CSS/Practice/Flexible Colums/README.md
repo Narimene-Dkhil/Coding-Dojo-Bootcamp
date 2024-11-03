@@ -46,3 +46,7 @@ Using the **HTML** provided below and reusing the `.row` and `.col-2`, classes f
 - Recreate the first row with evenly spaced columns
 - Recreate the second row with a 1/3 width and 2/3 width column
 - Recreate the third row with a 2/5 width and 3/5 width column
+
+### Technologies Used
+- HTML - For structuring the page.
+- CSS - For styling the text elements as per the assignment.
