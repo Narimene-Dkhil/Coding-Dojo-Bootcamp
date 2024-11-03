@@ -27,6 +27,12 @@ The main objectives of this assignment are:
 - Check that clicking "Add definition" removes the button from the page.
 - Verify that clicking the "Like" button triggers an alert with the message "Ninja was liked."
 
+## Requirements
+- Visually recreate the wireframe as shown above
+- Change "logout" text to say "login" on click
+- Remove the "Add definition" button when clicked
+- Alert "Ninja was liked" when clicking a like button
+
 ## Technologies Used
 - HTML - Structure of the layout.
 - CSS - Styling to match the wireframe.
