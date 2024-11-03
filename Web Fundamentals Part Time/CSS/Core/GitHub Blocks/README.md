@@ -33,4 +33,6 @@
 2. Verify that all images are uniformly sized and positioned correctly using Flexbox.
 3. Upload the code and images to the assignment platform.
 
-
+### Technologies Used
+- HTML - For structuring the page.
+- CSS - For styling the text elements as per the assignment.
