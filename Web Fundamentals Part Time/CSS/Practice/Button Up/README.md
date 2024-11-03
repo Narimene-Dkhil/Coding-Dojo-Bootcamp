@@ -28,3 +28,7 @@ Here are some key properties you may find useful for your buttons:
 - **Box-Shadow**: Add shadows to create a layered effect. Example:
   ```css
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+## Technologies Used
+- HTML - For structuring the page.
+- CSS - For styling the text elements as per the assignment.
