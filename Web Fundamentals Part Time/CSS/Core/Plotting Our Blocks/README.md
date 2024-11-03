@@ -62,3 +62,7 @@ While we do this assignment, we can make use `height` as well as the `vertical-a
 ### Requirements:
 - Copy the code above to set up the assignment
 - Apply CSS properties to recreate the image above
+
+### Technologies Used
+- HTML - For structuring the page.
+- CSS - For styling the text elements as per the assignment.
