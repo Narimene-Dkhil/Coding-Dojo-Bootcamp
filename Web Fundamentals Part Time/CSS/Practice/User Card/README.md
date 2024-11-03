@@ -32,3 +32,7 @@ Style the `.user-card` container to have a background, padding, and border radiu
 Use `position` properties to position the icon correctly within the card.
 Add spacing and alignment to elements to match the design. 
 
+## Requirements:
+- Use CSS to recreate the above image
+- Use position to properly set the icon image as show above
+
