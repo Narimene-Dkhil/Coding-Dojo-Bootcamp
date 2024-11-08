@@ -1,5 +1,6 @@
 # Assignment: Functions Basic I
 **Downloads:**
+- Functions Basic I Download (see the attached zipped folder functions_basics_i.zip)
 
 For each of the following code snippets, first predict the output (what you will see printed to the terminal). Once you've made a prediction, run the code snippet to see if you are correct!
 ```
