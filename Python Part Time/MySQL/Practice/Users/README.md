@@ -5,6 +5,7 @@
 - Students will use SQL queries.
 
 In the previous chapter, you created users_schema. Now, you'll get the chance to forward engineer this schema, and use queries to manipulate the database.
+
 ![Image](image.png)
 
 If you get stuck on retrieving, changing, sorting, or deleting users, be sure to apply the 20 minute rule! Try re-reading the previous modules and doing research on your own, then reaching out to your peers on Discord, and finally setting up some time with a Coding Dojo staff member so that you talk through the challenge you're facing.
