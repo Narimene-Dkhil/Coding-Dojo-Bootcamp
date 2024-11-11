@@ -8,7 +8,7 @@ Welcome to another Core assignment! Some students like to explore the assignment
 
 ## Now, the Assignment:
 
-![Counter](ounter.gif)
+![Counter](counter.gif)
 
 Build a flask application that counts the number of times the root route ('/') has been viewed. 
 
