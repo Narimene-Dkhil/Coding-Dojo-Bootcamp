@@ -17,8 +17,8 @@ This assignment is to test your understanding of session.
 ![Image](image.png)
 
 As part of this assignment, please start with the following features first:
-- localhost:5000 - have the template render the number of times the client has visited this site
-- localhost:5000/destroy_session - Clear the session. Once cleared, redirect to the root.
+- **localhost:5000** - have the template render the number of times the client has visited this site
+- **localhost:5000/destroy_session** - Clear the session. Once cleared, redirect to the root.
 
 ### Some Helpful Tips
 We can't increment something that doesn't exist! Here's how to check if a key exists in session yet:
