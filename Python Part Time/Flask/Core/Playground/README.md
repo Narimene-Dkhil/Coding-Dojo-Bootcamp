@@ -9,7 +9,7 @@ Welcome to another Core assignment! Some students like to explore the assignment
 
 ## Now, the Assignment:
 
-![Playground](image.gif.)
+![Playground](image.gif)
 
 ## Internal Styling
 Just for this assignment, use an internal stylesheet or inline CSS ([review here](https://www.w3schools.com/css/css_howto.asp)).
