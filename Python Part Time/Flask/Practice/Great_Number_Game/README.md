@@ -14,7 +14,7 @@ In order to generate a random number you can use the [random](https://docs.pytho
 import random 	                # import the random module
 random.randint(1, 100) 		# random number between 1-100
 ```
-##  Screenshots
+
 ![Number](number.png)
 
 ![Great](great.png)
