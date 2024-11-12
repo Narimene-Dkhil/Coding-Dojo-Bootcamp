@@ -9,7 +9,9 @@ Create a site that allows a user to play this guessing game. Upon loading, the s
 There are many different ways to do this assignment. When you finish the basic functionality, find a peer and compare your code!
 
 ## Reminder
-In order to generate a random number you can use the `[random](https://docs.python.org/3/library/random.html)` Python module:
+In order to generate a random number you can use the [random](https://docs.python.org/3/library/random.html)
+
+Python module:
 ```
 import random 	                # import the random module
 random.randint(1, 100) 		# random number between 1-100
