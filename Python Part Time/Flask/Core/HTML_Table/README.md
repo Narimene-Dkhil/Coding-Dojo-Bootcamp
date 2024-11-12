@@ -8,7 +8,7 @@
 - Completed and submitted your practice assignments
 
 ## Now, the Assignment:
-![Table](table)
+![Table](table.gif)
 
 Getting comfortable with iterating through a list of dictionaries is very important for all web development! Records returned from a database will almost always be in this format.
 
