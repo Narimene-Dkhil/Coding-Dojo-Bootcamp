@@ -5,7 +5,7 @@
 Build a new Flask application that accepts a form submission and presents the submitted data on a results page.
 
 The goal is to help you get familiar with sending POST requests through a form and displaying that information. Consider the below example as a guide.
-1[Image](image.png)
+![Image](image.png)
 
 When you build this, please make sure that your program meets the following criteria:
 
