@@ -14,15 +14,16 @@ In order to generate a random number you can use the [random](https://docs.pytho
 import random 	                # import the random module
 random.randint(1, 100) 		# random number between 1-100
 ```
-
+<!-- 
 ![Number](https://github.com/narimenedk/Coding-Dojo-Bootcamp/blob/main/Python%20Part%20Time/Flask/Practice/Great_Number_Game/number.png)
 
 ![Great](https://github.com/narimenedk/Coding-Dojo-Bootcamp/blob/main/Python%20Part%20Time/Flask/Practice/Great_Number_Game/great.png)
 
 ![GNG](https://github.com/narimenedk/Coding-Dojo-Bootcamp/blob/main/Python%20Part%20Time/Flask/Practice/Great_Number_Game/gng.png)
 
-![GN](https://github.com/narimenedk/Coding-Dojo-Bootcamp/blob/main/Python%20Part%20Time/Flask/Practice/Great_Number_Game/gn.png)
+![GN](https://github.com/narimenedk/Coding-Dojo-Bootcamp/blob/main/Python%20Part%20Time/Flask/Practice/Great_Number_Game/gn.png) -->
 
+![Number](number.png) 
 
 ## Requirements:
 - Create a new Flask project called great_number_game
