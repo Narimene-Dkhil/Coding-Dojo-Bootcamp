@@ -14,13 +14,18 @@ In order to generate a random number you can use the [random](https://docs.pytho
 import random 	                # import the random module
 random.randint(1, 100) 		# random number between 1-100
 ```
+<p>
 ![Number](number.png)
-
+</p>
+<p>
 ![Great](great.png)
-
+</p>
+<p>
 ![GNG](gng.png)
-
+</p>
+<p>
 ![GN](gn.png)
+</p>
 
 ## Requirements:
 - Create a new Flask project called great_number_game
