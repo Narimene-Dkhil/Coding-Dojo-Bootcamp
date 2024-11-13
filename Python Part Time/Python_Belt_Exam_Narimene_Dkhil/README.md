@@ -2,7 +2,7 @@
 
 The WishApp is a simple web application where users can register, log in, and make wishes. Each wish includes an item and a description. Users can manage their wishes, mark them as granted, and view statistics on the wishes made by all users.
 
-![Wireframe](pythonWishApp (1).png)
+![Wireframe](wireframe.png)
 
 ## Features
 - User Registration and Login
