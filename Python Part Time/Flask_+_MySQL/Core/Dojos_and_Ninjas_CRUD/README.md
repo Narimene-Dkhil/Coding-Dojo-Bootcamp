@@ -18,7 +18,7 @@ Pass id data appropriately to and from the client in order to create a foreign k
 
 ![Wireframe](photo.png)
 
-## requirements:
+## Requirements:
 - Create a new Flask project
 - Use dojos_and_ninjas_schema created in MySQL course
 - `Dojo` page to add a new Dojo and display all Dojos
