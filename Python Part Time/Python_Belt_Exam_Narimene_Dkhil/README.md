@@ -77,7 +77,6 @@ pip install -r requirements.txt
 ```
 bash
 
-Copy code
 python app.py
 ```
 
