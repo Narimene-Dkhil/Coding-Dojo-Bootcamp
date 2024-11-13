@@ -24,7 +24,7 @@ Let's add update and delete functionality to the Dojos and Ninjas assignment! In
 
 ![Ninja](ninja.png)
 
-![Dojos](Dojos.png)
+<!-- ![Dojos](Dojos.png) -->
 
 ## Requirements:
 
