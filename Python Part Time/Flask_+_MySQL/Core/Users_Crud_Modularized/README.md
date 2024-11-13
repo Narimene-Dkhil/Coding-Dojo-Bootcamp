@@ -18,6 +18,8 @@ Take the previous assignment and modularize it to use the MVC pattern design.
 
 ![Image](image.png)
 
+![Photo](photo.png)
+
 ## Requirements:
 
 - Go through the steps of modularizing the Users CRUD assignment
