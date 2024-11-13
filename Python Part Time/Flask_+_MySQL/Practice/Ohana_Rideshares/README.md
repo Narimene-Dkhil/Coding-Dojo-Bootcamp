@@ -2,6 +2,7 @@
 **Learning Objectives:**
 
 - Students will review essential skills needed for the Belt Exam.
+
 Click [here](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1657843447__Ohana%20Rideshares.png) to open the wireframe image and save it locally.
 
 ![Wireframe](wireframe.png) 
