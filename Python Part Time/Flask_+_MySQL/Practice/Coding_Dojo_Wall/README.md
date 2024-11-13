@@ -14,7 +14,7 @@ Create a wall/forum page where users will be able to post a message and see the 
 
 Download the [handout](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1657832382__The_Wall_22.png) (no bonus) and/or [bonus](https://assets.codingdojo.com/boomyeah2015/codingdojo/curriculum/content/chapter/1657832505__the_wall_comments_bonus.png) here for the wireframe/ERD:
 
-![Wall)](wall)
+![Wall](wall)
 
 ![Bonus](bonus.png)
 
