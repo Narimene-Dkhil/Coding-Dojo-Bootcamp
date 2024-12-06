@@ -3,7 +3,7 @@ You have been given a task as a front-end developer to create a front-end app to
 
 ![Luke](star.png)
 ![StarWars](character.png)
-1[SWAPI](planets.png)
+![SWAPI](planets.png)
 
 
 In addition to the index route, you should have a route to display specific characters and a route to display specific planets. Here are a couple considerations to keep in mind:
