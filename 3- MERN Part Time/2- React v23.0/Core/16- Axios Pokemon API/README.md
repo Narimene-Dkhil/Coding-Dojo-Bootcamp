@@ -3,7 +3,7 @@ Redo the previous assignment using axios. Using the previous lesson as a startin
 
 When this is clicked, output the names of all 807 Pokemon using the [Pokemon API](https://pokeapi.co/). 
 
-[Pokemon](Pokemon.png)
+![Pokemon](Pokemon.png)
 
 ## Requirements:
 
