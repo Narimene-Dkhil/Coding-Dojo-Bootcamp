@@ -35,7 +35,8 @@ After successfully adding a joke, use Postman to perform the POST DELETE and PUT
 ![Photo](photo.png)
 
 
-Ninja Bonus!
+## Ninja Bonus!
+
 Once you've added all the standard CRUD routes and have them working properly, try to take a step further by adding a new route with logic to return a random joke!
 
 Hint: If you need a refresher on generating random numbers, research the line `Math.random()`
