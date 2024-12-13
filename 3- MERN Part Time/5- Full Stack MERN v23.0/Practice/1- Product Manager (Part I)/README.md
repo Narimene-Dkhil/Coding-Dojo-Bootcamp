@@ -3,7 +3,7 @@
 
 Create a full stack MERN project that will become a complete product manager.
 
-![Image](image)
+![Image](image.png)
 
 
 Note: We will be using this project for the next couple of assignments as well, so keep that in mind as you are building it.
