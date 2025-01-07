@@ -38,12 +38,14 @@ Once you have your dice roller all worked out, write a new function that will ro
 
 - How do you make a function run repeatedly?
 - How can we see the results of our rolls? (What happens when you try to Console.WriteLine a List?)
+
 **Bonus:** Write your function to roll any number of times you would like.
 
 **Bonus:** After finishing your rolls, print the largest value you rolled.
 
 ## Roll Until...
-Write a new function that will roll your 6-sided die until you land on a certain result and tracks how many rolls occurred until it lands on the given number. For example, you could tell your code to keep rolling until your 6-sided die rolls the number 2. When you land on the number, return a string that says "Rolled a {number} after {count} tries". **Tip:** Do not hard-code the number you're looking for. Be able to accept any number.
+Write a new function that will roll your 6-sided die until you land on a certain result and tracks how many rolls occurred until it lands on the given number. For example, you could tell your code to keep rolling until your 6-sided die rolls the number 2. When you land on the number, return a string that says "Rolled a {number} after {count} tries". 
+**Tip:** Do not hard-code the number you're looking for. Be able to accept any number.
 
 ### Consider the following:
 
