@@ -48,6 +48,7 @@ Once you have your PerformAttack() method ready, the next step is to create thre
     - Lightning Bolt, 20 damage
     - Staff Strike, 10 damage
 - Heal method - The fighter heals a targeted Enemy character for 40 health and displays the new health at the end
+
 **Once all your classes are created, complete the following series of actions to test all your new code:**
 
 1. Create instances of the Melee, Ranged, and Magic Caster classes
