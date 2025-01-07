@@ -1,4 +1,4 @@
-# Practice Assignment: Ride Mader
+# Practice Assignment: Ride Maker
 
 ### Learning Objectives:
 
