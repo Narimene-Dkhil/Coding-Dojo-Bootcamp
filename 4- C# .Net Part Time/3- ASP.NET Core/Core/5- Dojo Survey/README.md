@@ -9,6 +9,7 @@
 Now that you've learned how to render pages, style them, use ViewBag, and handle post requests, your next assignment is to build an application that uses all these elements at once.
 
 Use the wireframe below to build out a form and render the data from the form.
+
 ![Image](model.png)
 
 For the simplest version of this assignment, it is okay to render on the post request so that we can see the form data. For an advanced version, we will ask you to figure out how to render the data after leaving the post request.
