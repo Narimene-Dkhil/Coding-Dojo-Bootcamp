@@ -8,53 +8,53 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ChefDish
 build_property.RootNamespace = ChefDish
-build_property.ProjectDir = C:\Users\narim\OneDrive\Desktop\Coding Dojo Programs\Coding-Dojo-Africa\C# .Net Part Time\ORMs\Core\Chefs 'N Dishes\ChefDish\
+build_property.ProjectDir = c:\Users\narim\OneDrive\Desktop\Coding Dojo Programs\Coding-Dojo-Bootcamp\4- C# .Net Part Time\4- ORMs\Core\5- Chefs 'N Dishes\ChefDish\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\narim\OneDrive\Desktop\Coding Dojo Programs\Coding-Dojo-Africa\C# .Net Part Time\ORMs\Core\Chefs 'N Dishes\ChefDish
+build_property.MSBuildProjectDirectory = c:\Users\narim\OneDrive\Desktop\Coding Dojo Programs\Coding-Dojo-Bootcamp\4- C# .Net Part Time\4- ORMs\Core\5- Chefs 'N Dishes\ChefDish
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/narim/OneDrive/Desktop/Coding Dojo Programs/Coding-Dojo-Africa/C\# .Net Part Time/ORMs/Core/Chefs 'N Dishes/ChefDish/Views/Home/AddChef.cshtml]
+[c:/Users/narim/OneDrive/Desktop/Coding Dojo Programs/Coding-Dojo-Bootcamp/4- C\# .Net Part Time/4- ORMs/Core/5- Chefs 'N Dishes/ChefDish/Views/Home/AddChef.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZGRDaGVmLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/narim/OneDrive/Desktop/Coding Dojo Programs/Coding-Dojo-Africa/C\# .Net Part Time/ORMs/Core/Chefs 'N Dishes/ChefDish/Views/Home/AddDish.cshtml]
+[c:/Users/narim/OneDrive/Desktop/Coding Dojo Programs/Coding-Dojo-Bootcamp/4- C\# .Net Part Time/4- ORMs/Core/5- Chefs 'N Dishes/ChefDish/Views/Home/AddDish.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZGREaXNoLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/narim/OneDrive/Desktop/Coding Dojo Programs/Coding-Dojo-Africa/C\# .Net Part Time/ORMs/Core/Chefs 'N Dishes/ChefDish/Views/Home/Dishes.cshtml]
+[c:/Users/narim/OneDrive/Desktop/Coding Dojo Programs/Coding-Dojo-Bootcamp/4- C\# .Net Part Time/4- ORMs/Core/5- Chefs 'N Dishes/ChefDish/Views/Home/Dishes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEaXNoZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/narim/OneDrive/Desktop/Coding Dojo Programs/Coding-Dojo-Africa/C\# .Net Part Time/ORMs/Core/Chefs 'N Dishes/ChefDish/Views/Home/Index.cshtml]
+[c:/Users/narim/OneDrive/Desktop/Coding Dojo Programs/Coding-Dojo-Bootcamp/4- C\# .Net Part Time/4- ORMs/Core/5- Chefs 'N Dishes/ChefDish/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/narim/OneDrive/Desktop/Coding Dojo Programs/Coding-Dojo-Africa/C\# .Net Part Time/ORMs/Core/Chefs 'N Dishes/ChefDish/Views/Home/Privacy.cshtml]
+[c:/Users/narim/OneDrive/Desktop/Coding Dojo Programs/Coding-Dojo-Bootcamp/4- C\# .Net Part Time/4- ORMs/Core/5- Chefs 'N Dishes/ChefDish/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/narim/OneDrive/Desktop/Coding Dojo Programs/Coding-Dojo-Africa/C\# .Net Part Time/ORMs/Core/Chefs 'N Dishes/ChefDish/Views/Home/_Navbar.cshtml]
+[c:/Users/narim/OneDrive/Desktop/Coding Dojo Programs/Coding-Dojo-Bootcamp/4- C\# .Net Part Time/4- ORMs/Core/5- Chefs 'N Dishes/ChefDish/Views/Home/_Navbar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxfTmF2YmFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/narim/OneDrive/Desktop/Coding Dojo Programs/Coding-Dojo-Africa/C\# .Net Part Time/ORMs/Core/Chefs 'N Dishes/ChefDish/Views/Shared/Error.cshtml]
+[c:/Users/narim/OneDrive/Desktop/Coding Dojo Programs/Coding-Dojo-Bootcamp/4- C\# .Net Part Time/4- ORMs/Core/5- Chefs 'N Dishes/ChefDish/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/narim/OneDrive/Desktop/Coding Dojo Programs/Coding-Dojo-Africa/C\# .Net Part Time/ORMs/Core/Chefs 'N Dishes/ChefDish/Views/Shared/_ValidationScriptsPartial.cshtml]
+[c:/Users/narim/OneDrive/Desktop/Coding Dojo Programs/Coding-Dojo-Bootcamp/4- C\# .Net Part Time/4- ORMs/Core/5- Chefs 'N Dishes/ChefDish/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/narim/OneDrive/Desktop/Coding Dojo Programs/Coding-Dojo-Africa/C\# .Net Part Time/ORMs/Core/Chefs 'N Dishes/ChefDish/Views/_ViewImports.cshtml]
+[c:/Users/narim/OneDrive/Desktop/Coding Dojo Programs/Coding-Dojo-Bootcamp/4- C\# .Net Part Time/4- ORMs/Core/5- Chefs 'N Dishes/ChefDish/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/narim/OneDrive/Desktop/Coding Dojo Programs/Coding-Dojo-Africa/C\# .Net Part Time/ORMs/Core/Chefs 'N Dishes/ChefDish/Views/_ViewStart.cshtml]
+[c:/Users/narim/OneDrive/Desktop/Coding Dojo Programs/Coding-Dojo-Bootcamp/4- C\# .Net Part Time/4- ORMs/Core/5- Chefs 'N Dishes/ChefDish/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/narim/OneDrive/Desktop/Coding Dojo Programs/Coding-Dojo-Africa/C\# .Net Part Time/ORMs/Core/Chefs 'N Dishes/ChefDish/Views/Shared/_Layout.cshtml]
+[c:/Users/narim/OneDrive/Desktop/Coding Dojo Programs/Coding-Dojo-Bootcamp/4- C\# .Net Part Time/4- ORMs/Core/5- Chefs 'N Dishes/ChefDish/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-4iwt6qyc3z
