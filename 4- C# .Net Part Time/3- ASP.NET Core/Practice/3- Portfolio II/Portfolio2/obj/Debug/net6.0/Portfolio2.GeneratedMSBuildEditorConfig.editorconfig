@@ -8,21 +8,21 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Portfolio2
 build_property.RootNamespace = Portfolio2
-build_property.ProjectDir = C:\Users\narim\OneDrive\Desktop\Coding Dojo Programs\Coding-Dojo-Africa\C# .Net Part Time\ASP.NET Core\Practice\Portfolio II\Portfolio2\
+build_property.ProjectDir = c:\Users\narim\OneDrive\Desktop\Coding Dojo Programs\Coding-Dojo-Bootcamp\4- C# .Net Part Time\3- ASP.NET Core\Practice\3- Portfolio II\Portfolio2\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\narim\OneDrive\Desktop\Coding Dojo Programs\Coding-Dojo-Africa\C# .Net Part Time\ASP.NET Core\Practice\Portfolio II\Portfolio2
+build_property.MSBuildProjectDirectory = c:\Users\narim\OneDrive\Desktop\Coding Dojo Programs\Coding-Dojo-Bootcamp\4- C# .Net Part Time\3- ASP.NET Core\Practice\3- Portfolio II\Portfolio2
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/narim/OneDrive/Desktop/Coding Dojo Programs/Coding-Dojo-Africa/C\# .Net Part Time/ASP.NET Core/Practice/Portfolio II/Portfolio2/Views/Main/Contact.cshtml]
+[c:/Users/narim/OneDrive/Desktop/Coding Dojo Programs/Coding-Dojo-Bootcamp/4- C\# .Net Part Time/3- ASP.NET Core/Practice/3- Portfolio II/Portfolio2/Views/Main/Contact.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpblxDb250YWN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/narim/OneDrive/Desktop/Coding Dojo Programs/Coding-Dojo-Africa/C\# .Net Part Time/ASP.NET Core/Practice/Portfolio II/Portfolio2/Views/Main/Index.cshtml]
+[c:/Users/narim/OneDrive/Desktop/Coding Dojo Programs/Coding-Dojo-Bootcamp/4- C\# .Net Part Time/3- ASP.NET Core/Practice/3- Portfolio II/Portfolio2/Views/Main/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpblxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/narim/OneDrive/Desktop/Coding Dojo Programs/Coding-Dojo-Africa/C\# .Net Part Time/ASP.NET Core/Practice/Portfolio II/Portfolio2/Views/Main/Projects.cshtml]
+[c:/Users/narim/OneDrive/Desktop/Coding Dojo Programs/Coding-Dojo-Bootcamp/4- C\# .Net Part Time/3- ASP.NET Core/Practice/3- Portfolio II/Portfolio2/Views/Main/Projects.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpblxQcm9qZWN0cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
