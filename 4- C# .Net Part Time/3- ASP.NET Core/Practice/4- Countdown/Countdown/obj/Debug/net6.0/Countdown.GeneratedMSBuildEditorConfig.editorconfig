@@ -8,13 +8,13 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Countdown
 build_property.RootNamespace = Countdown
-build_property.ProjectDir = C:\Users\narim\OneDrive\Desktop\Coding Dojo Programs\Coding-Dojo-Africa\C# .Net Part Time\ASP.NET Core\Practice\Countdown\Countdown\
+build_property.ProjectDir = c:\Users\narim\OneDrive\Desktop\Coding Dojo Programs\Coding-Dojo-Bootcamp\4- C# .Net Part Time\3- ASP.NET Core\Practice\4- Countdown\Countdown\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\narim\OneDrive\Desktop\Coding Dojo Programs\Coding-Dojo-Africa\C# .Net Part Time\ASP.NET Core\Practice\Countdown\Countdown
+build_property.MSBuildProjectDirectory = c:\Users\narim\OneDrive\Desktop\Coding Dojo Programs\Coding-Dojo-Bootcamp\4- C# .Net Part Time\3- ASP.NET Core\Practice\4- Countdown\Countdown
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/narim/OneDrive/Desktop/Coding Dojo Programs/Coding-Dojo-Africa/C\# .Net Part Time/ASP.NET Core/Practice/Countdown/Countdown/Views/Main/Index.cshtml]
+[c:/Users/narim/OneDrive/Desktop/Coding Dojo Programs/Coding-Dojo-Bootcamp/4- C\# .Net Part Time/3- ASP.NET Core/Practice/4- Countdown/Countdown/Views/Main/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpblxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
