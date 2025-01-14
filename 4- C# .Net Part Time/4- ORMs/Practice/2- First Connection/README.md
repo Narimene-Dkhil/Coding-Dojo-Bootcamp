@@ -21,4 +21,4 @@ Successfully finishing this assignment means following all the steps to connect 
 - Create an MVC project.
 - Create a Pets table for your database.
 - Follow the instructions to connect to MySQL.
-- Verify that the database and table are populated in MySQL. 
+- Verify that the database and table are populated in MySQL.
