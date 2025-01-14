@@ -11,7 +11,7 @@ Using what you have learned about switching between C# logic and HTML, replicate
 
 ![Image](image.png)
 
-**Bonus:** If the string in the List begins with the letter "c", style the <p> element with red text! (Do this using inline style for now since we have not gone over how to bring CSS files into our projects just yet.)
+**Bonus:** If the string in the List begins with the letter "c", style the < p> element with red text! (Do this using inline style for now since we have not gone over how to bring CSS files into our projects just yet.)
 
 ## Requirements:
 - Create a web application that renders a cshtml page.
