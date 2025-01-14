@@ -14,9 +14,9 @@ Time to test out your newfound session skills by making and editing some session
 ## Details:
 - Users should be able to put their name in and have it remembered with session until log out.
 - You can choose what number to start with on the dashboard. 22 is a good starting point.
-    - (plus +) 1 should add 1 to the value above.
-    - (minus -) 1 should subtract 1 from the value above.
-    - x 2 should multiply the value by 2.
+    - (+) 1 should add 1 to the value above.
+    - (-) 1 should subtract 1 from the value above.
+    - (x 2) should multiply the value by 2.
     - Random should add a random integer amount to the value between 1 and 10 (10 inclusive).
 - Clicking "log out" should clear session and send the user back to the first page.
     - "Log out" should trigger a post request (this is best practice).
