@@ -39,7 +39,7 @@ Create a web application that allows registered users to plan a wedding. Users c
 
 - Ensure all routes (both seen and unseen by the client) follow RESTful routing conventions
 
-![Wireframe](/1663019314__WeddingPlanner.png)
+![Wireframe](1663019314__WeddingPlanner.png)
 
 ## Requirements:
 
