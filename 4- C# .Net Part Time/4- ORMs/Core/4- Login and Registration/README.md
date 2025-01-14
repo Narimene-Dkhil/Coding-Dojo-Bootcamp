@@ -37,6 +37,8 @@ Start a new project with a Login and Registration feature. It will be helpful to
 
 - When a user selects "logout", clear session and redirect the user back to the login/register page. They should now be unable to access the success page after logging out unless they successfully log back in
 
+![Image](image.png)
+
 ## Requirements:
 
 - Create a working registration form.
