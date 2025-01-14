@@ -8,13 +8,13 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = RazorFun
 build_property.RootNamespace = RazorFun
-build_property.ProjectDir = C:\Users\narim\OneDrive\Desktop\Coding Dojo Programs\Coding-Dojo-Africa\C# .Net Part Time\ASP.NET Core\Practice\Razor Fun!\RazorFun\
+build_property.ProjectDir = c:\Users\narim\OneDrive\Desktop\Coding Dojo Programs\Coding-Dojo-Bootcamp\4- C# .Net Part Time\3- ASP.NET Core\Practice\2- Razor Fun!\RazorFun\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\narim\OneDrive\Desktop\Coding Dojo Programs\Coding-Dojo-Africa\C# .Net Part Time\ASP.NET Core\Practice\Razor Fun!\RazorFun
+build_property.MSBuildProjectDirectory = c:\Users\narim\OneDrive\Desktop\Coding Dojo Programs\Coding-Dojo-Bootcamp\4- C# .Net Part Time\3- ASP.NET Core\Practice\2- Razor Fun!\RazorFun
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/narim/OneDrive/Desktop/Coding Dojo Programs/Coding-Dojo-Africa/C\# .Net Part Time/ASP.NET Core/Practice/Razor Fun\!/RazorFun/Views/Razor/Index.cshtml]
+[c:/Users/narim/OneDrive/Desktop/Coding Dojo Programs/Coding-Dojo-Bootcamp/4- C\# .Net Part Time/3- ASP.NET Core/Practice/2- Razor Fun\!/RazorFun/Views/Razor/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmF6b3JcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
