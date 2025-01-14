@@ -12,7 +12,7 @@ Some of the validations we will ask you to use are built-in, and some will need 
 
 You have been shown all the basic tools you need to complete this assignment, but don't be afraid to do a little research or discuss with your classmates how they went about solving some of these problems.
 
-![Image]()
+![Image](image.png)
 
 ## Requirements:
 
