@@ -11,7 +11,7 @@ Begin by coming up with an idea, either from the listed wireframes, or your own 
 - Solve or simplify a problem for yourself or somebody
 - Perform common good for a community
 
-The front-end/design of your project can be just as important as your back-end, make sure you allow yourself the time to focus on this as well.
+The front-end/design of your project can be just as important as your back-end, **make sure you allow yourself the time to focus on this as well.**
 
 You should then build up a feature list for what you would want to include in your presentation (Minimum Viable Product or MVP) and features that would be cool, but not crucial (product backlog).
 
