@@ -3,7 +3,7 @@ Write functions using the JavaScript language for all challenges. Use only a sin
 
 
 ## Push Front
-Given an array and an additional value, insert this value at the beginning of the array. You may use **[.push()]**(https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push), you are able do this without it though!
+Given an array and an additional value, insert this value at the beginning of the array. You may use [.push()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push), you are able do this without it though!
 
 #### Examples:
 
@@ -11,7 +11,7 @@ pushFront([5,7,2,3], 8) => [8,5,7,2,3]
 pushFront([99], 7) => [7,99]
 
 ## Pop Front
-Given an array, remove and return the value at the beginning of the array. Prove the value is removed from the array by printing it. You may use **[.pop()]**(https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop), you are able do this without it though!
+Given an array, remove and return the value at the beginning of the array. Prove the value is removed from the array by printing it. You may use [.pop()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop), you are able do this without it though!
 
 #### Examples:
 
@@ -19,7 +19,7 @@ popFront([0,5,10,15]) => 0 returned, with [5,10,15] printed in the function
 popFront([4,5,7,9]) => 4 returned, with [5,7,9] printed in the function
 
 ## Insert At
-Given an array, index, and additional value, insert the value into array at given index. You can think of **pushFront(arr,val)** as equivalent to **insertAt(arr,0,val).** You may use **[.push()]**(https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push), you are able do this without it though!
+Given an array, index, and additional value, insert the value into array at given index. You can think of **pushFront(arr,val)** as equivalent to **insertAt(arr,0,val).** You may use [.push()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push), you are able do this without it though!
 
 #### Examples:
 
