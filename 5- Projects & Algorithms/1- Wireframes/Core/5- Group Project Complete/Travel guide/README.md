@@ -1,7 +1,8 @@
-![Travle_Guide](Travel_Guide.png)
-
 # Travel Guide Project
 This repository contains the structure and design of the Travel Guide application, which allows users to create, browse, edit, and delete travel posts.
+
+![Travle_Guide](Travel_Guide.png)
+
 
 ## Project Overview
 ### Login/Register Page
