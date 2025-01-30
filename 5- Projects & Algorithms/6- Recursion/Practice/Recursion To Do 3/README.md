@@ -26,6 +26,7 @@ The Tarai (Japanese: “to pass around”) function was created to profile recur
 
 - tarai(x,y,z) == y, if x <= y (otherwise see rule #2);
 - tarai(x,y,z) == tarai(tarai(x-1,y,z),tarai(y-1,z,x),tarai(z-1,x,y)).
+
 Calling **tarai(10,2,9)** should return 9 (after recursing 4145 times!).
 
 
