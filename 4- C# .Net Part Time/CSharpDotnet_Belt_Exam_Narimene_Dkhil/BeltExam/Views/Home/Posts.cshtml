@@ -1,0 +1,54 @@
+@{
+    ViewData["Title"] = "Posts Page";
+}
+
+@model MyViewModel
+
+<div class="container">
+    <div class="row">
+        @foreach (var post in Model.AllPosts)
+        {
+            <div class="col-md-4 mb-4"> 
+                <div class="card">
+                    <div class="card-image">
+                        <img src="@post.Image" alt="Post Image" class="img-fluid img-fixed-size">
+                    </div>
+                    <div class="card-content">
+                        <a href="posts/@post.PostId"><h3>@post.Title</h3></a>
+                        <p>By: @(post.Creator != null ? post.Creator.Name : "Unknown Creator")</p>
+                        <p>Medium: @post.Medium</p>
+                        <p>@(post.ForSale ? "For Sale" : "Not For Sale")</p>
+                        <p>Likes: @post.Likers.Count</p>
+                        @if (post.UserId == Model.LoggedInUser.UserId)
+                        {
+                            <div class="d-flex">
+                                <a href="/posts/@post.PostId/edit" class="btn btn-link">Edit</a>
+                                <form asp-action="DeletePost" asp-controller="Home" asp-route-postId="@post.PostId" method="post" class="m-0">
+                                    <input type="submit" value="Delete" class="btn btn-link">
+                                </form>
+                            </div>
+                        }
+                        else
+                        {
+                            var userLike = post.Likers.SingleOrDefault(l => l.UserId == Model.LoggedInUser.UserId);
+                            if (userLike != null)
+                            {
+                                <form asp-action="UnLike" asp-controller="Home" asp-route-id="@userLike.LikeId" method="post">
+                                    <input class="btn btn-link" type="submit" value="Unlike">
+                                </form>
+                            }
+                            else
+                            {
+                                <form asp-action="Like" asp-controller="Home" method="post">
+                                    <input type="hidden" name="UserId" value="@Model.LoggedInUser.UserId">
+                                    <input type="hidden" name="PostId" value="@post.PostId">
+                                    <input class="btn btn-link" type="submit" value="Like">
+                                </form>
+                            }
+                        }
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
